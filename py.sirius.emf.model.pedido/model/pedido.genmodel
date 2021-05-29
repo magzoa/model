@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel"
+    modelDirectory="/py.sirius.emf.model.pedido/src-gen" creationIcons="false"
+    editDirectory="/py.sirius.emf.model.pedido.edit/src-gen" editorDirectory="/py.sirius.emf.model.pedido.editor/src-gen"
+    modelPluginID="py.sirius.emf.model.pedido" modelName="Pedido" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    codeFormatting="true" importerID="org.eclipse.emf.importer.ecore" complianceLevel="5.0"
+    copyrightFields="false" operationReflection="true" importOrganizing="true">
+  <foreignModel>pedido.ecore</foreignModel>
+  <testsDirectory xsi:nil="true"/>
+  <genPackages prefix="Pedido" basePackage="py.sirius.emf.model" disposableProviderFactory="true"
+      ecorePackage="pedido.ecore#/">
+    <genClasses ecoreClass="pedido.ecore#//Persona">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute pedido.ecore#//Persona/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute pedido.ecore#//Persona/nombre"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute pedido.ecore#//Persona/correo"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference pedido.ecore#//Persona/usuario"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference pedido.ecore#//Persona/cliente"/>
+    </genClasses>
+    <genClasses ecoreClass="pedido.ecore#//Cliente">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute pedido.ecore#//Cliente/celular"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference pedido.ecore#//Cliente/pedido"/>
+    </genClasses>
+    <genClasses ecoreClass="pedido.ecore#//Usuario">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute pedido.ecore#//Usuario/password"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference pedido.ecore#//Usuario/pedido"/>
+    </genClasses>
+    <genClasses ecoreClass="pedido.ecore#//Pedido">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute pedido.ecore#//Pedido/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute pedido.ecore#//Pedido/fechaToma"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute pedido.ecore#//Pedido/fechaEntrega"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute pedido.ecore#//Pedido/total"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference pedido.ecore#//Pedido/itempedido"/>
+    </genClasses>
+    <genClasses ecoreClass="pedido.ecore#//ItemPedido">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute pedido.ecore#//ItemPedido/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute pedido.ecore#//ItemPedido/cantidad"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute pedido.ecore#//ItemPedido/subTotal"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference pedido.ecore#//ItemPedido/producto"/>
+    </genClasses>
+    <genClasses ecoreClass="pedido.ecore#//Producto">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute pedido.ecore#//Producto/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute pedido.ecore#//Producto/descripcion"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute pedido.ecore#//Producto/fechaVencimiento"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute pedido.ecore#//Producto/precio"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute pedido.ecore#//Producto/cantidad"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute pedido.ecore#//Producto/tipo"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>
