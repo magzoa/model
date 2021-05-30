@@ -21,9 +21,11 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 import org.eclipse.emf.ecore.util.EObjectContainmentEList;
 import org.eclipse.emf.ecore.util.InternalEList;
 
+import py.sirius.emf.model.pedido.Cliente;
 import py.sirius.emf.model.pedido.ItemPedido;
 import py.sirius.emf.model.pedido.Pedido;
 import py.sirius.emf.model.pedido.PedidoPackage;
+import py.sirius.emf.model.pedido.Usuario;
 
 /**
  * <!-- begin-user-doc -->
@@ -38,6 +40,8 @@ import py.sirius.emf.model.pedido.PedidoPackage;
  *   <li>{@link py.sirius.emf.model.pedido.impl.PedidoImpl#getFechaEntrega <em>Fecha Entrega</em>}</li>
  *   <li>{@link py.sirius.emf.model.pedido.impl.PedidoImpl#getTotal <em>Total</em>}</li>
  *   <li>{@link py.sirius.emf.model.pedido.impl.PedidoImpl#getItempedido <em>Itempedido</em>}</li>
+ *   <li>{@link py.sirius.emf.model.pedido.impl.PedidoImpl#getUsuario <em>Usuario</em>}</li>
+ *   <li>{@link py.sirius.emf.model.pedido.impl.PedidoImpl#getCliente <em>Cliente</em>}</li>
  * </ul>
  *
  * @generated
@@ -132,6 +136,26 @@ public class PedidoImpl extends MinimalEObjectImpl.Container implements Pedido {
 	 * @ordered
 	 */
 	protected EList<ItemPedido> itempedido;
+
+	/**
+	 * The cached value of the '{@link #getUsuario() <em>Usuario</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getUsuario()
+	 * @generated
+	 * @ordered
+	 */
+	protected Usuario usuario;
+
+	/**
+	 * The cached value of the '{@link #getCliente() <em>Cliente</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getCliente()
+	 * @generated
+	 * @ordered
+	 */
+	protected Cliente cliente;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -256,11 +280,115 @@ public class PedidoImpl extends MinimalEObjectImpl.Container implements Pedido {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public Cliente getCliente() {
+		return cliente;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public NotificationChain basicSetCliente(Cliente newCliente, NotificationChain msgs) {
+		Cliente oldCliente = cliente;
+		cliente = newCliente;
+		if (eNotificationRequired()) {
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
+					PedidoPackage.PEDIDO__CLIENTE, oldCliente, newCliente);
+			if (msgs == null)
+				msgs = notification;
+			else
+				msgs.add(notification);
+		}
+		return msgs;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setCliente(Cliente newCliente) {
+		if (newCliente != cliente) {
+			NotificationChain msgs = null;
+			if (cliente != null)
+				msgs = ((InternalEObject) cliente).eInverseRemove(this,
+						EOPPOSITE_FEATURE_BASE - PedidoPackage.PEDIDO__CLIENTE, null, msgs);
+			if (newCliente != null)
+				msgs = ((InternalEObject) newCliente).eInverseAdd(this,
+						EOPPOSITE_FEATURE_BASE - PedidoPackage.PEDIDO__CLIENTE, null, msgs);
+			msgs = basicSetCliente(newCliente, msgs);
+			if (msgs != null)
+				msgs.dispatch();
+		} else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, PedidoPackage.PEDIDO__CLIENTE, newCliente,
+					newCliente));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Usuario getUsuario() {
+		return usuario;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public NotificationChain basicSetUsuario(Usuario newUsuario, NotificationChain msgs) {
+		Usuario oldUsuario = usuario;
+		usuario = newUsuario;
+		if (eNotificationRequired()) {
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
+					PedidoPackage.PEDIDO__USUARIO, oldUsuario, newUsuario);
+			if (msgs == null)
+				msgs = notification;
+			else
+				msgs.add(notification);
+		}
+		return msgs;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setUsuario(Usuario newUsuario) {
+		if (newUsuario != usuario) {
+			NotificationChain msgs = null;
+			if (usuario != null)
+				msgs = ((InternalEObject) usuario).eInverseRemove(this,
+						EOPPOSITE_FEATURE_BASE - PedidoPackage.PEDIDO__USUARIO, null, msgs);
+			if (newUsuario != null)
+				msgs = ((InternalEObject) newUsuario).eInverseAdd(this,
+						EOPPOSITE_FEATURE_BASE - PedidoPackage.PEDIDO__USUARIO, null, msgs);
+			msgs = basicSetUsuario(newUsuario, msgs);
+			if (msgs != null)
+				msgs.dispatch();
+		} else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, PedidoPackage.PEDIDO__USUARIO, newUsuario,
+					newUsuario));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
 		case PedidoPackage.PEDIDO__ITEMPEDIDO:
 			return ((InternalEList<?>) getItempedido()).basicRemove(otherEnd, msgs);
+		case PedidoPackage.PEDIDO__USUARIO:
+			return basicSetUsuario(null, msgs);
+		case PedidoPackage.PEDIDO__CLIENTE:
+			return basicSetCliente(null, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
@@ -283,6 +411,10 @@ public class PedidoImpl extends MinimalEObjectImpl.Container implements Pedido {
 			return getTotal();
 		case PedidoPackage.PEDIDO__ITEMPEDIDO:
 			return getItempedido();
+		case PedidoPackage.PEDIDO__USUARIO:
+			return getUsuario();
+		case PedidoPackage.PEDIDO__CLIENTE:
+			return getCliente();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -312,6 +444,12 @@ public class PedidoImpl extends MinimalEObjectImpl.Container implements Pedido {
 			getItempedido().clear();
 			getItempedido().addAll((Collection<? extends ItemPedido>) newValue);
 			return;
+		case PedidoPackage.PEDIDO__USUARIO:
+			setUsuario((Usuario) newValue);
+			return;
+		case PedidoPackage.PEDIDO__CLIENTE:
+			setCliente((Cliente) newValue);
+			return;
 		}
 		super.eSet(featureID, newValue);
 	}
@@ -339,6 +477,12 @@ public class PedidoImpl extends MinimalEObjectImpl.Container implements Pedido {
 		case PedidoPackage.PEDIDO__ITEMPEDIDO:
 			getItempedido().clear();
 			return;
+		case PedidoPackage.PEDIDO__USUARIO:
+			setUsuario((Usuario) null);
+			return;
+		case PedidoPackage.PEDIDO__CLIENTE:
+			setCliente((Cliente) null);
+			return;
 		}
 		super.eUnset(featureID);
 	}
@@ -361,6 +505,10 @@ public class PedidoImpl extends MinimalEObjectImpl.Container implements Pedido {
 			return TOTAL_EDEFAULT == null ? total != null : !TOTAL_EDEFAULT.equals(total);
 		case PedidoPackage.PEDIDO__ITEMPEDIDO:
 			return itempedido != null && !itempedido.isEmpty();
+		case PedidoPackage.PEDIDO__USUARIO:
+			return usuario != null;
+		case PedidoPackage.PEDIDO__CLIENTE:
+			return cliente != null;
 		}
 		return super.eIsSet(featureID);
 	}

@@ -45,7 +45,6 @@ public class ClienteItemProvider extends PersonaItemProvider {
 			super.getPropertyDescriptors(object);
 
 			addCelularPropertyDescriptor(object);
-			addPedidoPropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
 	}
@@ -64,21 +63,6 @@ public class ClienteItemProvider extends PersonaItemProvider {
 								"_UI_Cliente_type"),
 						PedidoPackage.Literals.CLIENTE__CELULAR, true, false, false,
 						ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
-	}
-
-	/**
-	 * This adds a property descriptor for the Pedido feature.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void addPedidoPropertyDescriptor(Object object) {
-		itemPropertyDescriptors
-				.add(createItemPropertyDescriptor(((ComposeableAdapterFactory) adapterFactory).getRootAdapterFactory(),
-						getResourceLocator(), getString("_UI_Cliente_pedido_feature"),
-						getString("_UI_PropertyDescriptor_description", "_UI_Cliente_pedido_feature",
-								"_UI_Cliente_type"),
-						PedidoPackage.Literals.CLIENTE__PEDIDO, true, false, true, null, null, null));
 	}
 
 	/**

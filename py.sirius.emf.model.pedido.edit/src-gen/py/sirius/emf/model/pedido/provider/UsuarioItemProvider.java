@@ -45,7 +45,6 @@ public class UsuarioItemProvider extends PersonaItemProvider {
 			super.getPropertyDescriptors(object);
 
 			addPasswordPropertyDescriptor(object);
-			addPedidoPropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
 	}
@@ -64,21 +63,6 @@ public class UsuarioItemProvider extends PersonaItemProvider {
 								"_UI_Usuario_type"),
 						PedidoPackage.Literals.USUARIO__PASSWORD, true, false, false,
 						ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
-	}
-
-	/**
-	 * This adds a property descriptor for the Pedido feature.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void addPedidoPropertyDescriptor(Object object) {
-		itemPropertyDescriptors
-				.add(createItemPropertyDescriptor(((ComposeableAdapterFactory) adapterFactory).getRootAdapterFactory(),
-						getResourceLocator(), getString("_UI_Usuario_pedido_feature"),
-						getString("_UI_PropertyDescriptor_description", "_UI_Usuario_pedido_feature",
-								"_UI_Usuario_type"),
-						PedidoPackage.Literals.USUARIO__PEDIDO, true, false, true, null, null, null));
 	}
 
 	/**

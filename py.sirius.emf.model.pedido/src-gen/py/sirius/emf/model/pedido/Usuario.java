@@ -2,8 +2,6 @@
  */
 package py.sirius.emf.model.pedido;
 
-import org.eclipse.emf.common.util.EList;
-
 /**
  * <!-- begin-user-doc -->
  * A representation of the model object '<em><b>Usuario</b></em>'.
@@ -14,7 +12,6 @@ import org.eclipse.emf.common.util.EList;
  * </p>
  * <ul>
  *   <li>{@link py.sirius.emf.model.pedido.Usuario#getPassword <em>Password</em>}</li>
- *   <li>{@link py.sirius.emf.model.pedido.Usuario#getPedido <em>Pedido</em>}</li>
  * </ul>
  *
  * @see py.sirius.emf.model.pedido.PedidoPackage#getUsuario()
@@ -43,17 +40,5 @@ public interface Usuario extends Persona {
 	 * @generated
 	 */
 	void setPassword(String value);
-
-	/**
-	 * Returns the value of the '<em><b>Pedido</b></em>' reference list.
-	 * The list contents are of type {@link py.sirius.emf.model.pedido.Pedido}.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Pedido</em>' reference list.
-	 * @see py.sirius.emf.model.pedido.PedidoPackage#getUsuario_Pedido()
-	 * @model
-	 * @generated
-	 */
-	EList<Pedido> getPedido();
 
 } // Usuario

@@ -208,15 +208,6 @@ public class PedidoPackageImpl extends EPackageImpl implements PedidoPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getCliente_Pedido() {
-		return (EReference) clienteEClass.getEStructuralFeatures().get(1);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EClass getUsuario() {
 		return usuarioEClass;
 	}
@@ -228,15 +219,6 @@ public class PedidoPackageImpl extends EPackageImpl implements PedidoPackage {
 	 */
 	public EAttribute getUsuario_Password() {
 		return (EAttribute) usuarioEClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getUsuario_Pedido() {
-		return (EReference) usuarioEClass.getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -291,6 +273,24 @@ public class PedidoPackageImpl extends EPackageImpl implements PedidoPackage {
 	 */
 	public EReference getPedido_Itempedido() {
 		return (EReference) pedidoEClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getPedido_Cliente() {
+		return (EReference) pedidoEClass.getEStructuralFeatures().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getPedido_Usuario() {
+		return (EReference) pedidoEClass.getEStructuralFeatures().get(5);
 	}
 
 	/**
@@ -439,11 +439,9 @@ public class PedidoPackageImpl extends EPackageImpl implements PedidoPackage {
 
 		clienteEClass = createEClass(CLIENTE);
 		createEAttribute(clienteEClass, CLIENTE__CELULAR);
-		createEReference(clienteEClass, CLIENTE__PEDIDO);
 
 		usuarioEClass = createEClass(USUARIO);
 		createEAttribute(usuarioEClass, USUARIO__PASSWORD);
-		createEReference(usuarioEClass, USUARIO__PEDIDO);
 
 		pedidoEClass = createEClass(PEDIDO);
 		createEAttribute(pedidoEClass, PEDIDO__ID);
@@ -451,6 +449,8 @@ public class PedidoPackageImpl extends EPackageImpl implements PedidoPackage {
 		createEAttribute(pedidoEClass, PEDIDO__FECHA_ENTREGA);
 		createEAttribute(pedidoEClass, PEDIDO__TOTAL);
 		createEReference(pedidoEClass, PEDIDO__ITEMPEDIDO);
+		createEReference(pedidoEClass, PEDIDO__USUARIO);
+		createEReference(pedidoEClass, PEDIDO__CLIENTE);
 
 		itemPedidoEClass = createEClass(ITEM_PEDIDO);
 		createEAttribute(itemPedidoEClass, ITEM_PEDIDO__ID);
@@ -517,16 +517,10 @@ public class PedidoPackageImpl extends EPackageImpl implements PedidoPackage {
 		initEClass(clienteEClass, Cliente.class, "Cliente", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getCliente_Celular(), ecorePackage.getEString(), "celular", null, 0, 1, Cliente.class,
 				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getCliente_Pedido(), this.getPedido(), null, "pedido", null, 0, -1, Cliente.class, !IS_TRANSIENT,
-				!IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED,
-				IS_ORDERED);
 
 		initEClass(usuarioEClass, Usuario.class, "Usuario", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getUsuario_Password(), ecorePackage.getEString(), "password", null, 0, 1, Usuario.class,
 				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getUsuario_Pedido(), this.getPedido(), null, "pedido", null, 0, -1, Usuario.class, !IS_TRANSIENT,
-				!IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED,
-				IS_ORDERED);
 
 		initEClass(pedidoEClass, Pedido.class, "Pedido", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getPedido_Id(), ecorePackage.getELong(), "id", null, 0, 1, Pedido.class, !IS_TRANSIENT,
@@ -540,6 +534,12 @@ public class PedidoPackageImpl extends EPackageImpl implements PedidoPackage {
 		initEReference(getPedido_Itempedido(), this.getItemPedido(), null, "itempedido", null, 0, -1, Pedido.class,
 				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE,
 				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getPedido_Usuario(), this.getUsuario(), null, "usuario", null, 0, 1, Pedido.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED,
+				IS_ORDERED);
+		initEReference(getPedido_Cliente(), this.getCliente(), null, "cliente", null, 0, 1, Pedido.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED,
+				IS_ORDERED);
 
 		initEClass(itemPedidoEClass, ItemPedido.class, "ItemPedido", !IS_ABSTRACT, !IS_INTERFACE,
 				IS_GENERATED_INSTANCE_CLASS);

@@ -13,13 +13,9 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Cliente" eSuperTypes="#//Persona">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="celular" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="pedido" upperBound="-1"
-        eType="#//Pedido"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Usuario" eSuperTypes="#//Persona">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="password" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="pedido" upperBound="-1"
-        eType="#//Pedido"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Pedido">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//ELong"/>
@@ -28,6 +24,10 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="total" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBigDecimal"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="itempedido" upperBound="-1"
         eType="#//ItemPedido" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="usuario" eType="#//Usuario"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="cliente" eType="#//Cliente"
+        containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="ItemPedido">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//ELong"/>

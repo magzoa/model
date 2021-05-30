@@ -139,6 +139,8 @@ public class PedidoItemProvider extends ItemProviderAdapter implements IEditingD
 		if (childrenFeatures == null) {
 			super.getChildrenFeatures(object);
 			childrenFeatures.add(PedidoPackage.Literals.PEDIDO__ITEMPEDIDO);
+			childrenFeatures.add(PedidoPackage.Literals.PEDIDO__USUARIO);
+			childrenFeatures.add(PedidoPackage.Literals.PEDIDO__CLIENTE);
 		}
 		return childrenFeatures;
 	}
@@ -208,6 +210,8 @@ public class PedidoItemProvider extends ItemProviderAdapter implements IEditingD
 			fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 			return;
 		case PedidoPackage.PEDIDO__ITEMPEDIDO:
+		case PedidoPackage.PEDIDO__USUARIO:
+		case PedidoPackage.PEDIDO__CLIENTE:
 			fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 			return;
 		}
@@ -227,6 +231,12 @@ public class PedidoItemProvider extends ItemProviderAdapter implements IEditingD
 
 		newChildDescriptors.add(createChildParameter(PedidoPackage.Literals.PEDIDO__ITEMPEDIDO,
 				PedidoFactory.eINSTANCE.createItemPedido()));
+
+		newChildDescriptors.add(
+				createChildParameter(PedidoPackage.Literals.PEDIDO__USUARIO, PedidoFactory.eINSTANCE.createUsuario()));
+
+		newChildDescriptors.add(
+				createChildParameter(PedidoPackage.Literals.PEDIDO__CLIENTE, PedidoFactory.eINSTANCE.createCliente()));
 	}
 
 	/**

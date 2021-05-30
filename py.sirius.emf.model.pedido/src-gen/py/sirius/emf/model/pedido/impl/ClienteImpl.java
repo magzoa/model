@@ -2,20 +2,13 @@
  */
 package py.sirius.emf.model.pedido.impl;
 
-import java.util.Collection;
-
 import org.eclipse.emf.common.notify.Notification;
-
-import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EClass;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
 
-import org.eclipse.emf.ecore.util.EObjectResolvingEList;
-
 import py.sirius.emf.model.pedido.Cliente;
-import py.sirius.emf.model.pedido.Pedido;
 import py.sirius.emf.model.pedido.PedidoPackage;
 
 /**
@@ -27,7 +20,6 @@ import py.sirius.emf.model.pedido.PedidoPackage;
  * </p>
  * <ul>
  *   <li>{@link py.sirius.emf.model.pedido.impl.ClienteImpl#getCelular <em>Celular</em>}</li>
- *   <li>{@link py.sirius.emf.model.pedido.impl.ClienteImpl#getPedido <em>Pedido</em>}</li>
  * </ul>
  *
  * @generated
@@ -52,16 +44,6 @@ public class ClienteImpl extends PersonaImpl implements Cliente {
 	 * @ordered
 	 */
 	protected String celular = CELULAR_EDEFAULT;
-
-	/**
-	 * The cached value of the '{@link #getPedido() <em>Pedido</em>}' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getPedido()
-	 * @generated
-	 * @ordered
-	 */
-	protected EList<Pedido> pedido;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -108,25 +90,11 @@ public class ClienteImpl extends PersonaImpl implements Cliente {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<Pedido> getPedido() {
-		if (pedido == null) {
-			pedido = new EObjectResolvingEList<Pedido>(Pedido.class, this, PedidoPackage.CLIENTE__PEDIDO);
-		}
-		return pedido;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
 		case PedidoPackage.CLIENTE__CELULAR:
 			return getCelular();
-		case PedidoPackage.CLIENTE__PEDIDO:
-			return getPedido();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -136,16 +104,11 @@ public class ClienteImpl extends PersonaImpl implements Cliente {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@SuppressWarnings("unchecked")
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
 		case PedidoPackage.CLIENTE__CELULAR:
 			setCelular((String) newValue);
-			return;
-		case PedidoPackage.CLIENTE__PEDIDO:
-			getPedido().clear();
-			getPedido().addAll((Collection<? extends Pedido>) newValue);
 			return;
 		}
 		super.eSet(featureID, newValue);
@@ -162,9 +125,6 @@ public class ClienteImpl extends PersonaImpl implements Cliente {
 		case PedidoPackage.CLIENTE__CELULAR:
 			setCelular(CELULAR_EDEFAULT);
 			return;
-		case PedidoPackage.CLIENTE__PEDIDO:
-			getPedido().clear();
-			return;
 		}
 		super.eUnset(featureID);
 	}
@@ -179,8 +139,6 @@ public class ClienteImpl extends PersonaImpl implements Cliente {
 		switch (featureID) {
 		case PedidoPackage.CLIENTE__CELULAR:
 			return CELULAR_EDEFAULT == null ? celular != null : !CELULAR_EDEFAULT.equals(celular);
-		case PedidoPackage.CLIENTE__PEDIDO:
-			return pedido != null && !pedido.isEmpty();
 		}
 		return super.eIsSet(featureID);
 	}

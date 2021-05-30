@@ -194,22 +194,13 @@ public interface PedidoPackage extends EPackage {
 	int CLIENTE__CELULAR = PERSONA_FEATURE_COUNT + 0;
 
 	/**
-	 * The feature id for the '<em><b>Pedido</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CLIENTE__PEDIDO = PERSONA_FEATURE_COUNT + 1;
-
-	/**
 	 * The number of structural features of the '<em>Cliente</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CLIENTE_FEATURE_COUNT = PERSONA_FEATURE_COUNT + 2;
+	int CLIENTE_FEATURE_COUNT = PERSONA_FEATURE_COUNT + 1;
 
 	/**
 	 * The number of operations of the '<em>Cliente</em>' class.
@@ -285,22 +276,13 @@ public interface PedidoPackage extends EPackage {
 	int USUARIO__PASSWORD = PERSONA_FEATURE_COUNT + 0;
 
 	/**
-	 * The feature id for the '<em><b>Pedido</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int USUARIO__PEDIDO = PERSONA_FEATURE_COUNT + 1;
-
-	/**
 	 * The number of structural features of the '<em>Usuario</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int USUARIO_FEATURE_COUNT = PERSONA_FEATURE_COUNT + 2;
+	int USUARIO_FEATURE_COUNT = PERSONA_FEATURE_COUNT + 1;
 
 	/**
 	 * The number of operations of the '<em>Usuario</em>' class.
@@ -367,13 +349,31 @@ public interface PedidoPackage extends EPackage {
 	int PEDIDO__ITEMPEDIDO = 4;
 
 	/**
+	 * The feature id for the '<em><b>Usuario</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PEDIDO__USUARIO = 5;
+
+	/**
+	 * The feature id for the '<em><b>Cliente</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PEDIDO__CLIENTE = 6;
+
+	/**
 	 * The number of structural features of the '<em>Pedido</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PEDIDO_FEATURE_COUNT = 5;
+	int PEDIDO_FEATURE_COUNT = 7;
 
 	/**
 	 * The number of operations of the '<em>Pedido</em>' class.
@@ -617,17 +617,6 @@ public interface PedidoPackage extends EPackage {
 	EAttribute getCliente_Celular();
 
 	/**
-	 * Returns the meta object for the reference list '{@link py.sirius.emf.model.pedido.Cliente#getPedido <em>Pedido</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference list '<em>Pedido</em>'.
-	 * @see py.sirius.emf.model.pedido.Cliente#getPedido()
-	 * @see #getCliente()
-	 * @generated
-	 */
-	EReference getCliente_Pedido();
-
-	/**
 	 * Returns the meta object for class '{@link py.sirius.emf.model.pedido.Usuario <em>Usuario</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -647,17 +636,6 @@ public interface PedidoPackage extends EPackage {
 	 * @generated
 	 */
 	EAttribute getUsuario_Password();
-
-	/**
-	 * Returns the meta object for the reference list '{@link py.sirius.emf.model.pedido.Usuario#getPedido <em>Pedido</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference list '<em>Pedido</em>'.
-	 * @see py.sirius.emf.model.pedido.Usuario#getPedido()
-	 * @see #getUsuario()
-	 * @generated
-	 */
-	EReference getUsuario_Pedido();
 
 	/**
 	 * Returns the meta object for class '{@link py.sirius.emf.model.pedido.Pedido <em>Pedido</em>}'.
@@ -723,6 +701,28 @@ public interface PedidoPackage extends EPackage {
 	 * @generated
 	 */
 	EReference getPedido_Itempedido();
+
+	/**
+	 * Returns the meta object for the containment reference '{@link py.sirius.emf.model.pedido.Pedido#getCliente <em>Cliente</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference '<em>Cliente</em>'.
+	 * @see py.sirius.emf.model.pedido.Pedido#getCliente()
+	 * @see #getPedido()
+	 * @generated
+	 */
+	EReference getPedido_Cliente();
+
+	/**
+	 * Returns the meta object for the containment reference '{@link py.sirius.emf.model.pedido.Pedido#getUsuario <em>Usuario</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference '<em>Usuario</em>'.
+	 * @see py.sirius.emf.model.pedido.Pedido#getUsuario()
+	 * @see #getPedido()
+	 * @generated
+	 */
+	EReference getPedido_Usuario();
 
 	/**
 	 * Returns the meta object for class '{@link py.sirius.emf.model.pedido.ItemPedido <em>Item Pedido</em>}'.
@@ -946,14 +946,6 @@ public interface PedidoPackage extends EPackage {
 		EAttribute CLIENTE__CELULAR = eINSTANCE.getCliente_Celular();
 
 		/**
-		 * The meta object literal for the '<em><b>Pedido</b></em>' reference list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference CLIENTE__PEDIDO = eINSTANCE.getCliente_Pedido();
-
-		/**
 		 * The meta object literal for the '{@link py.sirius.emf.model.pedido.impl.UsuarioImpl <em>Usuario</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -970,14 +962,6 @@ public interface PedidoPackage extends EPackage {
 		 * @generated
 		 */
 		EAttribute USUARIO__PASSWORD = eINSTANCE.getUsuario_Password();
-
-		/**
-		 * The meta object literal for the '<em><b>Pedido</b></em>' reference list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference USUARIO__PEDIDO = eINSTANCE.getUsuario_Pedido();
 
 		/**
 		 * The meta object literal for the '{@link py.sirius.emf.model.pedido.impl.PedidoImpl <em>Pedido</em>}' class.
@@ -1028,6 +1012,22 @@ public interface PedidoPackage extends EPackage {
 		 * @generated
 		 */
 		EReference PEDIDO__ITEMPEDIDO = eINSTANCE.getPedido_Itempedido();
+
+		/**
+		 * The meta object literal for the '<em><b>Cliente</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference PEDIDO__CLIENTE = eINSTANCE.getPedido_Cliente();
+
+		/**
+		 * The meta object literal for the '<em><b>Usuario</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference PEDIDO__USUARIO = eINSTANCE.getPedido_Usuario();
 
 		/**
 		 * The meta object literal for the '{@link py.sirius.emf.model.pedido.impl.ItemPedidoImpl <em>Item Pedido</em>}' class.

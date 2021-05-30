@@ -19,11 +19,9 @@
     </genClasses>
     <genClasses ecoreClass="pedido.ecore#//Cliente">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute pedido.ecore#//Cliente/celular"/>
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference pedido.ecore#//Cliente/pedido"/>
     </genClasses>
     <genClasses ecoreClass="pedido.ecore#//Usuario">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute pedido.ecore#//Usuario/password"/>
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference pedido.ecore#//Usuario/pedido"/>
     </genClasses>
     <genClasses ecoreClass="pedido.ecore#//Pedido">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute pedido.ecore#//Pedido/id"/>
@@ -31,6 +29,8 @@
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute pedido.ecore#//Pedido/fechaEntrega"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute pedido.ecore#//Pedido/total"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference pedido.ecore#//Pedido/itempedido"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference pedido.ecore#//Pedido/usuario"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference pedido.ecore#//Pedido/cliente"/>
     </genClasses>
     <genClasses ecoreClass="pedido.ecore#//ItemPedido">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute pedido.ecore#//ItemPedido/id"/>
