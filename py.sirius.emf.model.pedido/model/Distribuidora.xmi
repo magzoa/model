@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pedido:Distribuidora
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:pedido="http://www.eclipse.org/py/sirius/emf/model/pedido"
+    xsi:schemaLocation="http://www.eclipse.org/py/sirius/emf/model/pedido pedido.ecore"/>

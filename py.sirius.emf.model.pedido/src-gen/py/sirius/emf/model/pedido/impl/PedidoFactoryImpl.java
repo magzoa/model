@@ -3,6 +3,7 @@
 package py.sirius.emf.model.pedido.impl;
 
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EDataType;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.EPackage;
 
@@ -66,8 +67,42 @@ public class PedidoFactoryImpl extends EFactoryImpl implements PedidoFactory {
 			return createItemPedido();
 		case PedidoPackage.PRODUCTO:
 			return createProducto();
+		case PedidoPackage.FACTURA:
+			return createFactura();
+		case PedidoPackage.DISTRIBUIDORA:
+			return createDistribuidora();
 		default:
 			throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
+		}
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Object createFromString(EDataType eDataType, String initialValue) {
+		switch (eDataType.getClassifierID()) {
+		case PedidoPackage.PRODUCTO_TIPO:
+			return createProductoTipoFromString(eDataType, initialValue);
+		default:
+			throw new IllegalArgumentException("The datatype '" + eDataType.getName() + "' is not a valid classifier");
+		}
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public String convertToString(EDataType eDataType, Object instanceValue) {
+		switch (eDataType.getClassifierID()) {
+		case PedidoPackage.PRODUCTO_TIPO:
+			return convertProductoTipoToString(eDataType, instanceValue);
+		default:
+			throw new IllegalArgumentException("The datatype '" + eDataType.getName() + "' is not a valid classifier");
 		}
 	}
 
@@ -119,6 +154,48 @@ public class PedidoFactoryImpl extends EFactoryImpl implements PedidoFactory {
 	public Producto createProducto() {
 		ProductoImpl producto = new ProductoImpl();
 		return producto;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Factura createFactura() {
+		FacturaImpl factura = new FacturaImpl();
+		return factura;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Distribuidora createDistribuidora() {
+		DistribuidoraImpl distribuidora = new DistribuidoraImpl();
+		return distribuidora;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ProductoTipo createProductoTipoFromString(EDataType eDataType, String initialValue) {
+		ProductoTipo result = ProductoTipo.get(initialValue);
+		if (result == null)
+			throw new IllegalArgumentException(
+					"The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
+		return result;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public String convertProductoTipoToString(EDataType eDataType, Object instanceValue) {
+		return instanceValue == null ? null : instanceValue.toString();
 	}
 
 	/**

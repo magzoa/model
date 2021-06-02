@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<description:Group xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:tool="http://www.eclipse.org/sirius/diagram/description/tool/1.1.0" xmlns:tool_1="http://www.eclipse.org/sirius/description/tool/1.1.0" name="pedido" version="12.0.0.2017041100">
+  <ownedViewpoints name="pedidos" modelFileExtension="pedido">
+    <ownedRepresentations xsi:type="description_1:DiagramDescription" name="Pedidos diagram" domainClass="pedido::Distribuidora" enablePopupBars="true">
+      <metamodel href="http://www.eclipse.org/py/sirius/emf/model/pedido#/"/>
+      <defaultLayer name="Default">
+        <nodeMappings name="PedidoNode" labelDirectEdit="//@ownedViewpoints[name='pedidos']/@ownedRepresentations[name='Pedidos%20diagram']/@defaultLayer/@toolSections.0/@ownedTools[name='editName']" semanticCandidatesExpression="feature:pedido" domainClass="pedido::Pedido">
+          <style xsi:type="style:WorkspaceImageDescription" labelSize="18" showIcon="false" labelExpression="feature:id" sizeComputationExpression="-1" resizeKind="NSEW" workspacePath="/py.sirius.emf.model.pedido.design/icons/Pedido.gif">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelFormat>bold</labelFormat>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+          </style>
+        </nodeMappings>
+        <nodeMappings name="UsuarioNode" labelDirectEdit="//@ownedViewpoints[name='pedidos']/@ownedRepresentations[name='Pedidos%20diagram']/@defaultLayer/@toolSections.0/@ownedTools[name='editName']" semanticCandidatesExpression="feature:usuario" domainClass="pedido::Usuario">
+          <style xsi:type="style:WorkspaceImageDescription" labelSize="18" showIcon="false" labelExpression="feature:nombre" sizeComputationExpression="-1" resizeKind="NSEW" workspacePath="/py.sirius.emf.model.pedido.design/icons/Usuario.gif">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+          </style>
+        </nodeMappings>
+        <nodeMappings name="ClienteNode" labelDirectEdit="//@ownedViewpoints[name='pedidos']/@ownedRepresentations[name='Pedidos%20diagram']/@defaultLayer/@toolSections.0/@ownedTools[name='editName']" semanticCandidatesExpression="feature:cliente" domainClass="pedido::Cliente">
+          <style xsi:type="style:WorkspaceImageDescription" labelSize="18" showIcon="false" labelExpression="feature:nombre" sizeComputationExpression="-1" resizeKind="NSEW" workspacePath="/py.sirius.emf.model.pedido.design/icons/Cliente.gif">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+          </style>
+        </nodeMappings>
+        <nodeMappings name="ItemPedidoNode" labelDirectEdit="//@ownedViewpoints[name='pedidos']/@ownedRepresentations[name='Pedidos%20diagram']/@defaultLayer/@toolSections.0/@ownedTools[name='editName']" domainClass="pedido::ItemPedido">
+          <style xsi:type="style:WorkspaceImageDescription" labelSize="18" showIcon="false" labelExpression="feature:id" sizeComputationExpression="-1" resizeKind="NSEW" workspacePath="/py.sirius.emf.model.pedido.design/icons/ItemPedido.gif">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelFormat>bold</labelFormat>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+          </style>
+        </nodeMappings>
+        <nodeMappings name="ProductoNode" labelDirectEdit="//@ownedViewpoints[name='pedidos']/@ownedRepresentations[name='Pedidos%20diagram']/@defaultLayer/@toolSections.0/@ownedTools[name='editName']" semanticCandidatesExpression="feature:producto" domainClass="pedido::Producto">
+          <style xsi:type="style:WorkspaceImageDescription" labelSize="18" showIcon="false" labelExpression="feature:descripcion" sizeComputationExpression="-1" resizeKind="NSEW" workspacePath="/py.sirius.emf.model.pedido.design/icons/Producto.gif">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+          </style>
+        </nodeMappings>
+        <edgeMappings name="PedidoClienteEdge" deletionDescription="//@ownedViewpoints[name='pedidos']/@ownedRepresentations[name='Pedidos%20diagram']/@defaultLayer/@toolSections.0/@ownedTools[name='eliminarCliente']" sourceMapping="//@ownedViewpoints[name='pedidos']/@ownedRepresentations[name='Pedidos%20diagram']/@defaultLayer/@nodeMappings[name='PedidoNode'] //@ownedViewpoints[name='pedidos']/@ownedRepresentations[name='Pedidos%20diagram']/@defaultLayer/@nodeMappings[name='ClienteNode']" targetMapping="//@ownedViewpoints[name='pedidos']/@ownedRepresentations[name='Pedidos%20diagram']/@defaultLayer/@nodeMappings[name='ClienteNode']" targetFinderExpression="feature:cliente" reconnections="//@ownedViewpoints[name='pedidos']/@ownedRepresentations[name='Pedidos%20diagram']/@defaultLayer/@toolSections.0/@ownedTools[name='reconectarCliente']">
+          <style sizeComputationExpression="6">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_blue']"/>
+            <centerLabelStyleDescription labelSize="12">
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <toolSections>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="CreateCliente" nodeMappings="//@ownedViewpoints[name='pedidos']/@ownedRepresentations[name='Pedidos%20diagram']/@defaultLayer/@nodeMappings[name='ClienteNode']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="pedido::Cliente" referenceName="cliente"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="CreateProducto" nodeMappings="//@ownedViewpoints[name='pedidos']/@ownedRepresentations[name='Pedidos%20diagram']/@defaultLayer/@nodeMappings[name='ProductoNode']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="pedido::Producto" referenceName="producto">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="descripcion" valueExpression="aql:'Producto'+container.producto->filter(pedido::Producto)->size()"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:EdgeCreationDescription" name="setCliente" label="Set Cliente" edgeMappings="//@ownedViewpoints[name='pedidos']/@ownedRepresentations[name='Pedidos%20diagram']/@defaultLayer/@edgeMappings[name='PedidoClienteEdge']">
+            <sourceVariable name="source"/>
+            <targetVariable name="target"/>
+            <sourceViewVariable name="sourceView"/>
+            <targetViewVariable name="targetView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:source">
+                <subModelOperations xsi:type="tool_1:SetValue" featureName="cliente" valueExpression="var:target"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:ReconnectEdgeDescription" name="reconectarCliente" label="Reconectar Cliente">
+            <source name="source"/>
+            <target name="target"/>
+            <sourceView name="sourceView"/>
+            <targetView name="targetView"/>
+            <element name="element"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:element">
+                <subModelOperations xsi:type="tool_1:SetValue" featureName="cliente" valueExpression="var:target"/>
+              </firstModelOperations>
+            </initialOperation>
+            <edgeView name="edgeView"/>
+          </ownedTools>
+          <ownedTools xsi:type="tool:DeleteElementDescription" name="eliminarCliente" label="Eliminar Cliente">
+            <element name="element"/>
+            <elementView name="elementView"/>
+            <containerView name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:element">
+                <subModelOperations xsi:type="tool_1:Unset" featureName="cliente"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:DirectEditLabel" name="editName">
+            <mask mask="{0}"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:SetValue" featureName="nombre" valueExpression="var:0"/>
+            </initialOperation>
+          </ownedTools>
+        </toolSections>
+      </defaultLayer>
+    </ownedRepresentations>
+    <ownedJavaExtensions qualifiedClassName="py.sirius.emf.model.pedido.design.Services"/>
+  </ownedViewpoints>
+</description:Group>

@@ -9,9 +9,6 @@ import org.eclipse.emf.common.notify.AdapterFactory;
 import org.eclipse.emf.common.notify.Notification;
 
 import org.eclipse.emf.common.util.ResourceLocator;
-
-import org.eclipse.emf.ecore.EStructuralFeature;
-
 import org.eclipse.emf.edit.provider.ComposeableAdapterFactory;
 import org.eclipse.emf.edit.provider.IEditingDomainItemProvider;
 import org.eclipse.emf.edit.provider.IItemLabelProvider;
@@ -24,7 +21,6 @@ import org.eclipse.emf.edit.provider.ItemProviderAdapter;
 import org.eclipse.emf.edit.provider.ViewerNotification;
 
 import py.sirius.emf.model.pedido.Pedido;
-import py.sirius.emf.model.pedido.PedidoFactory;
 import py.sirius.emf.model.pedido.PedidoPackage;
 
 /**
@@ -60,6 +56,9 @@ public class PedidoItemProvider extends ItemProviderAdapter implements IEditingD
 			addFechaTomaPropertyDescriptor(object);
 			addFechaEntregaPropertyDescriptor(object);
 			addTotalPropertyDescriptor(object);
+			addClientePropertyDescriptor(object);
+			addUsuarioPropertyDescriptor(object);
+			addItempedidoPropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
 	}
@@ -127,35 +126,48 @@ public class PedidoItemProvider extends ItemProviderAdapter implements IEditingD
 	}
 
 	/**
-	 * This specifies how to implement {@link #getChildren} and is used to deduce an appropriate feature for an
-	 * {@link org.eclipse.emf.edit.command.AddCommand}, {@link org.eclipse.emf.edit.command.RemoveCommand} or
-	 * {@link org.eclipse.emf.edit.command.MoveCommand} in {@link #createCommand}.
+	 * This adds a property descriptor for the Cliente feature.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public Collection<? extends EStructuralFeature> getChildrenFeatures(Object object) {
-		if (childrenFeatures == null) {
-			super.getChildrenFeatures(object);
-			childrenFeatures.add(PedidoPackage.Literals.PEDIDO__ITEMPEDIDO);
-			childrenFeatures.add(PedidoPackage.Literals.PEDIDO__USUARIO);
-			childrenFeatures.add(PedidoPackage.Literals.PEDIDO__CLIENTE);
-		}
-		return childrenFeatures;
+	protected void addClientePropertyDescriptor(Object object) {
+		itemPropertyDescriptors
+				.add(createItemPropertyDescriptor(((ComposeableAdapterFactory) adapterFactory).getRootAdapterFactory(),
+						getResourceLocator(), getString("_UI_Pedido_cliente_feature"),
+						getString("_UI_PropertyDescriptor_description", "_UI_Pedido_cliente_feature",
+								"_UI_Pedido_type"),
+						PedidoPackage.Literals.PEDIDO__CLIENTE, true, false, true, null, null, null));
 	}
 
 	/**
+	 * This adds a property descriptor for the Usuario feature.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	protected EStructuralFeature getChildFeature(Object object, Object child) {
-		// Check the type of the specified child object and return the proper feature to use for
-		// adding (see {@link AddCommand}) it as a child.
+	protected void addUsuarioPropertyDescriptor(Object object) {
+		itemPropertyDescriptors
+				.add(createItemPropertyDescriptor(((ComposeableAdapterFactory) adapterFactory).getRootAdapterFactory(),
+						getResourceLocator(), getString("_UI_Pedido_usuario_feature"),
+						getString("_UI_PropertyDescriptor_description", "_UI_Pedido_usuario_feature",
+								"_UI_Pedido_type"),
+						PedidoPackage.Literals.PEDIDO__USUARIO, true, false, true, null, null, null));
+	}
 
-		return super.getChildFeature(object, child);
+	/**
+	 * This adds a property descriptor for the Itempedido feature.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void addItempedidoPropertyDescriptor(Object object) {
+		itemPropertyDescriptors
+				.add(createItemPropertyDescriptor(((ComposeableAdapterFactory) adapterFactory).getRootAdapterFactory(),
+						getResourceLocator(), getString("_UI_Pedido_itempedido_feature"),
+						getString("_UI_PropertyDescriptor_description", "_UI_Pedido_itempedido_feature",
+								"_UI_Pedido_type"),
+						PedidoPackage.Literals.PEDIDO__ITEMPEDIDO, true, false, true, null, null, null));
 	}
 
 	/**
@@ -209,11 +221,6 @@ public class PedidoItemProvider extends ItemProviderAdapter implements IEditingD
 		case PedidoPackage.PEDIDO__TOTAL:
 			fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 			return;
-		case PedidoPackage.PEDIDO__ITEMPEDIDO:
-		case PedidoPackage.PEDIDO__USUARIO:
-		case PedidoPackage.PEDIDO__CLIENTE:
-			fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
-			return;
 		}
 		super.notifyChanged(notification);
 	}
@@ -228,15 +235,6 @@ public class PedidoItemProvider extends ItemProviderAdapter implements IEditingD
 	@Override
 	protected void collectNewChildDescriptors(Collection<Object> newChildDescriptors, Object object) {
 		super.collectNewChildDescriptors(newChildDescriptors, object);
-
-		newChildDescriptors.add(createChildParameter(PedidoPackage.Literals.PEDIDO__ITEMPEDIDO,
-				PedidoFactory.eINSTANCE.createItemPedido()));
-
-		newChildDescriptors.add(
-				createChildParameter(PedidoPackage.Literals.PEDIDO__USUARIO, PedidoFactory.eINSTANCE.createUsuario()));
-
-		newChildDescriptors.add(
-				createChildParameter(PedidoPackage.Literals.PEDIDO__CLIENTE, PedidoFactory.eINSTANCE.createCliente()));
 	}
 
 	/**

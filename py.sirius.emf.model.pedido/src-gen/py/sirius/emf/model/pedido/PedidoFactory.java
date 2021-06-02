@@ -67,6 +67,24 @@ public interface PedidoFactory extends EFactory {
 	Producto createProducto();
 
 	/**
+	 * Returns a new object of class '<em>Factura</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Factura</em>'.
+	 * @generated
+	 */
+	Factura createFactura();
+
+	/**
+	 * Returns a new object of class '<em>Distribuidora</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Distribuidora</em>'.
+	 * @generated
+	 */
+	Distribuidora createDistribuidora();
+
+	/**
 	 * Returns the package supported by this factory.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

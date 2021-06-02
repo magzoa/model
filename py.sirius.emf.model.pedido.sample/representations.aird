@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:diagram="http://www.eclipse.org/sirius/diagram/1.1.0" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:pedido="http://www.eclipse.org/py/sirius/emf/model/pedido" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/style/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description/style">
+  <viewpoint:DAnalysis uid="_Onb_IMDbEeutpqyyfGfMvg" selectedViews="_o5uEQMGYEeuvudWT7-1y0g" version="14.3.1.202003261200">
+    <semanticResources>MyDistribuidora.pedido</semanticResources>
+    <ownedViews xmi:type="viewpoint:DView" uid="_o5uEQMGYEeuvudWT7-1y0g">
+      <viewpoint xmi:type="description:Viewpoint" href="platform:/resource/py.sirius.emf.model.pedido.design/description/pedido.odesign#//@ownedViewpoints[name='pedidos']"/>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_8Pb7wMGYEeuvudWT7-1y0g" name="new Pedidos diagram" repPath="#_8O_24MGYEeuvudWT7-1y0g" changeId="c3712d05-c9e4-4b63-a37c-a8abcf70d63d">
+        <description xmi:type="description_1:DiagramDescription" href="platform:/resource/py.sirius.emf.model.pedido.design/description/pedido.odesign#//@ownedViewpoints[name='pedidos']/@ownedRepresentations[name='Pedidos%20diagram']"/>
+        <target xmi:type="pedido:Pedido" href="My.pedido#/"/>
+      </ownedRepresentationDescriptors>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_CWVKAMJ0Eeun-qEKuEKCLw" name="new Distribuidora diagram" repPath="#_CWTU0MJ0Eeun-qEKuEKCLw" changeId="ab2ea827-a3d9-43f0-b274-42352385efcc">
+        <description xmi:type="description_1:DiagramDescription" href="platform:/resource/py.sirius.emf.model.pedido.design/description/pedido.odesign#//@ownedViewpoints[name='pedidos']/@ownedRepresentations[name='Pedidos%20diagram']"/>
+        <target xmi:type="pedido:Distribuidora" href="MyDistribuidora.pedido#/"/>
+      </ownedRepresentationDescriptors>
+    </ownedViews>
+  </viewpoint:DAnalysis>
+  <diagram:DSemanticDiagram uid="_8O_24MGYEeuvudWT7-1y0g">
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_8QTecMGYEeuvudWT7-1y0g" source="GMF_DIAGRAMS">
+      <data xmi:type="notation:Diagram" xmi:id="_8QTeccGYEeuvudWT7-1y0g" type="Sirius" element="_8O_24MGYEeuvudWT7-1y0g" measurementUnit="Pixel">
+        <children xmi:type="notation:Node" xmi:id="_FGtYMMJ6Eeu-wMn-IzCwng" type="2001" element="_FGiZEMJ6Eeu-wMn-IzCwng">
+          <children xmi:type="notation:Node" xmi:id="_FGy3wMJ6Eeu-wMn-IzCwng" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_FGy3wcJ6Eeu-wMn-IzCwng" x="-1"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_FG8BsMJ6Eeu-wMn-IzCwng" type="3005" element="_FGjnMMJ6Eeu-wMn-IzCwng">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_FG8BscJ6Eeu-wMn-IzCwng" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_FG8BssJ6Eeu-wMn-IzCwng"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_FGtYMcJ6Eeu-wMn-IzCwng" fontName="Segoe UI" fontHeight="18"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_FGtYMsJ6Eeu-wMn-IzCwng" width="48" height="48"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_FG4XUMJ6Eeu-wMn-IzCwng" type="2001" element="_FGk1UMJ6Eeu-wMn-IzCwng">
+          <children xmi:type="notation:Node" xmi:id="_FG4-YMJ6Eeu-wMn-IzCwng" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_FG4-YcJ6Eeu-wMn-IzCwng" x="-1"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_FG8owMJ6Eeu-wMn-IzCwng" type="3005" element="_FGk1UcJ6Eeu-wMn-IzCwng">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_FG8owcJ6Eeu-wMn-IzCwng" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_FG8owsJ6Eeu-wMn-IzCwng"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_FG4XUcJ6Eeu-wMn-IzCwng" fontName="Segoe UI" fontHeight="18"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_FG4XUsJ6Eeu-wMn-IzCwng" width="48" height="48"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_FG5lcMJ6Eeu-wMn-IzCwng" type="2001" element="_FGlcYMJ6Eeu-wMn-IzCwng">
+          <children xmi:type="notation:Node" xmi:id="_FG6MgMJ6Eeu-wMn-IzCwng" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_FG6MgcJ6Eeu-wMn-IzCwng" x="-18"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_FG9P0MJ6Eeu-wMn-IzCwng" type="3005" element="_FGlcYcJ6Eeu-wMn-IzCwng">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_FG9P0cJ6Eeu-wMn-IzCwng" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_FG9P0sJ6Eeu-wMn-IzCwng"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_FG5lccJ6Eeu-wMn-IzCwng" fontName="Segoe UI" fontHeight="18" bold="true"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_FG5lcsJ6Eeu-wMn-IzCwng" x="216" width="48" height="48"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_FG6zkMJ6Eeu-wMn-IzCwng" type="2001" element="_FGmDcMJ6Eeu-wMn-IzCwng">
+          <children xmi:type="notation:Node" xmi:id="_FG7aoMJ6Eeu-wMn-IzCwng" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_FG7aocJ6Eeu-wMn-IzCwng" x="-18"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_FG924MJ6Eeu-wMn-IzCwng" type="3005" element="_FGmDccJ6Eeu-wMn-IzCwng">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_FG924cJ6Eeu-wMn-IzCwng" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_FG924sJ6Eeu-wMn-IzCwng"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_FG6zkcJ6Eeu-wMn-IzCwng" fontName="Segoe UI" fontHeight="18" bold="true"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_FG6zksJ6Eeu-wMn-IzCwng" x="324" width="48" height="48"/>
+        </children>
+        <styles xmi:type="notation:DiagramStyle" xmi:id="_8QTecsGYEeuvudWT7-1y0g"/>
+      </data>
+    </ownedAnnotationEntries>
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_8QzNsMGYEeuvudWT7-1y0g" source="DANNOTATION_CUSTOMIZATION_KEY">
+      <data xmi:type="diagram:ComputedStyleDescriptionRegistry" uid="_8Qz0wMGYEeuvudWT7-1y0g"/>
+    </ownedAnnotationEntries>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_FGiZEMJ6Eeu-wMn-IzCwng" width="-1" height="-1">
+      <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_FGjnMMJ6Eeu-wMn-IzCwng" labelSize="18" showIcon="false" workspacePath="/py.sirius.emf.model.pedido.design/icons/Usuario.gif">
+        <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/py.sirius.emf.model.pedido.design/description/pedido.odesign#//@ownedViewpoints[name='pedidos']/@ownedRepresentations[name='Pedidos%20diagram']/@defaultLayer/@nodeMappings[name='UsuarioNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/py.sirius.emf.model.pedido.design/description/pedido.odesign#//@ownedViewpoints[name='pedidos']/@ownedRepresentations[name='Pedidos%20diagram']/@defaultLayer/@nodeMappings[name='UsuarioNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_FGk1UMJ6Eeu-wMn-IzCwng" width="-1" height="-1">
+      <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_FGk1UcJ6Eeu-wMn-IzCwng" labelSize="18" showIcon="false" workspacePath="/py.sirius.emf.model.pedido.design/icons/Cliente.gif">
+        <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/py.sirius.emf.model.pedido.design/description/pedido.odesign#//@ownedViewpoints[name='pedidos']/@ownedRepresentations[name='Pedidos%20diagram']/@defaultLayer/@nodeMappings[name='ClienteNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/py.sirius.emf.model.pedido.design/description/pedido.odesign#//@ownedViewpoints[name='pedidos']/@ownedRepresentations[name='Pedidos%20diagram']/@defaultLayer/@nodeMappings[name='ClienteNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_FGlcYMJ6Eeu-wMn-IzCwng" name="2" width="-1" height="-1" resizeKind="NSEW">
+      <target xmi:type="pedido:ItemPedido" href="My.pedido#//@itempedido.0"/>
+      <semanticElements xmi:type="pedido:ItemPedido" href="My.pedido#//@itempedido.0"/>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_FGlcYcJ6Eeu-wMn-IzCwng" labelSize="18" showIcon="false" workspacePath="/py.sirius.emf.model.pedido.design/icons/ItemPedido.gif">
+        <labelFormat>bold</labelFormat>
+        <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/py.sirius.emf.model.pedido.design/description/pedido.odesign#//@ownedViewpoints[name='pedidos']/@ownedRepresentations[name='Pedidos%20diagram']/@defaultLayer/@nodeMappings[name='ItemPedidoNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/py.sirius.emf.model.pedido.design/description/pedido.odesign#//@ownedViewpoints[name='pedidos']/@ownedRepresentations[name='Pedidos%20diagram']/@defaultLayer/@nodeMappings[name='ItemPedidoNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_FGmDcMJ6Eeu-wMn-IzCwng" name="1" width="-1" height="-1" resizeKind="NSEW">
+      <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_FGmDccJ6Eeu-wMn-IzCwng" labelSize="18" showIcon="false" workspacePath="/py.sirius.emf.model.pedido.design/icons/ItemPedido.gif">
+        <labelFormat>bold</labelFormat>
+        <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/py.sirius.emf.model.pedido.design/description/pedido.odesign#//@ownedViewpoints[name='pedidos']/@ownedRepresentations[name='Pedidos%20diagram']/@defaultLayer/@nodeMappings[name='ItemPedidoNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/py.sirius.emf.model.pedido.design/description/pedido.odesign#//@ownedViewpoints[name='pedidos']/@ownedRepresentations[name='Pedidos%20diagram']/@defaultLayer/@nodeMappings[name='ItemPedidoNode']"/>
+    </ownedDiagramElements>
+    <description xmi:type="description_1:DiagramDescription" href="platform:/resource/py.sirius.emf.model.pedido.design/description/pedido.odesign#//@ownedViewpoints[name='pedidos']/@ownedRepresentations[name='Pedidos%20diagram']"/>
+    <filterVariableHistory xmi:type="diagram:FilterVariableHistory" uid="_8PNSQMGYEeuvudWT7-1y0g"/>
+    <activatedLayers xmi:type="description_1:Layer" href="platform:/resource/py.sirius.emf.model.pedido.design/description/pedido.odesign#//@ownedViewpoints[name='pedidos']/@ownedRepresentations[name='Pedidos%20diagram']/@defaultLayer"/>
+    <target xmi:type="pedido:Pedido" href="My.pedido#/"/>
+  </diagram:DSemanticDiagram>
+  <diagram:DSemanticDiagram uid="_CWTU0MJ0Eeun-qEKuEKCLw">
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_CWmPwMJ0Eeun-qEKuEKCLw" source="GMF_DIAGRAMS">
+      <data xmi:type="notation:Diagram" xmi:id="_CWmPwcJ0Eeun-qEKuEKCLw" type="Sirius" element="_CWTU0MJ0Eeun-qEKuEKCLw" measurementUnit="Pixel">
+        <children xmi:type="notation:Node" xmi:id="_CW6Y0MJ0Eeun-qEKuEKCLw" type="2001" element="_CWnd4MJ0Eeun-qEKuEKCLw">
+          <children xmi:type="notation:Node" xmi:id="_CW-DMMJ0Eeun-qEKuEKCLw" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_CW-DMcJ0Eeun-qEKuEKCLw" x="-18"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_CXH0MMJ0Eeun-qEKuEKCLw" type="3005" element="_CWpTEMJ0Eeun-qEKuEKCLw">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_CXH0McJ0Eeun-qEKuEKCLw" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_CXH0MsJ0Eeun-qEKuEKCLw"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_CW6_4MJ0Eeun-qEKuEKCLw" fontName="Segoe UI" fontHeight="18" bold="true"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_CW6_4cJ0Eeun-qEKuEKCLw" x="144" y="138" width="48" height="48"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_CXF_AMJ0Eeun-qEKuEKCLw" type="2001" element="_CWuLkMJ0Eeun-qEKuEKCLw">
+          <children xmi:type="notation:Node" xmi:id="_CXF_A8J0Eeun-qEKuEKCLw" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_CXF_BMJ0Eeun-qEKuEKCLw" x="-26" y="49"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_CXIbQMJ0Eeun-qEKuEKCLw" type="3005" element="_CWuLkcJ0Eeun-qEKuEKCLw">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_CXIbQcJ0Eeun-qEKuEKCLw" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_CXIbQsJ0Eeun-qEKuEKCLw"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_CXF_AcJ0Eeun-qEKuEKCLw" fontName="Segoe UI" fontHeight="18"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_CXF_AsJ0Eeun-qEKuEKCLw" x="570" y="306" width="48" height="48"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_n-kzEMM3Eeu-c4Z_EzjupQ" type="2001" element="_n-hIsMM3Eeu-c4Z_EzjupQ">
+          <children xmi:type="notation:Node" xmi:id="_n-laIMM3Eeu-c4Z_EzjupQ" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_n-laIcM3Eeu-c4Z_EzjupQ" x="49" y="3"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_n-mBMMM3Eeu-c4Z_EzjupQ" type="3005" element="_n-hIscM3Eeu-c4Z_EzjupQ">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_n-mBMcM3Eeu-c4Z_EzjupQ" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_n-mBMsM3Eeu-c4Z_EzjupQ"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_n-kzEcM3Eeu-c4Z_EzjupQ" fontName="Segoe UI" fontHeight="18"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_n-kzEsM3Eeu-c4Z_EzjupQ" x="191" y="259" width="48" height="48"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_pHuzgMM3Eeu-c4Z_EzjupQ" type="2001" element="_pHqiEMM3Eeu-c4Z_EzjupQ">
+          <children xmi:type="notation:Node" xmi:id="_pHuzg8M3Eeu-c4Z_EzjupQ" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_pHuzhMM3Eeu-c4Z_EzjupQ" x="49" y="3"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_pHvakMM3Eeu-c4Z_EzjupQ" type="3005" element="_pHrJIMM3Eeu-c4Z_EzjupQ">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_pHvakcM3Eeu-c4Z_EzjupQ" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_pHvaksM3Eeu-c4Z_EzjupQ"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_pHuzgcM3Eeu-c4Z_EzjupQ" fontName="Segoe UI" fontHeight="18"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_pHuzgsM3Eeu-c4Z_EzjupQ" x="318" y="432" width="48" height="48"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_pa8qcMM3Eeu-c4Z_EzjupQ" type="2001" element="_pa3x8MM3Eeu-c4Z_EzjupQ">
+          <children xmi:type="notation:Node" xmi:id="_pa9RgMM3Eeu-c4Z_EzjupQ" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_pa9RgcM3Eeu-c4Z_EzjupQ" x="49" y="3"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_pa94kMM3Eeu-c4Z_EzjupQ" type="3005" element="_pa3x8cM3Eeu-c4Z_EzjupQ">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_pa94kcM3Eeu-c4Z_EzjupQ" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_pa94ksM3Eeu-c4Z_EzjupQ"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_pa8qccM3Eeu-c4Z_EzjupQ" fontName="Segoe UI" fontHeight="18"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_pa8qcsM3Eeu-c4Z_EzjupQ" x="786" y="390" width="48" height="48"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_pufRgMM3Eeu-c4Z_EzjupQ" type="2001" element="_pubAEMM3Eeu-c4Z_EzjupQ">
+          <children xmi:type="notation:Node" xmi:id="_puf4kMM3Eeu-c4Z_EzjupQ" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_puf4kcM3Eeu-c4Z_EzjupQ" x="49" y="3"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_pugfoMM3Eeu-c4Z_EzjupQ" type="3005" element="_pubnIMM3Eeu-c4Z_EzjupQ">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_pugfocM3Eeu-c4Z_EzjupQ" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_pugfosM3Eeu-c4Z_EzjupQ"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_pufRgcM3Eeu-c4Z_EzjupQ" fontName="Segoe UI" fontHeight="18"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_pufRgsM3Eeu-c4Z_EzjupQ" x="654" y="498" width="48" height="48"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_b3-GQMM6Eeu-c4Z_EzjupQ" type="2001" element="_b3500MM6Eeu-c4Z_EzjupQ">
+          <children xmi:type="notation:Node" xmi:id="_b3-tUMM6Eeu-c4Z_EzjupQ" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_b3-tUcM6Eeu-c4Z_EzjupQ" x="-1" y="2"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_b3_UYMM6Eeu-c4Z_EzjupQ" type="3005" element="_b3500cM6Eeu-c4Z_EzjupQ">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_b3_UYcM6Eeu-c4Z_EzjupQ" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_b3_UYsM6Eeu-c4Z_EzjupQ"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_b3-GQcM6Eeu-c4Z_EzjupQ" fontName="Segoe UI" fontHeight="18"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_b3-GQsM6Eeu-c4Z_EzjupQ" x="354" y="196" width="48" height="48"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_aHY8pMM-Eeu-c4Z_EzjupQ" type="2001" element="_aHWgYMM-Eeu-c4Z_EzjupQ">
+          <children xmi:type="notation:Node" xmi:id="_aHZjsMM-Eeu-c4Z_EzjupQ" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_aHZjscM-Eeu-c4Z_EzjupQ" x="-1"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_aHZjssM-Eeu-c4Z_EzjupQ" type="3005" element="_aHWgYcM-Eeu-c4Z_EzjupQ">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_aHZjs8M-Eeu-c4Z_EzjupQ" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_aHZjtMM-Eeu-c4Z_EzjupQ"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_aHY8pcM-Eeu-c4Z_EzjupQ" fontName="Segoe UI" fontHeight="18"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_aHY8psM-Eeu-c4Z_EzjupQ" x="534" y="66" width="48" height="48"/>
+        </children>
+        <styles xmi:type="notation:DiagramStyle" xmi:id="_CWmPwsJ0Eeun-qEKuEKCLw"/>
+        <edges xmi:type="notation:Edge" xmi:id="_efiooMM-Eeu-c4Z_EzjupQ" type="4001" element="_efZesMM-Eeu-c4Z_EzjupQ" source="_CW6Y0MJ0Eeun-qEKuEKCLw" target="_b3-GQMM6Eeu-c4Z_EzjupQ">
+          <children xmi:type="notation:Node" xmi:id="_efjPsMM-Eeu-c4Z_EzjupQ" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_efjPscM-Eeu-c4Z_EzjupQ" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_efj2wMM-Eeu-c4Z_EzjupQ" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_efj2wcM-Eeu-c4Z_EzjupQ" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_efj2wsM-Eeu-c4Z_EzjupQ" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_efj2w8M-Eeu-c4Z_EzjupQ" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_efioocM-Eeu-c4Z_EzjupQ"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_efioosM-Eeu-c4Z_EzjupQ" fontName="Segoe UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_efioo8M-Eeu-c4Z_EzjupQ" points="[0, 0, -162, -60]$[162, 60, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_efkd0MM-Eeu-c4Z_EzjupQ" id="(1.0,0.25)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_efkd0cM-Eeu-c4Z_EzjupQ" id="(0.0,0.2916666666666667)"/>
+        </edges>
+      </data>
+    </ownedAnnotationEntries>
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_CWxO4MJ0Eeun-qEKuEKCLw" source="DANNOTATION_CUSTOMIZATION_KEY">
+      <data xmi:type="diagram:ComputedStyleDescriptionRegistry" uid="_CWxO4cJ0Eeun-qEKuEKCLw"/>
+    </ownedAnnotationEntries>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_CWnd4MJ0Eeun-qEKuEKCLw" name="1" outgoingEdges="_efZesMM-Eeu-c4Z_EzjupQ" width="-1" height="-1" resizeKind="NSEW">
+      <target xmi:type="pedido:Pedido" href="MyDistribuidora.pedido#//@pedido.0"/>
+      <semanticElements xmi:type="pedido:Pedido" href="MyDistribuidora.pedido#//@pedido.0"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_CWpTEMJ0Eeun-qEKuEKCLw" labelSize="18" showIcon="false" workspacePath="/py.sirius.emf.model.pedido.design/icons/Pedido.gif">
+        <labelFormat>bold</labelFormat>
+        <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/py.sirius.emf.model.pedido.design/description/pedido.odesign#//@ownedViewpoints[name='pedidos']/@ownedRepresentations[name='Pedidos%20diagram']/@defaultLayer/@nodeMappings[name='PedidoNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/py.sirius.emf.model.pedido.design/description/pedido.odesign#//@ownedViewpoints[name='pedidos']/@ownedRepresentations[name='Pedidos%20diagram']/@defaultLayer/@nodeMappings[name='PedidoNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_CWuLkMJ0Eeun-qEKuEKCLw" name="Usuario" width="-1" height="-1" resizeKind="NSEW">
+      <target xmi:type="pedido:Usuario" href="MyDistribuidora.pedido#//@usuario.0"/>
+      <semanticElements xmi:type="pedido:Usuario" href="MyDistribuidora.pedido#//@usuario.0"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_CWuLkcJ0Eeun-qEKuEKCLw" labelSize="18" showIcon="false" workspacePath="/py.sirius.emf.model.pedido.design/icons/Usuario.gif">
+        <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/py.sirius.emf.model.pedido.design/description/pedido.odesign#//@ownedViewpoints[name='pedidos']/@ownedRepresentations[name='Pedidos%20diagram']/@defaultLayer/@nodeMappings[name='UsuarioNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/py.sirius.emf.model.pedido.design/description/pedido.odesign#//@ownedViewpoints[name='pedidos']/@ownedRepresentations[name='Pedidos%20diagram']/@defaultLayer/@nodeMappings[name='UsuarioNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_b3500MM6Eeu-c4Z_EzjupQ" name="Cliente Magno" incomingEdges="_efZesMM-Eeu-c4Z_EzjupQ" width="-1" height="-1" resizeKind="NSEW">
+      <target xmi:type="pedido:Cliente" href="MyDistribuidora.pedido#//@cliente.0"/>
+      <semanticElements xmi:type="pedido:Cliente" href="MyDistribuidora.pedido#//@cliente.0"/>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_b3500cM6Eeu-c4Z_EzjupQ" labelSize="18" showIcon="false" workspacePath="/py.sirius.emf.model.pedido.design/icons/Cliente.gif">
+        <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/py.sirius.emf.model.pedido.design/description/pedido.odesign#//@ownedViewpoints[name='pedidos']/@ownedRepresentations[name='Pedidos%20diagram']/@defaultLayer/@nodeMappings[name='ClienteNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/py.sirius.emf.model.pedido.design/description/pedido.odesign#//@ownedViewpoints[name='pedidos']/@ownedRepresentations[name='Pedidos%20diagram']/@defaultLayer/@nodeMappings[name='ClienteNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_aHWgYMM-Eeu-c4Z_EzjupQ" width="-1" height="-1" resizeKind="NSEW">
+      <target xmi:type="pedido:Cliente" href="MyDistribuidora.pedido#//@cliente.1"/>
+      <semanticElements xmi:type="pedido:Cliente" href="MyDistribuidora.pedido#//@cliente.1"/>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_aHWgYcM-Eeu-c4Z_EzjupQ" labelSize="18" showIcon="false" workspacePath="/py.sirius.emf.model.pedido.design/icons/Cliente.gif">
+        <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/py.sirius.emf.model.pedido.design/description/pedido.odesign#//@ownedViewpoints[name='pedidos']/@ownedRepresentations[name='Pedidos%20diagram']/@defaultLayer/@nodeMappings[name='ClienteNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/py.sirius.emf.model.pedido.design/description/pedido.odesign#//@ownedViewpoints[name='pedidos']/@ownedRepresentations[name='Pedidos%20diagram']/@defaultLayer/@nodeMappings[name='ClienteNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_n-hIsMM3Eeu-c4Z_EzjupQ" name="Producto1" width="-1" height="-1" resizeKind="NSEW">
+      <target xmi:type="pedido:Producto" href="MyDistribuidora.pedido#//@producto.0"/>
+      <semanticElements xmi:type="pedido:Producto" href="MyDistribuidora.pedido#//@producto.0"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_n-hIscM3Eeu-c4Z_EzjupQ" labelSize="18" showIcon="false" workspacePath="/py.sirius.emf.model.pedido.design/icons/Producto.gif">
+        <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/py.sirius.emf.model.pedido.design/description/pedido.odesign#//@ownedViewpoints[name='pedidos']/@ownedRepresentations[name='Pedidos%20diagram']/@defaultLayer/@nodeMappings[name='ProductoNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/py.sirius.emf.model.pedido.design/description/pedido.odesign#//@ownedViewpoints[name='pedidos']/@ownedRepresentations[name='Pedidos%20diagram']/@defaultLayer/@nodeMappings[name='ProductoNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_pHqiEMM3Eeu-c4Z_EzjupQ" name="Producto2" width="-1" height="-1" resizeKind="NSEW">
+      <target xmi:type="pedido:Producto" href="MyDistribuidora.pedido#//@producto.1"/>
+      <semanticElements xmi:type="pedido:Producto" href="MyDistribuidora.pedido#//@producto.1"/>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_pHrJIMM3Eeu-c4Z_EzjupQ" labelSize="18" showIcon="false" workspacePath="/py.sirius.emf.model.pedido.design/icons/Producto.gif">
+        <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/py.sirius.emf.model.pedido.design/description/pedido.odesign#//@ownedViewpoints[name='pedidos']/@ownedRepresentations[name='Pedidos%20diagram']/@defaultLayer/@nodeMappings[name='ProductoNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/py.sirius.emf.model.pedido.design/description/pedido.odesign#//@ownedViewpoints[name='pedidos']/@ownedRepresentations[name='Pedidos%20diagram']/@defaultLayer/@nodeMappings[name='ProductoNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_pa3x8MM3Eeu-c4Z_EzjupQ" name="Producto3" width="-1" height="-1" resizeKind="NSEW">
+      <target xmi:type="pedido:Producto" href="MyDistribuidora.pedido#//@producto.2"/>
+      <semanticElements xmi:type="pedido:Producto" href="MyDistribuidora.pedido#//@producto.2"/>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_pa3x8cM3Eeu-c4Z_EzjupQ" labelSize="18" showIcon="false" workspacePath="/py.sirius.emf.model.pedido.design/icons/Producto.gif">
+        <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/py.sirius.emf.model.pedido.design/description/pedido.odesign#//@ownedViewpoints[name='pedidos']/@ownedRepresentations[name='Pedidos%20diagram']/@defaultLayer/@nodeMappings[name='ProductoNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/py.sirius.emf.model.pedido.design/description/pedido.odesign#//@ownedViewpoints[name='pedidos']/@ownedRepresentations[name='Pedidos%20diagram']/@defaultLayer/@nodeMappings[name='ProductoNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_pubAEMM3Eeu-c4Z_EzjupQ" name="Producto4" width="-1" height="-1" resizeKind="NSEW">
+      <target xmi:type="pedido:Producto" href="MyDistribuidora.pedido#//@producto.3"/>
+      <semanticElements xmi:type="pedido:Producto" href="MyDistribuidora.pedido#//@producto.3"/>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_pubnIMM3Eeu-c4Z_EzjupQ" labelSize="18" showIcon="false" workspacePath="/py.sirius.emf.model.pedido.design/icons/Producto.gif">
+        <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/py.sirius.emf.model.pedido.design/description/pedido.odesign#//@ownedViewpoints[name='pedidos']/@ownedRepresentations[name='Pedidos%20diagram']/@defaultLayer/@nodeMappings[name='ProductoNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/py.sirius.emf.model.pedido.design/description/pedido.odesign#//@ownedViewpoints[name='pedidos']/@ownedRepresentations[name='Pedidos%20diagram']/@defaultLayer/@nodeMappings[name='ProductoNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_efZesMM-Eeu-c4Z_EzjupQ" sourceNode="_CWnd4MJ0Eeun-qEKuEKCLw" targetNode="_b3500MM6Eeu-c4Z_EzjupQ">
+      <target xmi:type="pedido:Pedido" href="MyDistribuidora.pedido#//@pedido.0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_efaFwMM-Eeu-c4Z_EzjupQ" size="6" strokeColor="194,239,255">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/py.sirius.emf.model.pedido.design/description/pedido.odesign#//@ownedViewpoints[name='pedidos']/@ownedRepresentations[name='Pedidos%20diagram']/@defaultLayer/@edgeMappings[name='PedidoClienteEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_efaFwcM-Eeu-c4Z_EzjupQ" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/py.sirius.emf.model.pedido.design/description/pedido.odesign#//@ownedViewpoints[name='pedidos']/@ownedRepresentations[name='Pedidos%20diagram']/@defaultLayer/@edgeMappings[name='PedidoClienteEdge']"/>
+    </ownedDiagramElements>
+    <description xmi:type="description_1:DiagramDescription" href="platform:/resource/py.sirius.emf.model.pedido.design/description/pedido.odesign#//@ownedViewpoints[name='pedidos']/@ownedRepresentations[name='Pedidos%20diagram']"/>
+    <filterVariableHistory xmi:type="diagram:FilterVariableHistory" uid="_CWUi8MJ0Eeun-qEKuEKCLw"/>
+    <activatedLayers xmi:type="description_1:Layer" href="platform:/resource/py.sirius.emf.model.pedido.design/description/pedido.odesign#//@ownedViewpoints[name='pedidos']/@ownedRepresentations[name='Pedidos%20diagram']/@defaultLayer"/>
+    <target xmi:type="pedido:Distribuidora" href="MyDistribuidora.pedido#/"/>
+  </diagram:DSemanticDiagram>
+</xmi:XMI>

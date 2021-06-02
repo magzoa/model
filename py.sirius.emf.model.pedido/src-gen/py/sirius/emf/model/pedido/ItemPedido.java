@@ -3,9 +3,6 @@
 package py.sirius.emf.model.pedido;
 
 import java.math.BigDecimal;
-
-import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EObject;
 
 /**
@@ -95,15 +92,25 @@ public interface ItemPedido extends EObject {
 	void setSubTotal(BigDecimal value);
 
 	/**
-	 * Returns the value of the '<em><b>Producto</b></em>' containment reference list.
-	 * The list contents are of type {@link py.sirius.emf.model.pedido.Producto}.
+	 * Returns the value of the '<em><b>Producto</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Producto</em>' containment reference list.
+	 * @return the value of the '<em>Producto</em>' reference.
+	 * @see #setProducto(Producto)
 	 * @see py.sirius.emf.model.pedido.PedidoPackage#getItemPedido_Producto()
-	 * @model containment="true"
+	 * @model
 	 * @generated
 	 */
-	EList<Producto> getProducto();
+	Producto getProducto();
+
+	/**
+	 * Sets the value of the '{@link py.sirius.emf.model.pedido.ItemPedido#getProducto <em>Producto</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Producto</em>' reference.
+	 * @see #getProducto()
+	 * @generated
+	 */
+	void setProducto(Producto value);
 
 } // ItemPedido

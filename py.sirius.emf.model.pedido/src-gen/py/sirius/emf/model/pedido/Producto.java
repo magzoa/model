@@ -142,24 +142,27 @@ public interface Producto extends EObject {
 
 	/**
 	 * Returns the value of the '<em><b>Tipo</b></em>' attribute.
+	 * The literals are from the enumeration {@link py.sirius.emf.model.pedido.ProductoTipo}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Tipo</em>' attribute.
-	 * @see #setTipo(String)
+	 * @see py.sirius.emf.model.pedido.ProductoTipo
+	 * @see #setTipo(ProductoTipo)
 	 * @see py.sirius.emf.model.pedido.PedidoPackage#getProducto_Tipo()
 	 * @model
 	 * @generated
 	 */
-	String getTipo();
+	ProductoTipo getTipo();
 
 	/**
 	 * Sets the value of the '{@link py.sirius.emf.model.pedido.Producto#getTipo <em>Tipo</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Tipo</em>' attribute.
+	 * @see py.sirius.emf.model.pedido.ProductoTipo
 	 * @see #getTipo()
 	 * @generated
 	 */
-	void setTipo(String value);
+	void setTipo(ProductoTipo value);
 
 } // Producto

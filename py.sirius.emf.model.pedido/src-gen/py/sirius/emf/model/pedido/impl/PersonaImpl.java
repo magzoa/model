@@ -5,15 +5,10 @@ package py.sirius.emf.model.pedido.impl;
 import org.eclipse.emf.common.notify.Notification;
 
 import org.eclipse.emf.ecore.EClass;
-
-import org.eclipse.emf.ecore.InternalEObject;
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
 import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
-
-import py.sirius.emf.model.pedido.Cliente;
 import py.sirius.emf.model.pedido.PedidoPackage;
 import py.sirius.emf.model.pedido.Persona;
-import py.sirius.emf.model.pedido.Usuario;
 
 /**
  * <!-- begin-user-doc -->
@@ -26,8 +21,6 @@ import py.sirius.emf.model.pedido.Usuario;
  *   <li>{@link py.sirius.emf.model.pedido.impl.PersonaImpl#getId <em>Id</em>}</li>
  *   <li>{@link py.sirius.emf.model.pedido.impl.PersonaImpl#getNombre <em>Nombre</em>}</li>
  *   <li>{@link py.sirius.emf.model.pedido.impl.PersonaImpl#getCorreo <em>Correo</em>}</li>
- *   <li>{@link py.sirius.emf.model.pedido.impl.PersonaImpl#getUsuario <em>Usuario</em>}</li>
- *   <li>{@link py.sirius.emf.model.pedido.impl.PersonaImpl#getCliente <em>Cliente</em>}</li>
  * </ul>
  *
  * @generated
@@ -92,26 +85,6 @@ public abstract class PersonaImpl extends MinimalEObjectImpl.Container implement
 	 * @ordered
 	 */
 	protected String correo = CORREO_EDEFAULT;
-
-	/**
-	 * The cached value of the '{@link #getUsuario() <em>Usuario</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getUsuario()
-	 * @generated
-	 * @ordered
-	 */
-	protected Usuario usuario;
-
-	/**
-	 * The cached value of the '{@link #getCliente() <em>Cliente</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getCliente()
-	 * @generated
-	 * @ordered
-	 */
-	protected Cliente cliente;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -200,84 +173,6 @@ public abstract class PersonaImpl extends MinimalEObjectImpl.Container implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Usuario getUsuario() {
-		if (usuario != null && usuario.eIsProxy()) {
-			InternalEObject oldUsuario = (InternalEObject) usuario;
-			usuario = (Usuario) eResolveProxy(oldUsuario);
-			if (usuario != oldUsuario) {
-				if (eNotificationRequired())
-					eNotify(new ENotificationImpl(this, Notification.RESOLVE, PedidoPackage.PERSONA__USUARIO,
-							oldUsuario, usuario));
-			}
-		}
-		return usuario;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public Usuario basicGetUsuario() {
-		return usuario;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public void setUsuario(Usuario newUsuario) {
-		Usuario oldUsuario = usuario;
-		usuario = newUsuario;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, PedidoPackage.PERSONA__USUARIO, oldUsuario, usuario));
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public Cliente getCliente() {
-		if (cliente != null && cliente.eIsProxy()) {
-			InternalEObject oldCliente = (InternalEObject) cliente;
-			cliente = (Cliente) eResolveProxy(oldCliente);
-			if (cliente != oldCliente) {
-				if (eNotificationRequired())
-					eNotify(new ENotificationImpl(this, Notification.RESOLVE, PedidoPackage.PERSONA__CLIENTE,
-							oldCliente, cliente));
-			}
-		}
-		return cliente;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public Cliente basicGetCliente() {
-		return cliente;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public void setCliente(Cliente newCliente) {
-		Cliente oldCliente = cliente;
-		cliente = newCliente;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, PedidoPackage.PERSONA__CLIENTE, oldCliente, cliente));
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
@@ -287,14 +182,6 @@ public abstract class PersonaImpl extends MinimalEObjectImpl.Container implement
 			return getNombre();
 		case PedidoPackage.PERSONA__CORREO:
 			return getCorreo();
-		case PedidoPackage.PERSONA__USUARIO:
-			if (resolve)
-				return getUsuario();
-			return basicGetUsuario();
-		case PedidoPackage.PERSONA__CLIENTE:
-			if (resolve)
-				return getCliente();
-			return basicGetCliente();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -315,12 +202,6 @@ public abstract class PersonaImpl extends MinimalEObjectImpl.Container implement
 			return;
 		case PedidoPackage.PERSONA__CORREO:
 			setCorreo((String) newValue);
-			return;
-		case PedidoPackage.PERSONA__USUARIO:
-			setUsuario((Usuario) newValue);
-			return;
-		case PedidoPackage.PERSONA__CLIENTE:
-			setCliente((Cliente) newValue);
 			return;
 		}
 		super.eSet(featureID, newValue);
@@ -343,12 +224,6 @@ public abstract class PersonaImpl extends MinimalEObjectImpl.Container implement
 		case PedidoPackage.PERSONA__CORREO:
 			setCorreo(CORREO_EDEFAULT);
 			return;
-		case PedidoPackage.PERSONA__USUARIO:
-			setUsuario((Usuario) null);
-			return;
-		case PedidoPackage.PERSONA__CLIENTE:
-			setCliente((Cliente) null);
-			return;
 		}
 		super.eUnset(featureID);
 	}
@@ -367,10 +242,6 @@ public abstract class PersonaImpl extends MinimalEObjectImpl.Container implement
 			return NOMBRE_EDEFAULT == null ? nombre != null : !NOMBRE_EDEFAULT.equals(nombre);
 		case PedidoPackage.PERSONA__CORREO:
 			return CORREO_EDEFAULT == null ? correo != null : !CORREO_EDEFAULT.equals(correo);
-		case PedidoPackage.PERSONA__USUARIO:
-			return usuario != null;
-		case PedidoPackage.PERSONA__CLIENTE:
-			return cliente != null;
 		}
 		return super.eIsSet(featureID);
 	}

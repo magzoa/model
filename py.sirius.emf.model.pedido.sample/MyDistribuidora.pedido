@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pedido:Distribuidora xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:pedido="http://www.eclipse.org/py/sirius/emf/model/pedido" nombre="San Martin">
+  <cliente id="1" nombre="Juan" correo="juan@gmail.com" celular="0986323"/>
+  <usuario id="1" nombre="Usuario" correo="corrego@gmail.com" password="123"/>
+  <pedido id="1" fechaToma="2009-12-31T00:00:00.000-0300" fechaEntrega="2009-12-31T00:00:00.000-0300" cliente="//@cliente.0">
+    <itempedido id="1" cantidad="5" producto="//@producto.0"/>
+  </pedido>
+  <producto id="1" descripcion="TELEVISOR" cantidad="5"/>
+</pedido:Distribuidora>

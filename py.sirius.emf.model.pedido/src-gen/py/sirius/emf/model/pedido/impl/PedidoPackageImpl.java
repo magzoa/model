@@ -4,18 +4,22 @@ package py.sirius.emf.model.pedido.impl;
 
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EEnum;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EReference;
 
 import org.eclipse.emf.ecore.impl.EPackageImpl;
 
 import py.sirius.emf.model.pedido.Cliente;
+import py.sirius.emf.model.pedido.Distribuidora;
+import py.sirius.emf.model.pedido.Factura;
 import py.sirius.emf.model.pedido.ItemPedido;
 import py.sirius.emf.model.pedido.Pedido;
 import py.sirius.emf.model.pedido.PedidoFactory;
 import py.sirius.emf.model.pedido.PedidoPackage;
 import py.sirius.emf.model.pedido.Persona;
 import py.sirius.emf.model.pedido.Producto;
+import py.sirius.emf.model.pedido.ProductoTipo;
 import py.sirius.emf.model.pedido.Usuario;
 
 /**
@@ -66,6 +70,27 @@ public class PedidoPackageImpl extends EPackageImpl implements PedidoPackage {
 	 * @generated
 	 */
 	private EClass productoEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass facturaEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass distribuidoraEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EEnum productoTipoEEnum = null;
 
 	/**
 	 * Creates an instance of the model <b>Package</b>, registered with
@@ -172,24 +197,6 @@ public class PedidoPackageImpl extends EPackageImpl implements PedidoPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getPersona_Usuario() {
-		return (EReference) personaEClass.getEStructuralFeatures().get(3);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getPersona_Cliente() {
-		return (EReference) personaEClass.getEStructuralFeatures().get(4);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EClass getCliente() {
 		return clienteEClass;
 	}
@@ -272,7 +279,7 @@ public class PedidoPackageImpl extends EPackageImpl implements PedidoPackage {
 	 * @generated
 	 */
 	public EReference getPedido_Itempedido() {
-		return (EReference) pedidoEClass.getEStructuralFeatures().get(4);
+		return (EReference) pedidoEClass.getEStructuralFeatures().get(6);
 	}
 
 	/**
@@ -281,7 +288,7 @@ public class PedidoPackageImpl extends EPackageImpl implements PedidoPackage {
 	 * @generated
 	 */
 	public EReference getPedido_Cliente() {
-		return (EReference) pedidoEClass.getEStructuralFeatures().get(6);
+		return (EReference) pedidoEClass.getEStructuralFeatures().get(4);
 	}
 
 	/**
@@ -406,6 +413,123 @@ public class PedidoPackageImpl extends EPackageImpl implements PedidoPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EClass getFactura() {
+		return facturaEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getFactura_Numero() {
+		return (EAttribute) facturaEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getFactura_Pedidos() {
+		return (EReference) facturaEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getFactura_Producto() {
+		return (EReference) facturaEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getFactura_Cliente() {
+		return (EReference) facturaEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getFactura_Usuario() {
+		return (EReference) facturaEClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getDistribuidora() {
+		return distribuidoraEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getDistribuidora_Nombre() {
+		return (EAttribute) distribuidoraEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getDistribuidora_Cliente() {
+		return (EReference) distribuidoraEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getDistribuidora_Usuario() {
+		return (EReference) distribuidoraEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getDistribuidora_Pedido() {
+		return (EReference) distribuidoraEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getDistribuidora_Producto() {
+		return (EReference) distribuidoraEClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EEnum getProductoTipo() {
+		return productoTipoEEnum;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public PedidoFactory getPedidoFactory() {
 		return (PedidoFactory) getEFactoryInstance();
 	}
@@ -434,8 +558,6 @@ public class PedidoPackageImpl extends EPackageImpl implements PedidoPackage {
 		createEAttribute(personaEClass, PERSONA__ID);
 		createEAttribute(personaEClass, PERSONA__NOMBRE);
 		createEAttribute(personaEClass, PERSONA__CORREO);
-		createEReference(personaEClass, PERSONA__USUARIO);
-		createEReference(personaEClass, PERSONA__CLIENTE);
 
 		clienteEClass = createEClass(CLIENTE);
 		createEAttribute(clienteEClass, CLIENTE__CELULAR);
@@ -448,9 +570,9 @@ public class PedidoPackageImpl extends EPackageImpl implements PedidoPackage {
 		createEAttribute(pedidoEClass, PEDIDO__FECHA_TOMA);
 		createEAttribute(pedidoEClass, PEDIDO__FECHA_ENTREGA);
 		createEAttribute(pedidoEClass, PEDIDO__TOTAL);
-		createEReference(pedidoEClass, PEDIDO__ITEMPEDIDO);
-		createEReference(pedidoEClass, PEDIDO__USUARIO);
 		createEReference(pedidoEClass, PEDIDO__CLIENTE);
+		createEReference(pedidoEClass, PEDIDO__USUARIO);
+		createEReference(pedidoEClass, PEDIDO__ITEMPEDIDO);
 
 		itemPedidoEClass = createEClass(ITEM_PEDIDO);
 		createEAttribute(itemPedidoEClass, ITEM_PEDIDO__ID);
@@ -465,6 +587,23 @@ public class PedidoPackageImpl extends EPackageImpl implements PedidoPackage {
 		createEAttribute(productoEClass, PRODUCTO__PRECIO);
 		createEAttribute(productoEClass, PRODUCTO__CANTIDAD);
 		createEAttribute(productoEClass, PRODUCTO__TIPO);
+
+		facturaEClass = createEClass(FACTURA);
+		createEAttribute(facturaEClass, FACTURA__NUMERO);
+		createEReference(facturaEClass, FACTURA__PEDIDOS);
+		createEReference(facturaEClass, FACTURA__PRODUCTO);
+		createEReference(facturaEClass, FACTURA__CLIENTE);
+		createEReference(facturaEClass, FACTURA__USUARIO);
+
+		distribuidoraEClass = createEClass(DISTRIBUIDORA);
+		createEAttribute(distribuidoraEClass, DISTRIBUIDORA__NOMBRE);
+		createEReference(distribuidoraEClass, DISTRIBUIDORA__CLIENTE);
+		createEReference(distribuidoraEClass, DISTRIBUIDORA__USUARIO);
+		createEReference(distribuidoraEClass, DISTRIBUIDORA__PEDIDO);
+		createEReference(distribuidoraEClass, DISTRIBUIDORA__PRODUCTO);
+
+		// Create enums
+		productoTipoEEnum = createEEnum(PRODUCTO_TIPO);
 	}
 
 	/**
@@ -507,12 +646,6 @@ public class PedidoPackageImpl extends EPackageImpl implements PedidoPackage {
 				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getPersona_Correo(), ecorePackage.getEString(), "correo", null, 0, 1, Persona.class,
 				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getPersona_Usuario(), this.getUsuario(), null, "usuario", null, 0, 1, Persona.class,
-				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE,
-				IS_UNIQUE, IS_DERIVED, IS_ORDERED);
-		initEReference(getPersona_Cliente(), this.getCliente(), null, "cliente", null, 0, 1, Persona.class,
-				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE,
-				IS_UNIQUE, IS_DERIVED, IS_ORDERED);
 
 		initEClass(clienteEClass, Cliente.class, "Cliente", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getCliente_Celular(), ecorePackage.getEString(), "celular", null, 0, 1, Cliente.class,
@@ -531,15 +664,15 @@ public class PedidoPackageImpl extends EPackageImpl implements PedidoPackage {
 				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getPedido_Total(), ecorePackage.getEBigDecimal(), "total", null, 0, 1, Pedido.class,
 				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getPedido_Itempedido(), this.getItemPedido(), null, "itempedido", null, 0, -1, Pedido.class,
-				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE,
-				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getPedido_Usuario(), this.getUsuario(), null, "usuario", null, 0, 1, Pedido.class, !IS_TRANSIENT,
-				!IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED,
-				IS_ORDERED);
 		initEReference(getPedido_Cliente(), this.getCliente(), null, "cliente", null, 0, 1, Pedido.class, !IS_TRANSIENT,
-				!IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED,
 				IS_ORDERED);
+		initEReference(getPedido_Usuario(), this.getUsuario(), null, "usuario", null, 0, 1, Pedido.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED,
+				IS_ORDERED);
+		initEReference(getPedido_Itempedido(), this.getItemPedido(), null, "itempedido", null, 0, -1, Pedido.class,
+				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(itemPedidoEClass, ItemPedido.class, "ItemPedido", !IS_ABSTRACT, !IS_INTERFACE,
 				IS_GENERATED_INSTANCE_CLASS);
@@ -550,8 +683,8 @@ public class PedidoPackageImpl extends EPackageImpl implements PedidoPackage {
 		initEAttribute(getItemPedido_SubTotal(), ecorePackage.getEBigDecimal(), "subTotal", null, 0, 1,
 				ItemPedido.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
 				!IS_DERIVED, IS_ORDERED);
-		initEReference(getItemPedido_Producto(), this.getProducto(), null, "producto", null, 0, -1, ItemPedido.class,
-				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE,
+		initEReference(getItemPedido_Producto(), this.getProducto(), null, "producto", null, 0, 1, ItemPedido.class,
+				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE,
 				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(productoEClass, Producto.class, "Producto", !IS_ABSTRACT, !IS_INTERFACE,
@@ -567,8 +700,47 @@ public class PedidoPackageImpl extends EPackageImpl implements PedidoPackage {
 				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getProducto_Cantidad(), ecorePackage.getEInt(), "cantidad", null, 0, 1, Producto.class,
 				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getProducto_Tipo(), ecorePackage.getEString(), "tipo", null, 0, 1, Producto.class, !IS_TRANSIENT,
+		initEAttribute(getProducto_Tipo(), this.getProductoTipo(), "tipo", null, 0, 1, Producto.class, !IS_TRANSIENT,
 				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(facturaEClass, Factura.class, "Factura", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getFactura_Numero(), ecorePackage.getEInt(), "numero", null, 0, 1, Factura.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getFactura_Pedidos(), this.getPedido(), null, "pedidos", null, 0, -1, Factura.class,
+				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getFactura_Producto(), this.getProducto(), null, "producto", null, 0, -1, Factura.class,
+				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getFactura_Cliente(), this.getCliente(), null, "cliente", null, 0, -1, Factura.class,
+				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getFactura_Usuario(), this.getUsuario(), null, "usuario", null, 0, -1, Factura.class,
+				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(distribuidoraEClass, Distribuidora.class, "Distribuidora", !IS_ABSTRACT, !IS_INTERFACE,
+				IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getDistribuidora_Nombre(), ecorePackage.getEString(), "nombre", null, 0, 1, Distribuidora.class,
+				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getDistribuidora_Cliente(), this.getCliente(), null, "cliente", null, 0, -1, Distribuidora.class,
+				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getDistribuidora_Usuario(), this.getUsuario(), null, "usuario", null, 0, -1, Distribuidora.class,
+				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getDistribuidora_Pedido(), this.getPedido(), null, "pedido", null, 0, -1, Distribuidora.class,
+				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getDistribuidora_Producto(), this.getProducto(), null, "producto", null, 0, -1,
+				Distribuidora.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES,
+				!IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		// Initialize enums and add enum literals
+		initEEnum(productoTipoEEnum, ProductoTipo.class, "ProductoTipo");
+		addEEnumLiteral(productoTipoEEnum, ProductoTipo.SUPERMERCADO);
+		addEEnumLiteral(productoTipoEEnum, ProductoTipo.FARMACIA);
+		addEEnumLiteral(productoTipoEEnum, ProductoTipo.ELECTRONICOS);
 
 		// Create resource
 		createResource(eNS_URI);

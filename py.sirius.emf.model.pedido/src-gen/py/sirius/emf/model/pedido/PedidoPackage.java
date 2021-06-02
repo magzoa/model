@@ -4,6 +4,7 @@ package py.sirius.emf.model.pedido;
 
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EEnum;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EReference;
 
@@ -94,31 +95,13 @@ public interface PedidoPackage extends EPackage {
 	int PERSONA__CORREO = 2;
 
 	/**
-	 * The feature id for the '<em><b>Usuario</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PERSONA__USUARIO = 3;
-
-	/**
-	 * The feature id for the '<em><b>Cliente</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PERSONA__CLIENTE = 4;
-
-	/**
 	 * The number of structural features of the '<em>Persona</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PERSONA_FEATURE_COUNT = 5;
+	int PERSONA_FEATURE_COUNT = 3;
 
 	/**
 	 * The number of operations of the '<em>Persona</em>' class.
@@ -165,24 +148,6 @@ public interface PedidoPackage extends EPackage {
 	 * @ordered
 	 */
 	int CLIENTE__CORREO = PERSONA__CORREO;
-
-	/**
-	 * The feature id for the '<em><b>Usuario</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CLIENTE__USUARIO = PERSONA__USUARIO;
-
-	/**
-	 * The feature id for the '<em><b>Cliente</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CLIENTE__CLIENTE = PERSONA__CLIENTE;
 
 	/**
 	 * The feature id for the '<em><b>Celular</b></em>' attribute.
@@ -247,24 +212,6 @@ public interface PedidoPackage extends EPackage {
 	 * @ordered
 	 */
 	int USUARIO__CORREO = PERSONA__CORREO;
-
-	/**
-	 * The feature id for the '<em><b>Usuario</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int USUARIO__USUARIO = PERSONA__USUARIO;
-
-	/**
-	 * The feature id for the '<em><b>Cliente</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int USUARIO__CLIENTE = PERSONA__CLIENTE;
 
 	/**
 	 * The feature id for the '<em><b>Password</b></em>' attribute.
@@ -340,16 +287,16 @@ public interface PedidoPackage extends EPackage {
 	int PEDIDO__TOTAL = 3;
 
 	/**
-	 * The feature id for the '<em><b>Itempedido</b></em>' containment reference list.
+	 * The feature id for the '<em><b>Cliente</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PEDIDO__ITEMPEDIDO = 4;
+	int PEDIDO__CLIENTE = 4;
 
 	/**
-	 * The feature id for the '<em><b>Usuario</b></em>' containment reference.
+	 * The feature id for the '<em><b>Usuario</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -358,13 +305,13 @@ public interface PedidoPackage extends EPackage {
 	int PEDIDO__USUARIO = 5;
 
 	/**
-	 * The feature id for the '<em><b>Cliente</b></em>' containment reference.
+	 * The feature id for the '<em><b>Itempedido</b></em>' reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PEDIDO__CLIENTE = 6;
+	int PEDIDO__ITEMPEDIDO = 6;
 
 	/**
 	 * The number of structural features of the '<em>Pedido</em>' class.
@@ -422,7 +369,7 @@ public interface PedidoPackage extends EPackage {
 	int ITEM_PEDIDO__SUB_TOTAL = 2;
 
 	/**
-	 * The feature id for the '<em><b>Producto</b></em>' containment reference list.
+	 * The feature id for the '<em><b>Producto</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -531,6 +478,162 @@ public interface PedidoPackage extends EPackage {
 	int PRODUCTO_OPERATION_COUNT = 0;
 
 	/**
+	 * The meta object id for the '{@link py.sirius.emf.model.pedido.impl.FacturaImpl <em>Factura</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see py.sirius.emf.model.pedido.impl.FacturaImpl
+	 * @see py.sirius.emf.model.pedido.impl.PedidoPackageImpl#getFactura()
+	 * @generated
+	 */
+	int FACTURA = 6;
+
+	/**
+	 * The feature id for the '<em><b>Numero</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FACTURA__NUMERO = 0;
+
+	/**
+	 * The feature id for the '<em><b>Pedidos</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FACTURA__PEDIDOS = 1;
+
+	/**
+	 * The feature id for the '<em><b>Producto</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FACTURA__PRODUCTO = 2;
+
+	/**
+	 * The feature id for the '<em><b>Cliente</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FACTURA__CLIENTE = 3;
+
+	/**
+	 * The feature id for the '<em><b>Usuario</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FACTURA__USUARIO = 4;
+
+	/**
+	 * The number of structural features of the '<em>Factura</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FACTURA_FEATURE_COUNT = 5;
+
+	/**
+	 * The number of operations of the '<em>Factura</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FACTURA_OPERATION_COUNT = 0;
+
+	/**
+	 * The meta object id for the '{@link py.sirius.emf.model.pedido.impl.DistribuidoraImpl <em>Distribuidora</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see py.sirius.emf.model.pedido.impl.DistribuidoraImpl
+	 * @see py.sirius.emf.model.pedido.impl.PedidoPackageImpl#getDistribuidora()
+	 * @generated
+	 */
+	int DISTRIBUIDORA = 7;
+
+	/**
+	 * The feature id for the '<em><b>Nombre</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DISTRIBUIDORA__NOMBRE = 0;
+
+	/**
+	 * The feature id for the '<em><b>Cliente</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DISTRIBUIDORA__CLIENTE = 1;
+
+	/**
+	 * The feature id for the '<em><b>Usuario</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DISTRIBUIDORA__USUARIO = 2;
+
+	/**
+	 * The feature id for the '<em><b>Pedido</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DISTRIBUIDORA__PEDIDO = 3;
+
+	/**
+	 * The feature id for the '<em><b>Producto</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DISTRIBUIDORA__PRODUCTO = 4;
+
+	/**
+	 * The number of structural features of the '<em>Distribuidora</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DISTRIBUIDORA_FEATURE_COUNT = 5;
+
+	/**
+	 * The number of operations of the '<em>Distribuidora</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DISTRIBUIDORA_OPERATION_COUNT = 0;
+
+	/**
+	 * The meta object id for the '{@link py.sirius.emf.model.pedido.ProductoTipo <em>Producto Tipo</em>}' enum.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see py.sirius.emf.model.pedido.ProductoTipo
+	 * @see py.sirius.emf.model.pedido.impl.PedidoPackageImpl#getProductoTipo()
+	 * @generated
+	 */
+	int PRODUCTO_TIPO = 8;
+
+	/**
 	 * Returns the meta object for class '{@link py.sirius.emf.model.pedido.Persona <em>Persona</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -572,28 +675,6 @@ public interface PedidoPackage extends EPackage {
 	 * @generated
 	 */
 	EAttribute getPersona_Correo();
-
-	/**
-	 * Returns the meta object for the reference '{@link py.sirius.emf.model.pedido.Persona#getUsuario <em>Usuario</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Usuario</em>'.
-	 * @see py.sirius.emf.model.pedido.Persona#getUsuario()
-	 * @see #getPersona()
-	 * @generated
-	 */
-	EReference getPersona_Usuario();
-
-	/**
-	 * Returns the meta object for the reference '{@link py.sirius.emf.model.pedido.Persona#getCliente <em>Cliente</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Cliente</em>'.
-	 * @see py.sirius.emf.model.pedido.Persona#getCliente()
-	 * @see #getPersona()
-	 * @generated
-	 */
-	EReference getPersona_Cliente();
 
 	/**
 	 * Returns the meta object for class '{@link py.sirius.emf.model.pedido.Cliente <em>Cliente</em>}'.
@@ -692,10 +773,10 @@ public interface PedidoPackage extends EPackage {
 	EAttribute getPedido_Total();
 
 	/**
-	 * Returns the meta object for the containment reference list '{@link py.sirius.emf.model.pedido.Pedido#getItempedido <em>Itempedido</em>}'.
+	 * Returns the meta object for the reference list '{@link py.sirius.emf.model.pedido.Pedido#getItempedido <em>Itempedido</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Itempedido</em>'.
+	 * @return the meta object for the reference list '<em>Itempedido</em>'.
 	 * @see py.sirius.emf.model.pedido.Pedido#getItempedido()
 	 * @see #getPedido()
 	 * @generated
@@ -703,10 +784,10 @@ public interface PedidoPackage extends EPackage {
 	EReference getPedido_Itempedido();
 
 	/**
-	 * Returns the meta object for the containment reference '{@link py.sirius.emf.model.pedido.Pedido#getCliente <em>Cliente</em>}'.
+	 * Returns the meta object for the reference '{@link py.sirius.emf.model.pedido.Pedido#getCliente <em>Cliente</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference '<em>Cliente</em>'.
+	 * @return the meta object for the reference '<em>Cliente</em>'.
 	 * @see py.sirius.emf.model.pedido.Pedido#getCliente()
 	 * @see #getPedido()
 	 * @generated
@@ -714,10 +795,10 @@ public interface PedidoPackage extends EPackage {
 	EReference getPedido_Cliente();
 
 	/**
-	 * Returns the meta object for the containment reference '{@link py.sirius.emf.model.pedido.Pedido#getUsuario <em>Usuario</em>}'.
+	 * Returns the meta object for the reference '{@link py.sirius.emf.model.pedido.Pedido#getUsuario <em>Usuario</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference '<em>Usuario</em>'.
+	 * @return the meta object for the reference '<em>Usuario</em>'.
 	 * @see py.sirius.emf.model.pedido.Pedido#getUsuario()
 	 * @see #getPedido()
 	 * @generated
@@ -768,10 +849,10 @@ public interface PedidoPackage extends EPackage {
 	EAttribute getItemPedido_SubTotal();
 
 	/**
-	 * Returns the meta object for the containment reference list '{@link py.sirius.emf.model.pedido.ItemPedido#getProducto <em>Producto</em>}'.
+	 * Returns the meta object for the reference '{@link py.sirius.emf.model.pedido.ItemPedido#getProducto <em>Producto</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Producto</em>'.
+	 * @return the meta object for the reference '<em>Producto</em>'.
 	 * @see py.sirius.emf.model.pedido.ItemPedido#getProducto()
 	 * @see #getItemPedido()
 	 * @generated
@@ -855,6 +936,146 @@ public interface PedidoPackage extends EPackage {
 	EAttribute getProducto_Tipo();
 
 	/**
+	 * Returns the meta object for class '{@link py.sirius.emf.model.pedido.Factura <em>Factura</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Factura</em>'.
+	 * @see py.sirius.emf.model.pedido.Factura
+	 * @generated
+	 */
+	EClass getFactura();
+
+	/**
+	 * Returns the meta object for the attribute '{@link py.sirius.emf.model.pedido.Factura#getNumero <em>Numero</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Numero</em>'.
+	 * @see py.sirius.emf.model.pedido.Factura#getNumero()
+	 * @see #getFactura()
+	 * @generated
+	 */
+	EAttribute getFactura_Numero();
+
+	/**
+	 * Returns the meta object for the containment reference list '{@link py.sirius.emf.model.pedido.Factura#getPedidos <em>Pedidos</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference list '<em>Pedidos</em>'.
+	 * @see py.sirius.emf.model.pedido.Factura#getPedidos()
+	 * @see #getFactura()
+	 * @generated
+	 */
+	EReference getFactura_Pedidos();
+
+	/**
+	 * Returns the meta object for the containment reference list '{@link py.sirius.emf.model.pedido.Factura#getProducto <em>Producto</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference list '<em>Producto</em>'.
+	 * @see py.sirius.emf.model.pedido.Factura#getProducto()
+	 * @see #getFactura()
+	 * @generated
+	 */
+	EReference getFactura_Producto();
+
+	/**
+	 * Returns the meta object for the containment reference list '{@link py.sirius.emf.model.pedido.Factura#getCliente <em>Cliente</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference list '<em>Cliente</em>'.
+	 * @see py.sirius.emf.model.pedido.Factura#getCliente()
+	 * @see #getFactura()
+	 * @generated
+	 */
+	EReference getFactura_Cliente();
+
+	/**
+	 * Returns the meta object for the containment reference list '{@link py.sirius.emf.model.pedido.Factura#getUsuario <em>Usuario</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference list '<em>Usuario</em>'.
+	 * @see py.sirius.emf.model.pedido.Factura#getUsuario()
+	 * @see #getFactura()
+	 * @generated
+	 */
+	EReference getFactura_Usuario();
+
+	/**
+	 * Returns the meta object for class '{@link py.sirius.emf.model.pedido.Distribuidora <em>Distribuidora</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Distribuidora</em>'.
+	 * @see py.sirius.emf.model.pedido.Distribuidora
+	 * @generated
+	 */
+	EClass getDistribuidora();
+
+	/**
+	 * Returns the meta object for the attribute '{@link py.sirius.emf.model.pedido.Distribuidora#getNombre <em>Nombre</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Nombre</em>'.
+	 * @see py.sirius.emf.model.pedido.Distribuidora#getNombre()
+	 * @see #getDistribuidora()
+	 * @generated
+	 */
+	EAttribute getDistribuidora_Nombre();
+
+	/**
+	 * Returns the meta object for the containment reference list '{@link py.sirius.emf.model.pedido.Distribuidora#getCliente <em>Cliente</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference list '<em>Cliente</em>'.
+	 * @see py.sirius.emf.model.pedido.Distribuidora#getCliente()
+	 * @see #getDistribuidora()
+	 * @generated
+	 */
+	EReference getDistribuidora_Cliente();
+
+	/**
+	 * Returns the meta object for the containment reference list '{@link py.sirius.emf.model.pedido.Distribuidora#getUsuario <em>Usuario</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference list '<em>Usuario</em>'.
+	 * @see py.sirius.emf.model.pedido.Distribuidora#getUsuario()
+	 * @see #getDistribuidora()
+	 * @generated
+	 */
+	EReference getDistribuidora_Usuario();
+
+	/**
+	 * Returns the meta object for the containment reference list '{@link py.sirius.emf.model.pedido.Distribuidora#getPedido <em>Pedido</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference list '<em>Pedido</em>'.
+	 * @see py.sirius.emf.model.pedido.Distribuidora#getPedido()
+	 * @see #getDistribuidora()
+	 * @generated
+	 */
+	EReference getDistribuidora_Pedido();
+
+	/**
+	 * Returns the meta object for the containment reference list '{@link py.sirius.emf.model.pedido.Distribuidora#getProducto <em>Producto</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference list '<em>Producto</em>'.
+	 * @see py.sirius.emf.model.pedido.Distribuidora#getProducto()
+	 * @see #getDistribuidora()
+	 * @generated
+	 */
+	EReference getDistribuidora_Producto();
+
+	/**
+	 * Returns the meta object for enum '{@link py.sirius.emf.model.pedido.ProductoTipo <em>Producto Tipo</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for enum '<em>Producto Tipo</em>'.
+	 * @see py.sirius.emf.model.pedido.ProductoTipo
+	 * @generated
+	 */
+	EEnum getProductoTipo();
+
+	/**
 	 * Returns the factory that creates the instances of the model.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -910,22 +1131,6 @@ public interface PedidoPackage extends EPackage {
 		 * @generated
 		 */
 		EAttribute PERSONA__CORREO = eINSTANCE.getPersona_Correo();
-
-		/**
-		 * The meta object literal for the '<em><b>Usuario</b></em>' reference feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference PERSONA__USUARIO = eINSTANCE.getPersona_Usuario();
-
-		/**
-		 * The meta object literal for the '<em><b>Cliente</b></em>' reference feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference PERSONA__CLIENTE = eINSTANCE.getPersona_Cliente();
 
 		/**
 		 * The meta object literal for the '{@link py.sirius.emf.model.pedido.impl.ClienteImpl <em>Cliente</em>}' class.
@@ -1006,7 +1211,7 @@ public interface PedidoPackage extends EPackage {
 		EAttribute PEDIDO__TOTAL = eINSTANCE.getPedido_Total();
 
 		/**
-		 * The meta object literal for the '<em><b>Itempedido</b></em>' containment reference list feature.
+		 * The meta object literal for the '<em><b>Itempedido</b></em>' reference list feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
@@ -1014,7 +1219,7 @@ public interface PedidoPackage extends EPackage {
 		EReference PEDIDO__ITEMPEDIDO = eINSTANCE.getPedido_Itempedido();
 
 		/**
-		 * The meta object literal for the '<em><b>Cliente</b></em>' containment reference feature.
+		 * The meta object literal for the '<em><b>Cliente</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
@@ -1022,7 +1227,7 @@ public interface PedidoPackage extends EPackage {
 		EReference PEDIDO__CLIENTE = eINSTANCE.getPedido_Cliente();
 
 		/**
-		 * The meta object literal for the '<em><b>Usuario</b></em>' containment reference feature.
+		 * The meta object literal for the '<em><b>Usuario</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
@@ -1064,7 +1269,7 @@ public interface PedidoPackage extends EPackage {
 		EAttribute ITEM_PEDIDO__SUB_TOTAL = eINSTANCE.getItemPedido_SubTotal();
 
 		/**
-		 * The meta object literal for the '<em><b>Producto</b></em>' containment reference list feature.
+		 * The meta object literal for the '<em><b>Producto</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
@@ -1128,6 +1333,116 @@ public interface PedidoPackage extends EPackage {
 		 * @generated
 		 */
 		EAttribute PRODUCTO__TIPO = eINSTANCE.getProducto_Tipo();
+
+		/**
+		 * The meta object literal for the '{@link py.sirius.emf.model.pedido.impl.FacturaImpl <em>Factura</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see py.sirius.emf.model.pedido.impl.FacturaImpl
+		 * @see py.sirius.emf.model.pedido.impl.PedidoPackageImpl#getFactura()
+		 * @generated
+		 */
+		EClass FACTURA = eINSTANCE.getFactura();
+
+		/**
+		 * The meta object literal for the '<em><b>Numero</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute FACTURA__NUMERO = eINSTANCE.getFactura_Numero();
+
+		/**
+		 * The meta object literal for the '<em><b>Pedidos</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference FACTURA__PEDIDOS = eINSTANCE.getFactura_Pedidos();
+
+		/**
+		 * The meta object literal for the '<em><b>Producto</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference FACTURA__PRODUCTO = eINSTANCE.getFactura_Producto();
+
+		/**
+		 * The meta object literal for the '<em><b>Cliente</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference FACTURA__CLIENTE = eINSTANCE.getFactura_Cliente();
+
+		/**
+		 * The meta object literal for the '<em><b>Usuario</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference FACTURA__USUARIO = eINSTANCE.getFactura_Usuario();
+
+		/**
+		 * The meta object literal for the '{@link py.sirius.emf.model.pedido.impl.DistribuidoraImpl <em>Distribuidora</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see py.sirius.emf.model.pedido.impl.DistribuidoraImpl
+		 * @see py.sirius.emf.model.pedido.impl.PedidoPackageImpl#getDistribuidora()
+		 * @generated
+		 */
+		EClass DISTRIBUIDORA = eINSTANCE.getDistribuidora();
+
+		/**
+		 * The meta object literal for the '<em><b>Nombre</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DISTRIBUIDORA__NOMBRE = eINSTANCE.getDistribuidora_Nombre();
+
+		/**
+		 * The meta object literal for the '<em><b>Cliente</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference DISTRIBUIDORA__CLIENTE = eINSTANCE.getDistribuidora_Cliente();
+
+		/**
+		 * The meta object literal for the '<em><b>Usuario</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference DISTRIBUIDORA__USUARIO = eINSTANCE.getDistribuidora_Usuario();
+
+		/**
+		 * The meta object literal for the '<em><b>Pedido</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference DISTRIBUIDORA__PEDIDO = eINSTANCE.getDistribuidora_Pedido();
+
+		/**
+		 * The meta object literal for the '<em><b>Producto</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference DISTRIBUIDORA__PRODUCTO = eINSTANCE.getDistribuidora_Producto();
+
+		/**
+		 * The meta object literal for the '{@link py.sirius.emf.model.pedido.ProductoTipo <em>Producto Tipo</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see py.sirius.emf.model.pedido.ProductoTipo
+		 * @see py.sirius.emf.model.pedido.impl.PedidoPackageImpl#getProductoTipo()
+		 * @generated
+		 */
+		EEnum PRODUCTO_TIPO = eINSTANCE.getProductoTipo();
 
 	}
 

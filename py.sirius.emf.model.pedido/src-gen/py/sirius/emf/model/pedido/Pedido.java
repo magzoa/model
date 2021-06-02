@@ -23,9 +23,9 @@ import org.eclipse.emf.ecore.EObject;
  *   <li>{@link py.sirius.emf.model.pedido.Pedido#getFechaToma <em>Fecha Toma</em>}</li>
  *   <li>{@link py.sirius.emf.model.pedido.Pedido#getFechaEntrega <em>Fecha Entrega</em>}</li>
  *   <li>{@link py.sirius.emf.model.pedido.Pedido#getTotal <em>Total</em>}</li>
- *   <li>{@link py.sirius.emf.model.pedido.Pedido#getItempedido <em>Itempedido</em>}</li>
- *   <li>{@link py.sirius.emf.model.pedido.Pedido#getUsuario <em>Usuario</em>}</li>
  *   <li>{@link py.sirius.emf.model.pedido.Pedido#getCliente <em>Cliente</em>}</li>
+ *   <li>{@link py.sirius.emf.model.pedido.Pedido#getUsuario <em>Usuario</em>}</li>
+ *   <li>{@link py.sirius.emf.model.pedido.Pedido#getItempedido <em>Itempedido</em>}</li>
  * </ul>
  *
  * @see py.sirius.emf.model.pedido.PedidoPackage#getPedido()
@@ -122,56 +122,56 @@ public interface Pedido extends EObject {
 	void setTotal(BigDecimal value);
 
 	/**
-	 * Returns the value of the '<em><b>Itempedido</b></em>' containment reference list.
+	 * Returns the value of the '<em><b>Itempedido</b></em>' reference list.
 	 * The list contents are of type {@link py.sirius.emf.model.pedido.ItemPedido}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Itempedido</em>' containment reference list.
+	 * @return the value of the '<em>Itempedido</em>' reference list.
 	 * @see py.sirius.emf.model.pedido.PedidoPackage#getPedido_Itempedido()
-	 * @model containment="true"
+	 * @model
 	 * @generated
 	 */
 	EList<ItemPedido> getItempedido();
 
 	/**
-	 * Returns the value of the '<em><b>Cliente</b></em>' containment reference.
+	 * Returns the value of the '<em><b>Cliente</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Cliente</em>' containment reference.
+	 * @return the value of the '<em>Cliente</em>' reference.
 	 * @see #setCliente(Cliente)
 	 * @see py.sirius.emf.model.pedido.PedidoPackage#getPedido_Cliente()
-	 * @model containment="true"
+	 * @model
 	 * @generated
 	 */
 	Cliente getCliente();
 
 	/**
-	 * Sets the value of the '{@link py.sirius.emf.model.pedido.Pedido#getCliente <em>Cliente</em>}' containment reference.
+	 * Sets the value of the '{@link py.sirius.emf.model.pedido.Pedido#getCliente <em>Cliente</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Cliente</em>' containment reference.
+	 * @param value the new value of the '<em>Cliente</em>' reference.
 	 * @see #getCliente()
 	 * @generated
 	 */
 	void setCliente(Cliente value);
 
 	/**
-	 * Returns the value of the '<em><b>Usuario</b></em>' containment reference.
+	 * Returns the value of the '<em><b>Usuario</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Usuario</em>' containment reference.
+	 * @return the value of the '<em>Usuario</em>' reference.
 	 * @see #setUsuario(Usuario)
 	 * @see py.sirius.emf.model.pedido.PedidoPackage#getPedido_Usuario()
-	 * @model containment="true"
+	 * @model
 	 * @generated
 	 */
 	Usuario getUsuario();
 
 	/**
-	 * Sets the value of the '{@link py.sirius.emf.model.pedido.Pedido#getUsuario <em>Usuario</em>}' containment reference.
+	 * Sets the value of the '{@link py.sirius.emf.model.pedido.Pedido#getUsuario <em>Usuario</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Usuario</em>' containment reference.
+	 * @param value the new value of the '<em>Usuario</em>' reference.
 	 * @see #getUsuario()
 	 * @generated
 	 */

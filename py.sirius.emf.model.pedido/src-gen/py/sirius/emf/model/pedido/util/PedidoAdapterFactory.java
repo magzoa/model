@@ -97,6 +97,16 @@ public class PedidoAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
+		public Adapter caseFactura(Factura object) {
+			return createFacturaAdapter();
+		}
+
+		@Override
+		public Adapter caseDistribuidora(Distribuidora object) {
+			return createDistribuidoraAdapter();
+		}
+
+		@Override
 		public Adapter defaultCase(EObject object) {
 			return createEObjectAdapter();
 		}
@@ -196,6 +206,34 @@ public class PedidoAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createProductoAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link py.sirius.emf.model.pedido.Factura <em>Factura</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see py.sirius.emf.model.pedido.Factura
+	 * @generated
+	 */
+	public Adapter createFacturaAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link py.sirius.emf.model.pedido.Distribuidora <em>Distribuidora</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see py.sirius.emf.model.pedido.Distribuidora
+	 * @generated
+	 */
+	public Adapter createDistribuidoraAdapter() {
 		return null;
 	}
 

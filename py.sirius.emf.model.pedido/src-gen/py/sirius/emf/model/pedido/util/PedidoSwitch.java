@@ -112,6 +112,20 @@ public class PedidoSwitch<T> extends Switch<T> {
 				result = defaultCase(theEObject);
 			return result;
 		}
+		case PedidoPackage.FACTURA: {
+			Factura factura = (Factura) theEObject;
+			T result = caseFactura(factura);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case PedidoPackage.DISTRIBUIDORA: {
+			Distribuidora distribuidora = (Distribuidora) theEObject;
+			T result = caseDistribuidora(distribuidora);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
 		default:
 			return defaultCase(theEObject);
 		}
@@ -204,6 +218,36 @@ public class PedidoSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseProducto(Producto object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Factura</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Factura</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseFactura(Factura object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Distribuidora</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Distribuidora</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseDistribuidora(Distribuidora object) {
 		return null;
 	}
 

@@ -188,6 +188,52 @@ public class PedidoItemProviderAdapterFactory extends PedidoAdapterFactory
 	}
 
 	/**
+	 * This keeps track of the one adapter used for all {@link py.sirius.emf.model.pedido.Factura} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected FacturaItemProvider facturaItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link py.sirius.emf.model.pedido.Factura}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createFacturaAdapter() {
+		if (facturaItemProvider == null) {
+			facturaItemProvider = new FacturaItemProvider(this);
+		}
+
+		return facturaItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link py.sirius.emf.model.pedido.Distribuidora} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected DistribuidoraItemProvider distribuidoraItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link py.sirius.emf.model.pedido.Distribuidora}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createDistribuidoraAdapter() {
+		if (distribuidoraItemProvider == null) {
+			distribuidoraItemProvider = new DistribuidoraItemProvider(this);
+		}
+
+		return distribuidoraItemProvider;
+	}
+
+	/**
 	 * This returns the root adapter factory that contains this factory.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -296,6 +342,10 @@ public class PedidoItemProviderAdapterFactory extends PedidoAdapterFactory
 			itemPedidoItemProvider.dispose();
 		if (productoItemProvider != null)
 			productoItemProvider.dispose();
+		if (facturaItemProvider != null)
+			facturaItemProvider.dispose();
+		if (distribuidoraItemProvider != null)
+			distribuidoraItemProvider.dispose();
 	}
 
 }

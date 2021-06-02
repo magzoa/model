@@ -15,6 +15,7 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
 import py.sirius.emf.model.pedido.PedidoPackage;
 import py.sirius.emf.model.pedido.Producto;
+import py.sirius.emf.model.pedido.ProductoTipo;
 
 /**
  * <!-- begin-user-doc -->
@@ -143,7 +144,7 @@ public class ProductoImpl extends MinimalEObjectImpl.Container implements Produc
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String TIPO_EDEFAULT = null;
+	protected static final ProductoTipo TIPO_EDEFAULT = ProductoTipo.SUPERMERCADO;
 
 	/**
 	 * The cached value of the '{@link #getTipo() <em>Tipo</em>}' attribute.
@@ -153,7 +154,7 @@ public class ProductoImpl extends MinimalEObjectImpl.Container implements Produc
 	 * @generated
 	 * @ordered
 	 */
-	protected String tipo = TIPO_EDEFAULT;
+	protected ProductoTipo tipo = TIPO_EDEFAULT;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -287,7 +288,7 @@ public class ProductoImpl extends MinimalEObjectImpl.Container implements Produc
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getTipo() {
+	public ProductoTipo getTipo() {
 		return tipo;
 	}
 
@@ -296,9 +297,9 @@ public class ProductoImpl extends MinimalEObjectImpl.Container implements Produc
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setTipo(String newTipo) {
-		String oldTipo = tipo;
-		tipo = newTipo;
+	public void setTipo(ProductoTipo newTipo) {
+		ProductoTipo oldTipo = tipo;
+		tipo = newTipo == null ? TIPO_EDEFAULT : newTipo;
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET, PedidoPackage.PRODUCTO__TIPO, oldTipo, tipo));
 	}
@@ -351,7 +352,7 @@ public class ProductoImpl extends MinimalEObjectImpl.Container implements Produc
 			setCantidad((Integer) newValue);
 			return;
 		case PedidoPackage.PRODUCTO__TIPO:
-			setTipo((String) newValue);
+			setTipo((ProductoTipo) newValue);
 			return;
 		}
 		super.eSet(featureID, newValue);
@@ -407,7 +408,7 @@ public class ProductoImpl extends MinimalEObjectImpl.Container implements Produc
 		case PedidoPackage.PRODUCTO__CANTIDAD:
 			return cantidad != CANTIDAD_EDEFAULT;
 		case PedidoPackage.PRODUCTO__TIPO:
-			return TIPO_EDEFAULT == null ? tipo != null : !TIPO_EDEFAULT.equals(tipo);
+			return tipo != TIPO_EDEFAULT;
 		}
 		return super.eIsSet(featureID);
 	}

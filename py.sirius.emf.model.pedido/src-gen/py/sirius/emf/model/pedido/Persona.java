@@ -16,8 +16,6 @@ import org.eclipse.emf.ecore.EObject;
  *   <li>{@link py.sirius.emf.model.pedido.Persona#getId <em>Id</em>}</li>
  *   <li>{@link py.sirius.emf.model.pedido.Persona#getNombre <em>Nombre</em>}</li>
  *   <li>{@link py.sirius.emf.model.pedido.Persona#getCorreo <em>Correo</em>}</li>
- *   <li>{@link py.sirius.emf.model.pedido.Persona#getUsuario <em>Usuario</em>}</li>
- *   <li>{@link py.sirius.emf.model.pedido.Persona#getCliente <em>Cliente</em>}</li>
  * </ul>
  *
  * @see py.sirius.emf.model.pedido.PedidoPackage#getPersona()
@@ -90,49 +88,5 @@ public interface Persona extends EObject {
 	 * @generated
 	 */
 	void setCorreo(String value);
-
-	/**
-	 * Returns the value of the '<em><b>Usuario</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Usuario</em>' reference.
-	 * @see #setUsuario(Usuario)
-	 * @see py.sirius.emf.model.pedido.PedidoPackage#getPersona_Usuario()
-	 * @model derived="true"
-	 * @generated
-	 */
-	Usuario getUsuario();
-
-	/**
-	 * Sets the value of the '{@link py.sirius.emf.model.pedido.Persona#getUsuario <em>Usuario</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Usuario</em>' reference.
-	 * @see #getUsuario()
-	 * @generated
-	 */
-	void setUsuario(Usuario value);
-
-	/**
-	 * Returns the value of the '<em><b>Cliente</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Cliente</em>' reference.
-	 * @see #setCliente(Cliente)
-	 * @see py.sirius.emf.model.pedido.PedidoPackage#getPersona_Cliente()
-	 * @model derived="true"
-	 * @generated
-	 */
-	Cliente getCliente();
-
-	/**
-	 * Sets the value of the '{@link py.sirius.emf.model.pedido.Persona#getCliente <em>Cliente</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Cliente</em>' reference.
-	 * @see #getCliente()
-	 * @generated
-	 */
-	void setCliente(Cliente value);
 
 } // Persona

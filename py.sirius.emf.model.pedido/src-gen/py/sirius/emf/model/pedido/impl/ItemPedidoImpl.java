@@ -3,23 +3,12 @@
 package py.sirius.emf.model.pedido.impl;
 
 import java.math.BigDecimal;
-
-import java.util.Collection;
-
 import org.eclipse.emf.common.notify.Notification;
-import org.eclipse.emf.common.notify.NotificationChain;
-
-import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
 import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
-
-import org.eclipse.emf.ecore.util.EObjectContainmentEList;
-import org.eclipse.emf.ecore.util.InternalEList;
-
 import py.sirius.emf.model.pedido.ItemPedido;
 import py.sirius.emf.model.pedido.PedidoPackage;
 import py.sirius.emf.model.pedido.Producto;
@@ -102,14 +91,14 @@ public class ItemPedidoImpl extends MinimalEObjectImpl.Container implements Item
 	protected BigDecimal subTotal = SUB_TOTAL_EDEFAULT;
 
 	/**
-	 * The cached value of the '{@link #getProducto() <em>Producto</em>}' containment reference list.
+	 * The cached value of the '{@link #getProducto() <em>Producto</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #getProducto()
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<Producto> producto;
+	protected Producto producto;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -200,9 +189,15 @@ public class ItemPedidoImpl extends MinimalEObjectImpl.Container implements Item
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<Producto> getProducto() {
-		if (producto == null) {
-			producto = new EObjectContainmentEList<Producto>(Producto.class, this, PedidoPackage.ITEM_PEDIDO__PRODUCTO);
+	public Producto getProducto() {
+		if (producto != null && producto.eIsProxy()) {
+			InternalEObject oldProducto = (InternalEObject) producto;
+			producto = (Producto) eResolveProxy(oldProducto);
+			if (producto != oldProducto) {
+				if (eNotificationRequired())
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, PedidoPackage.ITEM_PEDIDO__PRODUCTO,
+							oldProducto, producto));
+			}
 		}
 		return producto;
 	}
@@ -212,13 +207,21 @@ public class ItemPedidoImpl extends MinimalEObjectImpl.Container implements Item
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
-		switch (featureID) {
-		case PedidoPackage.ITEM_PEDIDO__PRODUCTO:
-			return ((InternalEList<?>) getProducto()).basicRemove(otherEnd, msgs);
-		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
+	public Producto basicGetProducto() {
+		return producto;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setProducto(Producto newProducto) {
+		Producto oldProducto = producto;
+		producto = newProducto;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, PedidoPackage.ITEM_PEDIDO__PRODUCTO, oldProducto,
+					producto));
 	}
 
 	/**
@@ -236,7 +239,9 @@ public class ItemPedidoImpl extends MinimalEObjectImpl.Container implements Item
 		case PedidoPackage.ITEM_PEDIDO__SUB_TOTAL:
 			return getSubTotal();
 		case PedidoPackage.ITEM_PEDIDO__PRODUCTO:
-			return getProducto();
+			if (resolve)
+				return getProducto();
+			return basicGetProducto();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -260,8 +265,7 @@ public class ItemPedidoImpl extends MinimalEObjectImpl.Container implements Item
 			setSubTotal((BigDecimal) newValue);
 			return;
 		case PedidoPackage.ITEM_PEDIDO__PRODUCTO:
-			getProducto().clear();
-			getProducto().addAll((Collection<? extends Producto>) newValue);
+			setProducto((Producto) newValue);
 			return;
 		}
 		super.eSet(featureID, newValue);
@@ -285,7 +289,7 @@ public class ItemPedidoImpl extends MinimalEObjectImpl.Container implements Item
 			setSubTotal(SUB_TOTAL_EDEFAULT);
 			return;
 		case PedidoPackage.ITEM_PEDIDO__PRODUCTO:
-			getProducto().clear();
+			setProducto((Producto) null);
 			return;
 		}
 		super.eUnset(featureID);
@@ -306,7 +310,7 @@ public class ItemPedidoImpl extends MinimalEObjectImpl.Container implements Item
 		case PedidoPackage.ITEM_PEDIDO__SUB_TOTAL:
 			return SUB_TOTAL_EDEFAULT == null ? subTotal != null : !SUB_TOTAL_EDEFAULT.equals(subTotal);
 		case PedidoPackage.ITEM_PEDIDO__PRODUCTO:
-			return producto != null && !producto.isEmpty();
+			return producto != null;
 		}
 		return super.eIsSet(featureID);
 	}

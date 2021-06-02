@@ -9,9 +9,6 @@ import org.eclipse.emf.common.notify.AdapterFactory;
 import org.eclipse.emf.common.notify.Notification;
 
 import org.eclipse.emf.common.util.ResourceLocator;
-
-import org.eclipse.emf.ecore.EStructuralFeature;
-
 import org.eclipse.emf.edit.provider.ComposeableAdapterFactory;
 import org.eclipse.emf.edit.provider.IEditingDomainItemProvider;
 import org.eclipse.emf.edit.provider.IItemLabelProvider;
@@ -24,7 +21,6 @@ import org.eclipse.emf.edit.provider.ItemProviderAdapter;
 import org.eclipse.emf.edit.provider.ViewerNotification;
 
 import py.sirius.emf.model.pedido.ItemPedido;
-import py.sirius.emf.model.pedido.PedidoFactory;
 import py.sirius.emf.model.pedido.PedidoPackage;
 
 /**
@@ -59,6 +55,7 @@ public class ItemPedidoItemProvider extends ItemProviderAdapter implements IEdit
 			addIdPropertyDescriptor(object);
 			addCantidadPropertyDescriptor(object);
 			addSubTotalPropertyDescriptor(object);
+			addProductoPropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
 	}
@@ -112,33 +109,18 @@ public class ItemPedidoItemProvider extends ItemProviderAdapter implements IEdit
 	}
 
 	/**
-	 * This specifies how to implement {@link #getChildren} and is used to deduce an appropriate feature for an
-	 * {@link org.eclipse.emf.edit.command.AddCommand}, {@link org.eclipse.emf.edit.command.RemoveCommand} or
-	 * {@link org.eclipse.emf.edit.command.MoveCommand} in {@link #createCommand}.
+	 * This adds a property descriptor for the Producto feature.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public Collection<? extends EStructuralFeature> getChildrenFeatures(Object object) {
-		if (childrenFeatures == null) {
-			super.getChildrenFeatures(object);
-			childrenFeatures.add(PedidoPackage.Literals.ITEM_PEDIDO__PRODUCTO);
-		}
-		return childrenFeatures;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	protected EStructuralFeature getChildFeature(Object object, Object child) {
-		// Check the type of the specified child object and return the proper feature to use for
-		// adding (see {@link AddCommand}) it as a child.
-
-		return super.getChildFeature(object, child);
+	protected void addProductoPropertyDescriptor(Object object) {
+		itemPropertyDescriptors
+				.add(createItemPropertyDescriptor(((ComposeableAdapterFactory) adapterFactory).getRootAdapterFactory(),
+						getResourceLocator(), getString("_UI_ItemPedido_producto_feature"),
+						getString("_UI_PropertyDescriptor_description", "_UI_ItemPedido_producto_feature",
+								"_UI_ItemPedido_type"),
+						PedidoPackage.Literals.ITEM_PEDIDO__PRODUCTO, true, false, true, null, null, null));
 	}
 
 	/**
@@ -191,9 +173,6 @@ public class ItemPedidoItemProvider extends ItemProviderAdapter implements IEdit
 		case PedidoPackage.ITEM_PEDIDO__SUB_TOTAL:
 			fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 			return;
-		case PedidoPackage.ITEM_PEDIDO__PRODUCTO:
-			fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
-			return;
 		}
 		super.notifyChanged(notification);
 	}
@@ -208,9 +187,6 @@ public class ItemPedidoItemProvider extends ItemProviderAdapter implements IEdit
 	@Override
 	protected void collectNewChildDescriptors(Collection<Object> newChildDescriptors, Object object) {
 		super.collectNewChildDescriptors(newChildDescriptors, object);
-
-		newChildDescriptors.add(createChildParameter(PedidoPackage.Literals.ITEM_PEDIDO__PRODUCTO,
-				PedidoFactory.eINSTANCE.createProducto()));
 	}
 
 	/**
