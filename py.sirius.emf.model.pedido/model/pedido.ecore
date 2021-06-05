@@ -58,6 +58,8 @@
         eType="#//Pedido" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="producto" upperBound="-1"
         eType="#//Producto" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="itempedido" upperBound="-1"
+        eType="#//ItemPedido" containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EEnum" name="ProductoTipo">
     <eLiterals name="SUPERMERCADO"/>

@@ -93,6 +93,7 @@ public class DistribuidoraItemProvider extends ItemProviderAdapter implements IE
 			childrenFeatures.add(PedidoPackage.Literals.DISTRIBUIDORA__USUARIO);
 			childrenFeatures.add(PedidoPackage.Literals.DISTRIBUIDORA__PEDIDO);
 			childrenFeatures.add(PedidoPackage.Literals.DISTRIBUIDORA__PRODUCTO);
+			childrenFeatures.add(PedidoPackage.Literals.DISTRIBUIDORA__ITEMPEDIDO);
 		}
 		return childrenFeatures;
 	}
@@ -163,6 +164,7 @@ public class DistribuidoraItemProvider extends ItemProviderAdapter implements IE
 		case PedidoPackage.DISTRIBUIDORA__USUARIO:
 		case PedidoPackage.DISTRIBUIDORA__PEDIDO:
 		case PedidoPackage.DISTRIBUIDORA__PRODUCTO:
+		case PedidoPackage.DISTRIBUIDORA__ITEMPEDIDO:
 			fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 			return;
 		}
@@ -191,6 +193,9 @@ public class DistribuidoraItemProvider extends ItemProviderAdapter implements IE
 
 		newChildDescriptors.add(createChildParameter(PedidoPackage.Literals.DISTRIBUIDORA__PRODUCTO,
 				PedidoFactory.eINSTANCE.createProducto()));
+
+		newChildDescriptors.add(createChildParameter(PedidoPackage.Literals.DISTRIBUIDORA__ITEMPEDIDO,
+				PedidoFactory.eINSTANCE.createItemPedido()));
 	}
 
 	/**

@@ -606,13 +606,22 @@ public interface PedidoPackage extends EPackage {
 	int DISTRIBUIDORA__PRODUCTO = 4;
 
 	/**
+	 * The feature id for the '<em><b>Itempedido</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DISTRIBUIDORA__ITEMPEDIDO = 5;
+
+	/**
 	 * The number of structural features of the '<em>Distribuidora</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int DISTRIBUIDORA_FEATURE_COUNT = 5;
+	int DISTRIBUIDORA_FEATURE_COUNT = 6;
 
 	/**
 	 * The number of operations of the '<em>Distribuidora</em>' class.
@@ -1066,6 +1075,17 @@ public interface PedidoPackage extends EPackage {
 	EReference getDistribuidora_Producto();
 
 	/**
+	 * Returns the meta object for the containment reference list '{@link py.sirius.emf.model.pedido.Distribuidora#getItempedido <em>Itempedido</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference list '<em>Itempedido</em>'.
+	 * @see py.sirius.emf.model.pedido.Distribuidora#getItempedido()
+	 * @see #getDistribuidora()
+	 * @generated
+	 */
+	EReference getDistribuidora_Itempedido();
+
+	/**
 	 * Returns the meta object for enum '{@link py.sirius.emf.model.pedido.ProductoTipo <em>Producto Tipo</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1433,6 +1453,14 @@ public interface PedidoPackage extends EPackage {
 		 * @generated
 		 */
 		EReference DISTRIBUIDORA__PRODUCTO = eINSTANCE.getDistribuidora_Producto();
+
+		/**
+		 * The meta object literal for the '<em><b>Itempedido</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference DISTRIBUIDORA__ITEMPEDIDO = eINSTANCE.getDistribuidora_Itempedido();
 
 		/**
 		 * The meta object literal for the '{@link py.sirius.emf.model.pedido.ProductoTipo <em>Producto Tipo</em>}' enum.

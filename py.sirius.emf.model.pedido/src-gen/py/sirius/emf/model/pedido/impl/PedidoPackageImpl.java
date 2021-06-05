@@ -521,6 +521,15 @@ public class PedidoPackageImpl extends EPackageImpl implements PedidoPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EReference getDistribuidora_Itempedido() {
+		return (EReference) distribuidoraEClass.getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EEnum getProductoTipo() {
 		return productoTipoEEnum;
 	}
@@ -601,6 +610,7 @@ public class PedidoPackageImpl extends EPackageImpl implements PedidoPackage {
 		createEReference(distribuidoraEClass, DISTRIBUIDORA__USUARIO);
 		createEReference(distribuidoraEClass, DISTRIBUIDORA__PEDIDO);
 		createEReference(distribuidoraEClass, DISTRIBUIDORA__PRODUCTO);
+		createEReference(distribuidoraEClass, DISTRIBUIDORA__ITEMPEDIDO);
 
 		// Create enums
 		productoTipoEEnum = createEEnum(PRODUCTO_TIPO);
@@ -733,6 +743,9 @@ public class PedidoPackageImpl extends EPackageImpl implements PedidoPackage {
 				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE,
 				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getDistribuidora_Producto(), this.getProducto(), null, "producto", null, 0, -1,
+				Distribuidora.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES,
+				!IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getDistribuidora_Itempedido(), this.getItemPedido(), null, "itempedido", null, 0, -1,
 				Distribuidora.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES,
 				!IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 

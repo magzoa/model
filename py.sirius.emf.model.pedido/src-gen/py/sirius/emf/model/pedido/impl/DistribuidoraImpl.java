@@ -20,6 +20,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
 
 import py.sirius.emf.model.pedido.Cliente;
 import py.sirius.emf.model.pedido.Distribuidora;
+import py.sirius.emf.model.pedido.ItemPedido;
 import py.sirius.emf.model.pedido.Pedido;
 import py.sirius.emf.model.pedido.PedidoPackage;
 import py.sirius.emf.model.pedido.Producto;
@@ -38,6 +39,7 @@ import py.sirius.emf.model.pedido.Usuario;
  *   <li>{@link py.sirius.emf.model.pedido.impl.DistribuidoraImpl#getUsuario <em>Usuario</em>}</li>
  *   <li>{@link py.sirius.emf.model.pedido.impl.DistribuidoraImpl#getPedido <em>Pedido</em>}</li>
  *   <li>{@link py.sirius.emf.model.pedido.impl.DistribuidoraImpl#getProducto <em>Producto</em>}</li>
+ *   <li>{@link py.sirius.emf.model.pedido.impl.DistribuidoraImpl#getItempedido <em>Itempedido</em>}</li>
  * </ul>
  *
  * @generated
@@ -102,6 +104,16 @@ public class DistribuidoraImpl extends MinimalEObjectImpl.Container implements D
 	 * @ordered
 	 */
 	protected EList<Producto> producto;
+
+	/**
+	 * The cached value of the '{@link #getItempedido() <em>Itempedido</em>}' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getItempedido()
+	 * @generated
+	 * @ordered
+	 */
+	protected EList<ItemPedido> itempedido;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -198,6 +210,19 @@ public class DistribuidoraImpl extends MinimalEObjectImpl.Container implements D
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EList<ItemPedido> getItempedido() {
+		if (itempedido == null) {
+			itempedido = new EObjectContainmentEList<ItemPedido>(ItemPedido.class, this,
+					PedidoPackage.DISTRIBUIDORA__ITEMPEDIDO);
+		}
+		return itempedido;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
@@ -209,6 +234,8 @@ public class DistribuidoraImpl extends MinimalEObjectImpl.Container implements D
 			return ((InternalEList<?>) getPedido()).basicRemove(otherEnd, msgs);
 		case PedidoPackage.DISTRIBUIDORA__PRODUCTO:
 			return ((InternalEList<?>) getProducto()).basicRemove(otherEnd, msgs);
+		case PedidoPackage.DISTRIBUIDORA__ITEMPEDIDO:
+			return ((InternalEList<?>) getItempedido()).basicRemove(otherEnd, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
@@ -231,6 +258,8 @@ public class DistribuidoraImpl extends MinimalEObjectImpl.Container implements D
 			return getPedido();
 		case PedidoPackage.DISTRIBUIDORA__PRODUCTO:
 			return getProducto();
+		case PedidoPackage.DISTRIBUIDORA__ITEMPEDIDO:
+			return getItempedido();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -263,6 +292,10 @@ public class DistribuidoraImpl extends MinimalEObjectImpl.Container implements D
 			getProducto().clear();
 			getProducto().addAll((Collection<? extends Producto>) newValue);
 			return;
+		case PedidoPackage.DISTRIBUIDORA__ITEMPEDIDO:
+			getItempedido().clear();
+			getItempedido().addAll((Collection<? extends ItemPedido>) newValue);
+			return;
 		}
 		super.eSet(featureID, newValue);
 	}
@@ -290,6 +323,9 @@ public class DistribuidoraImpl extends MinimalEObjectImpl.Container implements D
 		case PedidoPackage.DISTRIBUIDORA__PRODUCTO:
 			getProducto().clear();
 			return;
+		case PedidoPackage.DISTRIBUIDORA__ITEMPEDIDO:
+			getItempedido().clear();
+			return;
 		}
 		super.eUnset(featureID);
 	}
@@ -312,6 +348,8 @@ public class DistribuidoraImpl extends MinimalEObjectImpl.Container implements D
 			return pedido != null && !pedido.isEmpty();
 		case PedidoPackage.DISTRIBUIDORA__PRODUCTO:
 			return producto != null && !producto.isEmpty();
+		case PedidoPackage.DISTRIBUIDORA__ITEMPEDIDO:
+			return itempedido != null && !itempedido.isEmpty();
 		}
 		return super.eIsSet(featureID);
 	}

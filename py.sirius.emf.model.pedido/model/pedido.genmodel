@@ -33,7 +33,7 @@
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute pedido.ecore#//Pedido/total"/>
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference pedido.ecore#//Pedido/cliente"/>
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference pedido.ecore#//Pedido/usuario"/>
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference pedido.ecore#//Pedido/itempedido"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference pedido.ecore#//Pedido/itempedido"/>
     </genClasses>
     <genClasses ecoreClass="pedido.ecore#//ItemPedido">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute pedido.ecore#//ItemPedido/id"/>
@@ -62,6 +62,7 @@
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference pedido.ecore#//Distribuidora/usuario"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference pedido.ecore#//Distribuidora/pedido"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference pedido.ecore#//Distribuidora/producto"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference pedido.ecore#//Distribuidora/itempedido"/>
     </genClasses>
   </genPackages>
 </genmodel:GenModel>

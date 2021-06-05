@@ -20,6 +20,7 @@ import org.eclipse.emf.ecore.EObject;
  *   <li>{@link py.sirius.emf.model.pedido.Distribuidora#getUsuario <em>Usuario</em>}</li>
  *   <li>{@link py.sirius.emf.model.pedido.Distribuidora#getPedido <em>Pedido</em>}</li>
  *   <li>{@link py.sirius.emf.model.pedido.Distribuidora#getProducto <em>Producto</em>}</li>
+ *   <li>{@link py.sirius.emf.model.pedido.Distribuidora#getItempedido <em>Itempedido</em>}</li>
  * </ul>
  *
  * @see py.sirius.emf.model.pedido.PedidoPackage#getDistribuidora()
@@ -96,5 +97,17 @@ public interface Distribuidora extends EObject {
 	 * @generated
 	 */
 	EList<Producto> getProducto();
+
+	/**
+	 * Returns the value of the '<em><b>Itempedido</b></em>' containment reference list.
+	 * The list contents are of type {@link py.sirius.emf.model.pedido.ItemPedido}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Itempedido</em>' containment reference list.
+	 * @see py.sirius.emf.model.pedido.PedidoPackage#getDistribuidora_Itempedido()
+	 * @model containment="true"
+	 * @generated
+	 */
+	EList<ItemPedido> getItempedido();
 
 } // Distribuidora
