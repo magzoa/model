@@ -8,7 +8,7 @@
         <description xmi:type="description_1:DiagramDescription" href="platform:/resource/py.sirius.emf.model.pedido.design/description/pedido.odesign#//@ownedViewpoints[name='pedidos']/@ownedRepresentations[name='Pedidos%20diagram']"/>
         <target xmi:type="pedido:Pedido" href="My.pedido#/"/>
       </ownedRepresentationDescriptors>
-      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_CWVKAMJ0Eeun-qEKuEKCLw" name="new Distribuidora diagram" repPath="#_CWTU0MJ0Eeun-qEKuEKCLw" changeId="85d1497e-27b1-4883-b987-45bad699dd64">
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_CWVKAMJ0Eeun-qEKuEKCLw" name="new Distribuidora diagram" repPath="#_CWTU0MJ0Eeun-qEKuEKCLw" changeId="3b9ca7f3-a393-4089-a448-87914d4bb173">
         <description xmi:type="description_1:DiagramDescription" href="platform:/resource/py.sirius.emf.model.pedido.design/description/pedido.odesign#//@ownedViewpoints[name='pedidos']/@ownedRepresentations[name='Pedidos%20diagram']"/>
         <target xmi:type="pedido:Distribuidora" href="MyDistribuidora.pedido#/"/>
       </ownedRepresentationDescriptors>
@@ -268,22 +268,6 @@
           <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_wHHJkMYuEeuO-sCcM8MBvg" id="(1.0,0.25)"/>
           <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_wHHJkcYuEeuO-sCcM8MBvg" id="(0.0,0.25)"/>
         </edges>
-        <edges xmi:type="notation:Edge" xmi:id="_wxhYgMYuEeuO-sCcM8MBvg" type="4001" element="_wxQ50MYuEeuO-sCcM8MBvg" source="_yNl_0MYsEeusJ86lEwDmQw" target="_b3-GQMM6Eeu-c4Z_EzjupQ">
-          <children xmi:type="notation:Node" xmi:id="_wxh_kMYuEeuO-sCcM8MBvg" type="6001">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_wxh_kcYuEeuO-sCcM8MBvg" x="-6" y="-9"/>
-          </children>
-          <children xmi:type="notation:Node" xmi:id="_wxh_ksYuEeuO-sCcM8MBvg" type="6002">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_wxh_k8YuEeuO-sCcM8MBvg" x="4" y="9"/>
-          </children>
-          <children xmi:type="notation:Node" xmi:id="_wximoMYuEeuO-sCcM8MBvg" type="6003">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_wximocYuEeuO-sCcM8MBvg" x="5" y="8"/>
-          </children>
-          <styles xmi:type="notation:ConnectorStyle" xmi:id="_wxhYgcYuEeuO-sCcM8MBvg"/>
-          <styles xmi:type="notation:FontStyle" xmi:id="_wxhYgsYuEeuO-sCcM8MBvg" fontName="Segoe UI" fontHeight="12"/>
-          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_wxhYg8YuEeuO-sCcM8MBvg" points="[0, 0, -408, 72]$[408, -72, 0, 0]"/>
-          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_wximosYuEeuO-sCcM8MBvg" id="(0.25,0.0)"/>
-          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_wximo8YuEeuO-sCcM8MBvg" id="(0.0,0.625)"/>
-        </edges>
         <edges xmi:type="notation:Edge" xmi:id="_lTq4UMYyEeu3eefy_FK0XA" type="4001" element="_lTU6EsYyEeu3eefy_FK0XA" source="_J5uogMYuEeuO-sCcM8MBvg" target="_n-kzEMM3Eeu-c4Z_EzjupQ">
           <children xmi:type="notation:Node" xmi:id="_lTwX4MYyEeu3eefy_FK0XA" type="6001">
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lTwX4cYyEeu3eefy_FK0XA" y="-11"/>
@@ -300,54 +284,6 @@
           <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_lT1QYMYyEeu3eefy_FK0XA" id="(1.0,0.4375)"/>
           <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_lT1QYcYyEeu3eefy_FK0XA" id="(0.0,0.625)"/>
         </edges>
-        <edges xmi:type="notation:Edge" xmi:id="_PCm0kMYzEeu3eefy_FK0XA" type="4001" element="_PCVu0MYzEeu3eefy_FK0XA" source="_oVtF8MYyEeu3eefy_FK0XA" target="_b3-GQMM6Eeu-c4Z_EzjupQ">
-          <children xmi:type="notation:Node" xmi:id="_PCnboMYzEeu3eefy_FK0XA" type="6001">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_PCnbocYzEeu3eefy_FK0XA" y="-12"/>
-          </children>
-          <children xmi:type="notation:Node" xmi:id="_PCnbosYzEeu3eefy_FK0XA" type="6002">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_PCnbo8YzEeu3eefy_FK0XA" x="2" y="9"/>
-          </children>
-          <children xmi:type="notation:Node" xmi:id="_PCnbpMYzEeu3eefy_FK0XA" type="6003">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_PCnbpcYzEeu3eefy_FK0XA" x="-2" y="8"/>
-          </children>
-          <styles xmi:type="notation:ConnectorStyle" xmi:id="_PCm0kcYzEeu3eefy_FK0XA"/>
-          <styles xmi:type="notation:FontStyle" xmi:id="_PCm0ksYzEeu3eefy_FK0XA" fontName="Segoe UI" fontHeight="12"/>
-          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_PCm0k8YzEeu3eefy_FK0XA" points="[0, 0, -396, 477]$[396, -477, 0, 0]"/>
-          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_PCnbpsYzEeu3eefy_FK0XA" id="(1.0,0.4375)"/>
-          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_PCnbp8YzEeu3eefy_FK0XA" id="(0.5,1.0)"/>
-        </edges>
-        <edges xmi:type="notation:Edge" xmi:id="_QRQZAMYzEeu3eefy_FK0XA" type="4001" element="_QQ-FIsYzEeu3eefy_FK0XA" source="_oVtF8MYyEeu3eefy_FK0XA" target="_K5fDEMYzEeu3eefy_FK0XA">
-          <children xmi:type="notation:Node" xmi:id="_QRRAEMYzEeu3eefy_FK0XA" type="6001">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_QRRAEcYzEeu3eefy_FK0XA" x="-4" y="-6"/>
-          </children>
-          <children xmi:type="notation:Node" xmi:id="_QRRAEsYzEeu3eefy_FK0XA" type="6002">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_QRRAE8YzEeu3eefy_FK0XA" x="15" y="-2"/>
-          </children>
-          <children xmi:type="notation:Node" xmi:id="_QRRAFMYzEeu3eefy_FK0XA" type="6003">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_QRRAFcYzEeu3eefy_FK0XA" x="9" y="-2"/>
-          </children>
-          <styles xmi:type="notation:ConnectorStyle" xmi:id="_QRQZAcYzEeu3eefy_FK0XA"/>
-          <styles xmi:type="notation:FontStyle" xmi:id="_QRQZAsYzEeu3eefy_FK0XA" fontName="Segoe UI" fontHeight="12"/>
-          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_QRQZA8YzEeu3eefy_FK0XA" points="[0, 0, -168, 129]$[168, -129, 0, 0]"/>
-          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_QRRnIMYzEeu3eefy_FK0XA" id="(1.0,0.4375)"/>
-          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_QRRnIcYzEeu3eefy_FK0XA" id="(0.0,0.625)"/>
-        </edges>
-        <edges xmi:type="notation:Edge" xmi:id="_RWzEwMYzEeu3eefy_FK0XA" type="4001" element="_RWimFMYzEeu3eefy_FK0XA" source="_oVtF8MYyEeu3eefy_FK0XA" target="_qFtrAMYyEeu3eefy_FK0XA">
-          <children xmi:type="notation:Node" xmi:id="_RWzExMYzEeu3eefy_FK0XA" type="6001">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_RWzExcYzEeu3eefy_FK0XA" x="7" y="-10"/>
-          </children>
-          <children xmi:type="notation:Node" xmi:id="_RWzr0MYzEeu3eefy_FK0XA" type="6002">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_RWzr0cYzEeu3eefy_FK0XA" x="-9" y="6"/>
-          </children>
-          <children xmi:type="notation:Node" xmi:id="_RWzr0sYzEeu3eefy_FK0XA" type="6003">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_RWzr08YzEeu3eefy_FK0XA" x="-8" y="7"/>
-          </children>
-          <styles xmi:type="notation:ConnectorStyle" xmi:id="_RWzEwcYzEeu3eefy_FK0XA"/>
-          <styles xmi:type="notation:FontStyle" xmi:id="_RWzEwsYzEeu3eefy_FK0XA" fontName="Segoe UI" fontHeight="12"/>
-          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_RWzEw8YzEeu3eefy_FK0XA" points="[0, 0, -325, 83]$[325, -83, 0, 0]"/>
-          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_RWzr1MYzEeu3eefy_FK0XA" id="(1.0,0.4375)"/>
-          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_RWzr1cYzEeu3eefy_FK0XA" id="(0.0,0.8333333333333334)"/>
-        </edges>
         <edges xmi:type="notation:Edge" xmi:id="_R-QtYMYzEeu3eefy_FK0XA" type="4001" element="_R93r1sYzEeu3eefy_FK0XA" source="_oVtF8MYyEeu3eefy_FK0XA" target="_sb_l4MYyEeu3eefy_FK0XA">
           <children xmi:type="notation:Node" xmi:id="_R-RUcMYzEeu3eefy_FK0XA" type="6001">
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_R-RUccYzEeu3eefy_FK0XA" x="4" y="-11"/>
@@ -363,22 +299,6 @@
           <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_R-QtY8YzEeu3eefy_FK0XA" points="[0, 0, -330, 6]$[330, -6, 0, 0]"/>
           <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_R-RUdsYzEeu3eefy_FK0XA" id="(1.0,0.4375)"/>
           <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_R-RUd8YzEeu3eefy_FK0XA" id="(0.0,0.4375)"/>
-        </edges>
-        <edges xmi:type="notation:Edge" xmi:id="__J16MMY0EeuI4vIa3_sw1A" type="4001" element="__JdfssY0EeuI4vIa3_sw1A" source="_qFtrAMYyEeu3eefy_FK0XA" target="_dGWHAMYxEeuO-sCcM8MBvg">
-          <children xmi:type="notation:Node" xmi:id="__J8n4MY0EeuI4vIa3_sw1A" type="6001">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="__J8n4cY0EeuI4vIa3_sw1A" x="-7" y="-7"/>
-          </children>
-          <children xmi:type="notation:Node" xmi:id="__J9O8MY0EeuI4vIa3_sw1A" type="6002">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="__J9O8cY0EeuI4vIa3_sw1A" x="7" y="7"/>
-          </children>
-          <children xmi:type="notation:Node" xmi:id="__J-dEMY0EeuI4vIa3_sw1A" type="6003">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="__J-dEcY0EeuI4vIa3_sw1A" x="6" y="7"/>
-          </children>
-          <styles xmi:type="notation:ConnectorStyle" xmi:id="__J2hQMY0EeuI4vIa3_sw1A"/>
-          <styles xmi:type="notation:FontStyle" xmi:id="__J2hQcY0EeuI4vIa3_sw1A" fontName="Segoe UI" fontHeight="12"/>
-          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="__J2hQsY0EeuI4vIa3_sw1A" points="[0, 0, -305, -129]$[305, 129, 0, 0]"/>
-          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="__KASQMY0EeuI4vIa3_sw1A" id="(1.0,0.4375)"/>
-          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="__KASQcY0EeuI4vIa3_sw1A" id="(0.0,0.5)"/>
         </edges>
         <edges xmi:type="notation:Edge" xmi:id="_ABvLgMY1EeuI4vIa3_sw1A" type="4001" element="_ABX_JMY1EeuI4vIa3_sw1A" source="_sb_l4MYyEeu3eefy_FK0XA" target="_c4p-YMYzEeu3eefy_FK0XA">
           <children xmi:type="notation:Node" xmi:id="_ABvykMY1EeuI4vIa3_sw1A" type="6001">
@@ -412,28 +332,107 @@
           <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_K--8MMY1EeuI4vIa3_sw1A" id="(0.25,1.0)"/>
           <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_K--8McY1EeuI4vIa3_sw1A" id="(0.0,0.4375)"/>
         </edges>
-        <edges xmi:type="notation:Edge" xmi:id="_WEROkMY1EeuI4vIa3_sw1A" type="4001" element="_WD5bIMY1EeuI4vIa3_sw1A" source="_HGwGYMY1EeuI4vIa3_sw1A" target="_n-kzEMM3Eeu-c4Z_EzjupQ">
-          <children xmi:type="notation:Node" xmi:id="_WER1oMY1EeuI4vIa3_sw1A" type="6001">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_WER1ocY1EeuI4vIa3_sw1A" y="-10"/>
+        <edges xmi:type="notation:Edge" xmi:id="_bCHEwMiqEeup3sIxZDMQpg" type="4001" element="_bCCMSMiqEeup3sIxZDMQpg" source="_HGwGYMY1EeuI4vIa3_sw1A" target="_n-kzEMM3Eeu-c4Z_EzjupQ">
+          <children xmi:type="notation:Node" xmi:id="_bCHr0MiqEeup3sIxZDMQpg" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_bCHr0ciqEeup3sIxZDMQpg" y="-10"/>
           </children>
-          <children xmi:type="notation:Node" xmi:id="_WER1osY1EeuI4vIa3_sw1A" type="6002">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_WER1o8Y1EeuI4vIa3_sw1A" y="10"/>
+          <children xmi:type="notation:Node" xmi:id="_bCHr0siqEeup3sIxZDMQpg" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_bCHr08iqEeup3sIxZDMQpg" y="10"/>
           </children>
-          <children xmi:type="notation:Node" xmi:id="_WEScsMY1EeuI4vIa3_sw1A" type="6003">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_WEScscY1EeuI4vIa3_sw1A" y="10"/>
+          <children xmi:type="notation:Node" xmi:id="_bCHr1MiqEeup3sIxZDMQpg" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_bCHr1ciqEeup3sIxZDMQpg" y="10"/>
           </children>
-          <styles xmi:type="notation:ConnectorStyle" xmi:id="_WEROkcY1EeuI4vIa3_sw1A"/>
-          <styles xmi:type="notation:FontStyle" xmi:id="_WEROksY1EeuI4vIa3_sw1A" fontName="Segoe UI" fontHeight="12"/>
-          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_WEROk8Y1EeuI4vIa3_sw1A" points="[0, 0, -324, 426]$[324, -426, 0, 0]"/>
-          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_WEScssY1EeuI4vIa3_sw1A" id="(0.6041666666666666,0.0)"/>
-          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_WEScs8Y1EeuI4vIa3_sw1A" id="(0.5,1.0)"/>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_bCHEwciqEeup3sIxZDMQpg"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_bCHEwsiqEeup3sIxZDMQpg" fontName="Segoe UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_bCHEw8iqEeup3sIxZDMQpg" points="[16, -24, -313, 450]$[312, -450, -17, 24]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_bCIS4MiqEeup3sIxZDMQpg" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_bCIS4ciqEeup3sIxZDMQpg" id="(0.5,0.5)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_po0IEsitEeuj7IHBRhkfXg" type="4001" element="_poxExMitEeuj7IHBRhkfXg" source="_oVtF8MYyEeu3eefy_FK0XA" target="_qFtrAMYyEeu3eefy_FK0XA">
+          <children xmi:type="notation:Node" xmi:id="_po0IFsitEeuj7IHBRhkfXg" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_po0IF8itEeuj7IHBRhkfXg" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_po0IGMitEeuj7IHBRhkfXg" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_po0IGcitEeuj7IHBRhkfXg" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_po0vIMitEeuj7IHBRhkfXg" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_po0vIcitEeuj7IHBRhkfXg" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_po0IE8itEeuj7IHBRhkfXg"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_po0IFMitEeuj7IHBRhkfXg" fontName="Segoe UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_po0IFcitEeuj7IHBRhkfXg" points="[24, -7, -349, 95]$[349, -96, -24, 6]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_po0vIsitEeuj7IHBRhkfXg" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_po0vI8itEeuj7IHBRhkfXg" id="(0.5,0.5)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_teO6cMitEeuj7IHBRhkfXg" type="4001" element="_wxQ50MYuEeuO-sCcM8MBvg" source="_yNl_0MYsEeusJ86lEwDmQw" target="_b3-GQMM6Eeu-c4Z_EzjupQ">
+          <children xmi:type="notation:Node" xmi:id="_tePhgMitEeuj7IHBRhkfXg" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_tePhgcitEeuj7IHBRhkfXg" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_tePhgsitEeuj7IHBRhkfXg" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_tePhg8itEeuj7IHBRhkfXg" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_tePhhMitEeuj7IHBRhkfXg" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_tePhhcitEeuj7IHBRhkfXg" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_teO6ccitEeuj7IHBRhkfXg"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_teO6csitEeuj7IHBRhkfXg" fontName="Segoe UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_teO6c8itEeuj7IHBRhkfXg" points="[0, 11, -432, 89]$[414, -74, -18, 4]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_tePhhsitEeuj7IHBRhkfXg" id="(0.25,0.0)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_yOgykMitEeuj7IHBRhkfXg" type="4001" element="_yOSJFMitEeuj7IHBRhkfXg" source="_qFtrAMYyEeu3eefy_FK0XA" target="_dGWHAMYxEeuO-sCcM8MBvg">
+          <children xmi:type="notation:Node" xmi:id="_yOiAsMitEeuj7IHBRhkfXg" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_yOiAscitEeuj7IHBRhkfXg" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_yOiAssitEeuj7IHBRhkfXg" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_yOiAs8itEeuj7IHBRhkfXg" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_yOiAtMitEeuj7IHBRhkfXg" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_yOiAtcitEeuj7IHBRhkfXg" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_yOgykcitEeuj7IHBRhkfXg"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_yOgyksitEeuj7IHBRhkfXg" fontName="Segoe UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_yOhZoMitEeuj7IHBRhkfXg" points="[0, 0, -305, -123]$[305, 123, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_yOiAtsitEeuj7IHBRhkfXg" id="(1.0,0.4375)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_yOiAt8itEeuj7IHBRhkfXg" id="(0.0,0.375)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_zHclsMitEeuj7IHBRhkfXg" type="4001" element="_zHMHAMitEeuj7IHBRhkfXg" source="_oVtF8MYyEeu3eefy_FK0XA" target="_K5fDEMYzEeu3eefy_FK0XA">
+          <children xmi:type="notation:Node" xmi:id="_zHdz0MitEeuj7IHBRhkfXg" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zHdz0citEeuj7IHBRhkfXg" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_zHea4MitEeuj7IHBRhkfXg" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zHea4citEeuj7IHBRhkfXg" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_zHfB8MitEeuj7IHBRhkfXg" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zHfB8citEeuj7IHBRhkfXg" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_zHclscitEeuj7IHBRhkfXg"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_zHclssitEeuj7IHBRhkfXg" fontName="Segoe UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_zHcls8itEeuj7IHBRhkfXg" points="[0, 0, -204, 111]$[204, -111, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_zHfpAMitEeuj7IHBRhkfXg" id="(1.0,0.4375)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_zHfpAcitEeuj7IHBRhkfXg" id="(0.75,1.0)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_z66C8MitEeuj7IHBRhkfXg" type="4001" element="_z6oWIMitEeuj7IHBRhkfXg" source="_oVtF8MYyEeu3eefy_FK0XA" target="_b3-GQMM6Eeu-c4Z_EzjupQ">
+          <children xmi:type="notation:Node" xmi:id="_z66qAMitEeuj7IHBRhkfXg" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_z66qAcitEeuj7IHBRhkfXg" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_z67REMitEeuj7IHBRhkfXg" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_z67REcitEeuj7IHBRhkfXg" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_z67REsitEeuj7IHBRhkfXg" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_z67RE8itEeuj7IHBRhkfXg" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_z66C8citEeuj7IHBRhkfXg"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_z66C8sitEeuj7IHBRhkfXg" fontName="Segoe UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_z66C88itEeuj7IHBRhkfXg" points="[0, 0, -432, 456]$[432, -456, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_z674IMitEeuj7IHBRhkfXg" id="(0.375,0.0)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_z674IcitEeuj7IHBRhkfXg" id="(0.625,1.0)"/>
         </edges>
       </data>
     </ownedAnnotationEntries>
     <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_CWxO4MJ0Eeun-qEKuEKCLw" source="DANNOTATION_CUSTOMIZATION_KEY">
       <data xmi:type="diagram:ComputedStyleDescriptionRegistry" uid="_CWxO4cJ0Eeun-qEKuEKCLw"/>
     </ownedAnnotationEntries>
-    <ownedDiagramElements xmi:type="diagram:DNode" uid="_CWuLkMJ0Eeun-qEKuEKCLw" name="Usuario Liz" incomingEdges="_wGtg8MYuEeuO-sCcM8MBvg" width="-1" height="-1" resizeKind="NSEW">
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_CWuLkMJ0Eeun-qEKuEKCLw" name="User" incomingEdges="_wGtg8MYuEeuO-sCcM8MBvg" width="-1" height="-1" resizeKind="NSEW">
       <target xmi:type="pedido:Usuario" href="MyDistribuidora.pedido#//@usuario.0"/>
       <semanticElements xmi:type="pedido:Usuario" href="MyDistribuidora.pedido#//@usuario.0"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
@@ -444,7 +443,7 @@
       </ownedStyle>
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/py.sirius.emf.model.pedido.design/description/pedido.odesign#//@ownedViewpoints[name='pedidos']/@ownedRepresentations[name='Pedidos%20diagram']/@defaultLayer/@nodeMappings[name='UsuarioNode']"/>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DNode" uid="_K5SOwMYzEeu3eefy_FK0XA" name="Perla" incomingEdges="_QQ-FIsYzEeu3eefy_FK0XA" width="-1" height="-1" resizeKind="NSEW">
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_K5SOwMYzEeu3eefy_FK0XA" name="Perla" incomingEdges="_zHMHAMitEeuj7IHBRhkfXg" width="-1" height="-1" resizeKind="NSEW">
       <target xmi:type="pedido:Usuario" href="MyDistribuidora.pedido#//@usuario.1"/>
       <semanticElements xmi:type="pedido:Usuario" href="MyDistribuidora.pedido#//@usuario.1"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
@@ -455,7 +454,7 @@
       </ownedStyle>
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/py.sirius.emf.model.pedido.design/description/pedido.odesign#//@ownedViewpoints[name='pedidos']/@ownedRepresentations[name='Pedidos%20diagram']/@defaultLayer/@nodeMappings[name='UsuarioNode']"/>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DNode" uid="_b3500MM6Eeu-c4Z_EzjupQ" name="Juan" incomingEdges="_wxQ50MYuEeuO-sCcM8MBvg _PCVu0MYzEeu3eefy_FK0XA" width="-1" height="-1" resizeKind="NSEW">
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_b3500MM6Eeu-c4Z_EzjupQ" name="Juancho" incomingEdges="_wxQ50MYuEeuO-sCcM8MBvg _z6oWIMitEeuj7IHBRhkfXg" width="-1" height="-1" resizeKind="NSEW">
       <target xmi:type="pedido:Cliente" href="MyDistribuidora.pedido#//@cliente.0"/>
       <semanticElements xmi:type="pedido:Cliente" href="MyDistribuidora.pedido#//@cliente.0"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
@@ -466,7 +465,7 @@
       </ownedStyle>
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/py.sirius.emf.model.pedido.design/description/pedido.odesign#//@ownedViewpoints[name='pedidos']/@ownedRepresentations[name='Pedidos%20diagram']/@defaultLayer/@nodeMappings[name='ClienteNode']"/>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DNode" uid="_n-hIsMM3Eeu-c4Z_EzjupQ" name="TELEVISOR" incomingEdges="_lTU6EsYyEeu3eefy_FK0XA _WD5bIMY1EeuI4vIa3_sw1A" width="-1" height="-1" resizeKind="NSEW">
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_n-hIsMM3Eeu-c4Z_EzjupQ" name="TELEVISOR" incomingEdges="_lTU6EsYyEeu3eefy_FK0XA _bCCMSMiqEeup3sIxZDMQpg" width="-1" height="-1" resizeKind="NSEW">
       <target xmi:type="pedido:Producto" href="MyDistribuidora.pedido#//@producto.0"/>
       <semanticElements xmi:type="pedido:Producto" href="MyDistribuidora.pedido#//@producto.0"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
@@ -477,7 +476,7 @@
       </ownedStyle>
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/py.sirius.emf.model.pedido.design/description/pedido.odesign#//@ownedViewpoints[name='pedidos']/@ownedRepresentations[name='Pedidos%20diagram']/@defaultLayer/@nodeMappings[name='ProductoNode']"/>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DNode" uid="_dGOLMMYxEeuO-sCcM8MBvg" name="Producto2" incomingEdges="__JdfssY0EeuI4vIa3_sw1A" width="-1" height="-1" resizeKind="NSEW">
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_dGOLMMYxEeuO-sCcM8MBvg" name="ESTANTE" incomingEdges="_yOSJFMitEeuj7IHBRhkfXg" width="-1" height="-1" resizeKind="NSEW">
       <target xmi:type="pedido:Producto" href="MyDistribuidora.pedido#//@producto.1"/>
       <semanticElements xmi:type="pedido:Producto" href="MyDistribuidora.pedido#//@producto.1"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
@@ -511,7 +510,7 @@
       </ownedStyle>
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/py.sirius.emf.model.pedido.design/description/pedido.odesign#//@ownedViewpoints[name='pedidos']/@ownedRepresentations[name='Pedidos%20diagram']/@defaultLayer/@nodeMappings[name='PedidoNode']"/>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DNode" uid="_oVit4MYyEeu3eefy_FK0XA" name="2" outgoingEdges="_PCVu0MYzEeu3eefy_FK0XA _QQ-FIsYzEeu3eefy_FK0XA _RWimFMYzEeu3eefy_FK0XA _R93r1sYzEeu3eefy_FK0XA _K-2ZUMY1EeuI4vIa3_sw1A" width="-1" height="-1" resizeKind="NSEW">
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_oVit4MYyEeu3eefy_FK0XA" name="2" outgoingEdges="_R93r1sYzEeu3eefy_FK0XA _K-2ZUMY1EeuI4vIa3_sw1A _poxExMitEeuj7IHBRhkfXg _zHMHAMitEeuj7IHBRhkfXg _z6oWIMitEeuj7IHBRhkfXg" width="-1" height="-1" resizeKind="NSEW">
       <target xmi:type="pedido:Pedido" href="MyDistribuidora.pedido#//@pedido.1"/>
       <semanticElements xmi:type="pedido:Pedido" href="MyDistribuidora.pedido#//@pedido.1"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
@@ -535,7 +534,7 @@
       </ownedStyle>
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/py.sirius.emf.model.pedido.design/description/pedido.odesign#//@ownedViewpoints[name='pedidos']/@ownedRepresentations[name='Pedidos%20diagram']/@defaultLayer/@nodeMappings[name='ItemPedidoNode']"/>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DNode" uid="_qFUCYMYyEeu3eefy_FK0XA" name="2" outgoingEdges="__JdfssY0EeuI4vIa3_sw1A" incomingEdges="_RWimFMYzEeu3eefy_FK0XA" width="-1" height="-1" resizeKind="NSEW">
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_qFUCYMYyEeu3eefy_FK0XA" name="2" outgoingEdges="_yOSJFMitEeuj7IHBRhkfXg" incomingEdges="_poxExMitEeuj7IHBRhkfXg" width="-1" height="-1" resizeKind="NSEW">
       <target xmi:type="pedido:ItemPedido" href="MyDistribuidora.pedido#//@itempedido.1"/>
       <semanticElements xmi:type="pedido:ItemPedido" href="MyDistribuidora.pedido#//@itempedido.1"/>
       <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_qFUpcMYyEeu3eefy_FK0XA" labelSize="18" showIcon="false" workspacePath="/py.sirius.emf.model.pedido.design/icons/ItemPedido.gif">
@@ -553,7 +552,7 @@
       </ownedStyle>
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/py.sirius.emf.model.pedido.design/description/pedido.odesign#//@ownedViewpoints[name='pedidos']/@ownedRepresentations[name='Pedidos%20diagram']/@defaultLayer/@nodeMappings[name='ItemPedidoNode']"/>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DNode" uid="_HGiD8MY1EeuI4vIa3_sw1A" name="4" outgoingEdges="_WD5bIMY1EeuI4vIa3_sw1A" incomingEdges="_K-2ZUMY1EeuI4vIa3_sw1A" width="-1" height="-1" resizeKind="NSEW">
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_HGiD8MY1EeuI4vIa3_sw1A" name="4" outgoingEdges="_bCCMSMiqEeup3sIxZDMQpg" incomingEdges="_K-2ZUMY1EeuI4vIa3_sw1A" width="-1" height="-1" resizeKind="NSEW">
       <target xmi:type="pedido:ItemPedido" href="MyDistribuidora.pedido#//@itempedido.3"/>
       <semanticElements xmi:type="pedido:ItemPedido" href="MyDistribuidora.pedido#//@itempedido.3"/>
       <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_HGjSEMY1EeuI4vIa3_sw1A" labelSize="18" showIcon="false" workspacePath="/py.sirius.emf.model.pedido.design/icons/ItemPedido.gif">
@@ -594,30 +593,6 @@
       </ownedStyle>
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/py.sirius.emf.model.pedido.design/description/pedido.odesign#//@ownedViewpoints[name='pedidos']/@ownedRepresentations[name='Pedidos%20diagram']/@defaultLayer/@edgeMappings[name='ItemPedidoProductoEdge']"/>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_PCVu0MYzEeu3eefy_FK0XA" sourceNode="_oVit4MYyEeu3eefy_FK0XA" targetNode="_b3500MM6Eeu-c4Z_EzjupQ">
-      <target xmi:type="pedido:Pedido" href="MyDistribuidora.pedido#//@pedido.1"/>
-      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_PCWV4MYzEeu3eefy_FK0XA" size="6" strokeColor="194,239,255">
-        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/py.sirius.emf.model.pedido.design/description/pedido.odesign#//@ownedViewpoints[name='pedidos']/@ownedRepresentations[name='Pedidos%20diagram']/@defaultLayer/@edgeMappings[name='PedidoClienteEdge']/@style"/>
-        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_PCWV4cYzEeu3eefy_FK0XA" labelSize="12"/>
-      </ownedStyle>
-      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/py.sirius.emf.model.pedido.design/description/pedido.odesign#//@ownedViewpoints[name='pedidos']/@ownedRepresentations[name='Pedidos%20diagram']/@defaultLayer/@edgeMappings[name='PedidoClienteEdge']"/>
-    </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_QQ-FIsYzEeu3eefy_FK0XA" sourceNode="_oVit4MYyEeu3eefy_FK0XA" targetNode="_K5SOwMYzEeu3eefy_FK0XA">
-      <target xmi:type="pedido:Pedido" href="MyDistribuidora.pedido#//@pedido.1"/>
-      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_QQ-sMMYzEeu3eefy_FK0XA" size="6" strokeColor="194,239,255">
-        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/py.sirius.emf.model.pedido.design/description/pedido.odesign#//@ownedViewpoints[name='pedidos']/@ownedRepresentations[name='Pedidos%20diagram']/@defaultLayer/@edgeMappings[name='PedidoUsuarioEdge']/@style"/>
-        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_QQ-sMcYzEeu3eefy_FK0XA" labelSize="12"/>
-      </ownedStyle>
-      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/py.sirius.emf.model.pedido.design/description/pedido.odesign#//@ownedViewpoints[name='pedidos']/@ownedRepresentations[name='Pedidos%20diagram']/@defaultLayer/@edgeMappings[name='PedidoUsuarioEdge']"/>
-    </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_RWimFMYzEeu3eefy_FK0XA" sourceNode="_oVit4MYyEeu3eefy_FK0XA" targetNode="_qFUCYMYyEeu3eefy_FK0XA">
-      <target xmi:type="pedido:Pedido" href="MyDistribuidora.pedido#//@pedido.1"/>
-      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_RWjNIMYzEeu3eefy_FK0XA" size="6" strokeColor="194,239,255">
-        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/py.sirius.emf.model.pedido.design/description/pedido.odesign#//@ownedViewpoints[name='pedidos']/@ownedRepresentations[name='Pedidos%20diagram']/@defaultLayer/@edgeMappings[name='PedidoItemPedidoEdge']/@style"/>
-        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_RWjNIcYzEeu3eefy_FK0XA" labelSize="12"/>
-      </ownedStyle>
-      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/py.sirius.emf.model.pedido.design/description/pedido.odesign#//@ownedViewpoints[name='pedidos']/@ownedRepresentations[name='Pedidos%20diagram']/@defaultLayer/@edgeMappings[name='PedidoItemPedidoEdge']"/>
-    </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_R93r1sYzEeu3eefy_FK0XA" sourceNode="_oVit4MYyEeu3eefy_FK0XA" targetNode="_sbrc0MYyEeu3eefy_FK0XA">
       <target xmi:type="pedido:Pedido" href="MyDistribuidora.pedido#//@pedido.1"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_R93r18YzEeu3eefy_FK0XA" size="6" strokeColor="194,239,255">
@@ -625,14 +600,6 @@
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_R93r2MYzEeu3eefy_FK0XA" labelSize="12"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/py.sirius.emf.model.pedido.design/description/pedido.odesign#//@ownedViewpoints[name='pedidos']/@ownedRepresentations[name='Pedidos%20diagram']/@defaultLayer/@edgeMappings[name='PedidoItemPedidoEdge']"/>
-    </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DEdge" uid="__JdfssY0EeuI4vIa3_sw1A" sourceNode="_qFUCYMYyEeu3eefy_FK0XA" targetNode="_dGOLMMYxEeuO-sCcM8MBvg">
-      <target xmi:type="pedido:ItemPedido" href="MyDistribuidora.pedido#//@itempedido.1"/>
-      <ownedStyle xmi:type="diagram:EdgeStyle" uid="__JfU4MY0EeuI4vIa3_sw1A" size="6" strokeColor="194,239,255">
-        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/py.sirius.emf.model.pedido.design/description/pedido.odesign#//@ownedViewpoints[name='pedidos']/@ownedRepresentations[name='Pedidos%20diagram']/@defaultLayer/@edgeMappings[name='ItemPedidoProductoEdge']/@style"/>
-        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="__JfU4cY0EeuI4vIa3_sw1A" labelSize="12"/>
-      </ownedStyle>
-      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/py.sirius.emf.model.pedido.design/description/pedido.odesign#//@ownedViewpoints[name='pedidos']/@ownedRepresentations[name='Pedidos%20diagram']/@defaultLayer/@edgeMappings[name='ItemPedidoProductoEdge']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_ABX_JMY1EeuI4vIa3_sw1A" sourceNode="_sbrc0MYyEeu3eefy_FK0XA" targetNode="_c4ke0MYzEeu3eefy_FK0XA">
       <target xmi:type="pedido:ItemPedido" href="MyDistribuidora.pedido#//@itempedido.2"/>
@@ -650,13 +617,45 @@
       </ownedStyle>
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/py.sirius.emf.model.pedido.design/description/pedido.odesign#//@ownedViewpoints[name='pedidos']/@ownedRepresentations[name='Pedidos%20diagram']/@defaultLayer/@edgeMappings[name='PedidoItemPedidoEdge']"/>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_WD5bIMY1EeuI4vIa3_sw1A" sourceNode="_HGiD8MY1EeuI4vIa3_sw1A" targetNode="_n-hIsMM3Eeu-c4Z_EzjupQ">
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_bCCMSMiqEeup3sIxZDMQpg" sourceNode="_HGiD8MY1EeuI4vIa3_sw1A" targetNode="_n-hIsMM3Eeu-c4Z_EzjupQ">
       <target xmi:type="pedido:ItemPedido" href="MyDistribuidora.pedido#//@itempedido.3"/>
-      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_WD6CMMY1EeuI4vIa3_sw1A" size="6" strokeColor="194,239,255">
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_bCCzUMiqEeup3sIxZDMQpg" size="6" strokeColor="194,239,255">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/py.sirius.emf.model.pedido.design/description/pedido.odesign#//@ownedViewpoints[name='pedidos']/@ownedRepresentations[name='Pedidos%20diagram']/@defaultLayer/@edgeMappings[name='ItemPedidoProductoEdge']/@style"/>
-        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_WD6CMcY1EeuI4vIa3_sw1A" labelSize="12"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_bCCzUciqEeup3sIxZDMQpg" labelSize="12"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/py.sirius.emf.model.pedido.design/description/pedido.odesign#//@ownedViewpoints[name='pedidos']/@ownedRepresentations[name='Pedidos%20diagram']/@defaultLayer/@edgeMappings[name='ItemPedidoProductoEdge']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_poxExMitEeuj7IHBRhkfXg" sourceNode="_oVit4MYyEeu3eefy_FK0XA" targetNode="_qFUCYMYyEeu3eefy_FK0XA">
+      <target xmi:type="pedido:Pedido" href="MyDistribuidora.pedido#//@pedido.1"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_poxExcitEeuj7IHBRhkfXg" size="6" strokeColor="194,239,255">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/py.sirius.emf.model.pedido.design/description/pedido.odesign#//@ownedViewpoints[name='pedidos']/@ownedRepresentations[name='Pedidos%20diagram']/@defaultLayer/@edgeMappings[name='PedidoItemPedidoEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_poxExsitEeuj7IHBRhkfXg" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/py.sirius.emf.model.pedido.design/description/pedido.odesign#//@ownedViewpoints[name='pedidos']/@ownedRepresentations[name='Pedidos%20diagram']/@defaultLayer/@edgeMappings[name='PedidoItemPedidoEdge']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_yOSJFMitEeuj7IHBRhkfXg" sourceNode="_qFUCYMYyEeu3eefy_FK0XA" targetNode="_dGOLMMYxEeuO-sCcM8MBvg">
+      <target xmi:type="pedido:ItemPedido" href="MyDistribuidora.pedido#//@itempedido.1"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_yOSJFcitEeuj7IHBRhkfXg" size="6" strokeColor="194,239,255">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/py.sirius.emf.model.pedido.design/description/pedido.odesign#//@ownedViewpoints[name='pedidos']/@ownedRepresentations[name='Pedidos%20diagram']/@defaultLayer/@edgeMappings[name='ItemPedidoProductoEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_yOSJFsitEeuj7IHBRhkfXg" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/py.sirius.emf.model.pedido.design/description/pedido.odesign#//@ownedViewpoints[name='pedidos']/@ownedRepresentations[name='Pedidos%20diagram']/@defaultLayer/@edgeMappings[name='ItemPedidoProductoEdge']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_zHMHAMitEeuj7IHBRhkfXg" sourceNode="_oVit4MYyEeu3eefy_FK0XA" targetNode="_K5SOwMYzEeu3eefy_FK0XA">
+      <target xmi:type="pedido:Pedido" href="MyDistribuidora.pedido#//@pedido.1"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_zHMHAcitEeuj7IHBRhkfXg" size="6" strokeColor="194,239,255">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/py.sirius.emf.model.pedido.design/description/pedido.odesign#//@ownedViewpoints[name='pedidos']/@ownedRepresentations[name='Pedidos%20diagram']/@defaultLayer/@edgeMappings[name='PedidoUsuarioEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_zHMHAsitEeuj7IHBRhkfXg" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/py.sirius.emf.model.pedido.design/description/pedido.odesign#//@ownedViewpoints[name='pedidos']/@ownedRepresentations[name='Pedidos%20diagram']/@defaultLayer/@edgeMappings[name='PedidoUsuarioEdge']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_z6oWIMitEeuj7IHBRhkfXg" sourceNode="_oVit4MYyEeu3eefy_FK0XA" targetNode="_b3500MM6Eeu-c4Z_EzjupQ">
+      <target xmi:type="pedido:Pedido" href="MyDistribuidora.pedido#//@pedido.1"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_z6oWIcitEeuj7IHBRhkfXg" size="6" strokeColor="194,239,255">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/py.sirius.emf.model.pedido.design/description/pedido.odesign#//@ownedViewpoints[name='pedidos']/@ownedRepresentations[name='Pedidos%20diagram']/@defaultLayer/@edgeMappings[name='PedidoClienteEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_z6oWIsitEeuj7IHBRhkfXg" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/py.sirius.emf.model.pedido.design/description/pedido.odesign#//@ownedViewpoints[name='pedidos']/@ownedRepresentations[name='Pedidos%20diagram']/@defaultLayer/@edgeMappings[name='PedidoClienteEdge']"/>
     </ownedDiagramElements>
     <description xmi:type="description_1:DiagramDescription" href="platform:/resource/py.sirius.emf.model.pedido.design/description/pedido.odesign#//@ownedViewpoints[name='pedidos']/@ownedRepresentations[name='Pedidos%20diagram']"/>
     <filterVariableHistory xmi:type="diagram:FilterVariableHistory" uid="_CWUi8MJ0Eeun-qEKuEKCLw"/>
