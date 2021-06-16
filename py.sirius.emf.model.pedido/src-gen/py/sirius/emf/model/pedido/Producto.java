@@ -37,7 +37,7 @@ public interface Producto extends EObject {
 	 * @return the value of the '<em>Id</em>' attribute.
 	 * @see #setId(long)
 	 * @see py.sirius.emf.model.pedido.PedidoPackage#getProducto_Id()
-	 * @model
+	 * @model required="true"
 	 * @generated
 	 */
 	long getId();
@@ -125,7 +125,8 @@ public interface Producto extends EObject {
 	 * @return the value of the '<em>Cantidad</em>' attribute.
 	 * @see #setCantidad(int)
 	 * @see py.sirius.emf.model.pedido.PedidoPackage#getProducto_Cantidad()
-	 * @model
+	 * @model required="true"
+	 *        annotation="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot derivation='1'"
 	 * @generated
 	 */
 	int getCantidad();

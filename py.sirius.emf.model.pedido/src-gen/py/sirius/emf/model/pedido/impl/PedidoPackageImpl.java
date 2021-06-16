@@ -8,6 +8,7 @@ import org.eclipse.emf.ecore.EEnum;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EReference;
 
+import org.eclipse.emf.ecore.EValidator;
 import org.eclipse.emf.ecore.impl.EPackageImpl;
 
 import py.sirius.emf.model.pedido.Cliente;
@@ -21,6 +22,7 @@ import py.sirius.emf.model.pedido.Persona;
 import py.sirius.emf.model.pedido.Producto;
 import py.sirius.emf.model.pedido.ProductoTipo;
 import py.sirius.emf.model.pedido.Usuario;
+import py.sirius.emf.model.pedido.util.PedidoValidator;
 
 /**
  * <!-- begin-user-doc -->
@@ -147,6 +149,13 @@ public class PedidoPackageImpl extends EPackageImpl implements PedidoPackage {
 
 		// Initialize created meta-data
 		thePedidoPackage.initializePackageContents();
+
+		// Register package validator
+		EValidator.Registry.INSTANCE.put(thePedidoPackage, new EValidator.Descriptor() {
+			public EValidator getEValidator() {
+				return PedidoValidator.INSTANCE;
+			}
+		});
 
 		// Mark meta-data to indicate it can't be changed
 		thePedidoPackage.freeze();
@@ -650,7 +659,7 @@ public class PedidoPackageImpl extends EPackageImpl implements PedidoPackage {
 
 		// Initialize classes, features, and operations; add parameters
 		initEClass(personaEClass, Persona.class, "Persona", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getPersona_Id(), ecorePackage.getELong(), "id", null, 0, 1, Persona.class, !IS_TRANSIENT,
+		initEAttribute(getPersona_Id(), ecorePackage.getELong(), "id", null, 1, 1, Persona.class, !IS_TRANSIENT,
 				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getPersona_Nombre(), ecorePackage.getEString(), "nombre", null, 0, 1, Persona.class,
 				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -666,7 +675,7 @@ public class PedidoPackageImpl extends EPackageImpl implements PedidoPackage {
 				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(pedidoEClass, Pedido.class, "Pedido", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getPedido_Id(), ecorePackage.getELong(), "id", null, 0, 1, Pedido.class, !IS_TRANSIENT,
+		initEAttribute(getPedido_Id(), ecorePackage.getELong(), "id", null, 1, 1, Pedido.class, !IS_TRANSIENT,
 				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getPedido_FechaToma(), ecorePackage.getEDate(), "fechaToma", null, 0, 1, Pedido.class,
 				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -686,9 +695,9 @@ public class PedidoPackageImpl extends EPackageImpl implements PedidoPackage {
 
 		initEClass(itemPedidoEClass, ItemPedido.class, "ItemPedido", !IS_ABSTRACT, !IS_INTERFACE,
 				IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getItemPedido_Id(), ecorePackage.getELong(), "id", null, 0, 1, ItemPedido.class, !IS_TRANSIENT,
+		initEAttribute(getItemPedido_Id(), ecorePackage.getELong(), "id", null, 1, 1, ItemPedido.class, !IS_TRANSIENT,
 				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getItemPedido_Cantidad(), ecorePackage.getEInt(), "cantidad", null, 0, 1, ItemPedido.class,
+		initEAttribute(getItemPedido_Cantidad(), ecorePackage.getEInt(), "cantidad", null, 1, 1, ItemPedido.class,
 				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getItemPedido_SubTotal(), ecorePackage.getEBigDecimal(), "subTotal", null, 0, 1,
 				ItemPedido.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
@@ -699,7 +708,7 @@ public class PedidoPackageImpl extends EPackageImpl implements PedidoPackage {
 
 		initEClass(productoEClass, Producto.class, "Producto", !IS_ABSTRACT, !IS_INTERFACE,
 				IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getProducto_Id(), ecorePackage.getELong(), "id", null, 0, 1, Producto.class, !IS_TRANSIENT,
+		initEAttribute(getProducto_Id(), ecorePackage.getELong(), "id", null, 1, 1, Producto.class, !IS_TRANSIENT,
 				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getProducto_Descripcion(), ecorePackage.getEString(), "descripcion", null, 0, 1, Producto.class,
 				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -708,13 +717,13 @@ public class PedidoPackageImpl extends EPackageImpl implements PedidoPackage {
 				!IS_DERIVED, IS_ORDERED);
 		initEAttribute(getProducto_Precio(), ecorePackage.getEBigDecimal(), "precio", null, 0, 1, Producto.class,
 				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getProducto_Cantidad(), ecorePackage.getEInt(), "cantidad", null, 0, 1, Producto.class,
+		initEAttribute(getProducto_Cantidad(), ecorePackage.getEInt(), "cantidad", null, 1, 1, Producto.class,
 				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getProducto_Tipo(), this.getProductoTipo(), "tipo", null, 0, 1, Producto.class, !IS_TRANSIENT,
 				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(facturaEClass, Factura.class, "Factura", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getFactura_Numero(), ecorePackage.getEInt(), "numero", null, 0, 1, Factura.class, !IS_TRANSIENT,
+		initEAttribute(getFactura_Numero(), ecorePackage.getEInt(), "numero", null, 1, 1, Factura.class, !IS_TRANSIENT,
 				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getFactura_Pedidos(), this.getPedido(), null, "pedidos", null, 0, -1, Factura.class,
 				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE,
@@ -757,6 +766,57 @@ public class PedidoPackageImpl extends EPackageImpl implements PedidoPackage {
 
 		// Create resource
 		createResource(eNS_URI);
+
+		// Create annotations
+		// http://www.eclipse.org/OCL/Import
+		createImportAnnotations();
+		// http://www.eclipse.org/emf/2002/Ecore
+		createEcoreAnnotations();
+		// http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot
+		createPivotAnnotations();
+	}
+
+	/**
+	 * Initializes the annotations for <b>http://www.eclipse.org/OCL/Import</b>.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void createImportAnnotations() {
+		String source = "http://www.eclipse.org/OCL/Import";
+		addAnnotation(this, source, new String[] { "ecore", "http://www.eclipse.org/emf/2002/Ecore" });
+	}
+
+	/**
+	 * Initializes the annotations for <b>http://www.eclipse.org/emf/2002/Ecore</b>.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void createEcoreAnnotations() {
+		String source = "http://www.eclipse.org/emf/2002/Ecore";
+		addAnnotation(this, source,
+				new String[] { "invocationDelegates", "http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot",
+						"settingDelegates", "http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot", "validationDelegates",
+						"http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot" });
+		addAnnotation(personaEClass, source, new String[] { "constraints", "validarLetra novaciocorreo" });
+		addAnnotation(clienteEClass, source, new String[] { "constraints", "novaciocelular" });
+		addAnnotation(usuarioEClass, source, new String[] { "constraints", "novaciopass" });
+	}
+
+	/**
+	 * Initializes the annotations for <b>http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot</b>.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void createPivotAnnotations() {
+		String source = "http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot";
+		addAnnotation(personaEClass, source, new String[] { "validarLetra", "self.nombre.matches(\'[A-Z][A-Aa-z]*\')",
+				"novaciocorreo", "self.correo->notEmpty()" });
+		addAnnotation(clienteEClass, source, new String[] { "novaciocelular", "self.celular->notEmpty()" });
+		addAnnotation(usuarioEClass, source, new String[] { "novaciopass", "self.password->notEmpty()" });
+		addAnnotation(getProducto_Cantidad(), source, new String[] { "derivation", "1" });
 	}
 
 } //PedidoPackageImpl

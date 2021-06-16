@@ -40,7 +40,7 @@ public interface Pedido extends EObject {
 	 * @return the value of the '<em>Id</em>' attribute.
 	 * @see #setId(long)
 	 * @see py.sirius.emf.model.pedido.PedidoPackage#getPedido_Id()
-	 * @model
+	 * @model required="true"
 	 * @generated
 	 */
 	long getId();

@@ -10,6 +10,7 @@ import org.eclipse.emf.common.notify.Notification;
 
 import org.eclipse.emf.ecore.EClass;
 
+import org.eclipse.emf.ecore.EStructuralFeature;
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
 import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
@@ -117,24 +118,15 @@ public class ProductoImpl extends MinimalEObjectImpl.Container implements Produc
 	protected BigDecimal precio = PRECIO_EDEFAULT;
 
 	/**
-	 * The default value of the '{@link #getCantidad() <em>Cantidad</em>}' attribute.
+	 * The cached setting delegate for the '{@link #getCantidad() <em>Cantidad</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #getCantidad()
 	 * @generated
 	 * @ordered
 	 */
-	protected static final int CANTIDAD_EDEFAULT = 0;
-
-	/**
-	 * The cached value of the '{@link #getCantidad() <em>Cantidad</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getCantidad()
-	 * @generated
-	 * @ordered
-	 */
-	protected int cantidad = CANTIDAD_EDEFAULT;
+	protected EStructuralFeature.Internal.SettingDelegate CANTIDAD__ESETTING_DELEGATE = ((EStructuralFeature.Internal) PedidoPackage.Literals.PRODUCTO__CANTIDAD)
+			.getSettingDelegate();
 
 	/**
 	 * The default value of the '{@link #getTipo() <em>Tipo</em>}' attribute.
@@ -267,7 +259,7 @@ public class ProductoImpl extends MinimalEObjectImpl.Container implements Produc
 	 * @generated
 	 */
 	public int getCantidad() {
-		return cantidad;
+		return (Integer) CANTIDAD__ESETTING_DELEGATE.dynamicGet(this, null, 0, true, false);
 	}
 
 	/**
@@ -276,11 +268,7 @@ public class ProductoImpl extends MinimalEObjectImpl.Container implements Produc
 	 * @generated
 	 */
 	public void setCantidad(int newCantidad) {
-		int oldCantidad = cantidad;
-		cantidad = newCantidad;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, PedidoPackage.PRODUCTO__CANTIDAD, oldCantidad,
-					cantidad));
+		CANTIDAD__ESETTING_DELEGATE.dynamicSet(this, null, 0, newCantidad);
 	}
 
 	/**
@@ -379,7 +367,7 @@ public class ProductoImpl extends MinimalEObjectImpl.Container implements Produc
 			setPrecio(PRECIO_EDEFAULT);
 			return;
 		case PedidoPackage.PRODUCTO__CANTIDAD:
-			setCantidad(CANTIDAD_EDEFAULT);
+			CANTIDAD__ESETTING_DELEGATE.dynamicUnset(this, null, 0);
 			return;
 		case PedidoPackage.PRODUCTO__TIPO:
 			setTipo(TIPO_EDEFAULT);
@@ -406,7 +394,7 @@ public class ProductoImpl extends MinimalEObjectImpl.Container implements Produc
 		case PedidoPackage.PRODUCTO__PRECIO:
 			return PRECIO_EDEFAULT == null ? precio != null : !PRECIO_EDEFAULT.equals(precio);
 		case PedidoPackage.PRODUCTO__CANTIDAD:
-			return cantidad != CANTIDAD_EDEFAULT;
+			return CANTIDAD__ESETTING_DELEGATE.dynamicIsSet(this, null, 0);
 		case PedidoPackage.PRODUCTO__TIPO:
 			return tipo != TIPO_EDEFAULT;
 		}
@@ -432,8 +420,6 @@ public class ProductoImpl extends MinimalEObjectImpl.Container implements Produc
 		result.append(fechaVencimiento);
 		result.append(", precio: ");
 		result.append(precio);
-		result.append(", cantidad: ");
-		result.append(cantidad);
 		result.append(", tipo: ");
 		result.append(tipo);
 		result.append(')');

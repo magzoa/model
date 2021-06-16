@@ -32,7 +32,7 @@ public interface ItemPedido extends EObject {
 	 * @return the value of the '<em>Id</em>' attribute.
 	 * @see #setId(long)
 	 * @see py.sirius.emf.model.pedido.PedidoPackage#getItemPedido_Id()
-	 * @model
+	 * @model required="true"
 	 * @generated
 	 */
 	long getId();
@@ -54,7 +54,7 @@ public interface ItemPedido extends EObject {
 	 * @return the value of the '<em>Cantidad</em>' attribute.
 	 * @see #setCantidad(int)
 	 * @see py.sirius.emf.model.pedido.PedidoPackage#getItemPedido_Cantidad()
-	 * @model
+	 * @model required="true"
 	 * @generated
 	 */
 	int getCantidad();

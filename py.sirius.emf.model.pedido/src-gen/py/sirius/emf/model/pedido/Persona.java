@@ -20,6 +20,8 @@ import org.eclipse.emf.ecore.EObject;
  *
  * @see py.sirius.emf.model.pedido.PedidoPackage#getPersona()
  * @model abstract="true"
+ *        annotation="http://www.eclipse.org/emf/2002/Ecore constraints='validarLetra novaciocorreo'"
+ *        annotation="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot validarLetra='self.nombre.matches(\'[A-Z][A-Aa-z]*\')' novaciocorreo='self.correo-&gt;notEmpty()'"
  * @generated
  */
 public interface Persona extends EObject {
@@ -30,7 +32,7 @@ public interface Persona extends EObject {
 	 * @return the value of the '<em>Id</em>' attribute.
 	 * @see #setId(long)
 	 * @see py.sirius.emf.model.pedido.PedidoPackage#getPersona_Id()
-	 * @model
+	 * @model required="true"
 	 * @generated
 	 */
 	long getId();

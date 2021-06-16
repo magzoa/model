@@ -4,4 +4,12 @@
     xmlns:xmi="http://www.omg.org/XMI"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:pedido="http://www.eclipse.org/py/sirius/emf/model/pedido"
-    xsi:schemaLocation="http://www.eclipse.org/py/sirius/emf/model/pedido pedido.ecore"/>
+    xsi:schemaLocation="http://www.eclipse.org/py/sirius/emf/model/pedido pedido.ecore">
+  <usuario id="1"
+      nombre="Juan"
+      correo="correo"
+      password="432"/>
+  <pedido/>
+  <producto/>
+  <producto/>
+</pedido:Distribuidora>

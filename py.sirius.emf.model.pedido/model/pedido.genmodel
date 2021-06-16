@@ -15,6 +15,7 @@
       <genEnumLiterals ecoreEnumLiteral="pedido.ecore#//ProductoTipo/FARMACIA"/>
       <genEnumLiterals ecoreEnumLiteral="pedido.ecore#//ProductoTipo/ELECTRONICOS"/>
     </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="pedido.ecore#//NewEnum2"/>
     <genClasses ecoreClass="pedido.ecore#//Persona">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute pedido.ecore#//Persona/id"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute pedido.ecore#//Persona/nombre"/>

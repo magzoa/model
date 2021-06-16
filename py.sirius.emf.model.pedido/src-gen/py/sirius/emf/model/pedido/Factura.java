@@ -34,7 +34,7 @@ public interface Factura extends EObject {
 	 * @return the value of the '<em>Numero</em>' attribute.
 	 * @see #setNumero(int)
 	 * @see py.sirius.emf.model.pedido.PedidoPackage#getFactura_Numero()
-	 * @model
+	 * @model required="true"
 	 * @generated
 	 */
 	int getNumero();

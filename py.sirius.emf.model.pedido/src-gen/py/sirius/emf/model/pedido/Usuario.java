@@ -15,7 +15,8 @@ package py.sirius.emf.model.pedido;
  * </ul>
  *
  * @see py.sirius.emf.model.pedido.PedidoPackage#getUsuario()
- * @model
+ * @model annotation="http://www.eclipse.org/emf/2002/Ecore constraints='novaciopass'"
+ *        annotation="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot novaciopass='self.password-&gt;notEmpty()'"
  * @generated
  */
 public interface Usuario extends Persona {

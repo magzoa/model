@@ -15,7 +15,8 @@ package py.sirius.emf.model.pedido;
  * </ul>
  *
  * @see py.sirius.emf.model.pedido.PedidoPackage#getCliente()
- * @model
+ * @model annotation="http://www.eclipse.org/emf/2002/Ecore constraints='novaciocelular'"
+ *        annotation="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot novaciocelular='self.celular-&gt;notEmpty()'"
  * @generated
  */
 public interface Cliente extends Persona {
